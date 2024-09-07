@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zwnl-learning" />
+        <module name="zwnl-resume" />
+        <module name="zwnl-common" />
+        <module name="zwnl-gateway" />
+        <module name="zwnl-api" />
+        <module name="zwnl-media" />
+        <module name="zwnl-ports" />
+        <module name="zwnl-admin" />
+        <module name="zwnl-user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zwnl-admin" options="-parameters" />
+      <module name="zwnl-api" options="-parameters" />
+      <module name="zwnl-common" options="-parameters" />
+      <module name="zwnl-gateway" options="-parameters" />
+      <module name="zwnl-learning" options="-parameters" />
+      <module name="zwnl-media" options="-parameters" />
+      <module name="zwnl-ports" options="-parameters" />
+      <module name="zwnl-resume" options="-parameters" />
+      <module name="zwnl-user" options="-parameters" />
+    </option>
+  </component>
+</project>
