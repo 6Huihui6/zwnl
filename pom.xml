@@ -144,6 +144,7 @@
             <artifactId>redisson</artifactId>
             <version>${redisson.version}</version>
         </dependency>
+
         <!-- 数据库驱动包管理 -->
         <dependency>
             <groupId>mysql</groupId>
