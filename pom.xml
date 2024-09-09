@@ -42,15 +42,29 @@
         <redisson.version>3.16.7</redisson.version>
         <elasticsearch.version>8.1.0</elasticsearch.version>
         <hutool.version>5.7.17</hutool.version>
-<!--        <knife4j.version>4.0.0</knife4j.version>-->
+        <knife4j.version></knife4j.version>
         <swagger.version>3.0.3</swagger.version>
         <mysql.version>8.0.23</mysql.version>
+        <jjwt>0.9.1</jjwt>
+        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.dataformat.version>2.9.9</fastjson.dataformat.version>
 <!--     druid -springboot  1.2.20-->
     </properties>
 
     <!-- 对依赖包进行管理 -->
     <dependencyManagement>
         <dependencies>
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-cbor</artifactId>
+                <version>${fastjson.dataformat.version}</version>
+            </dependency>
             <!-- Spring Cloud 依赖包管理 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -82,16 +96,26 @@
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl-job-version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.github.xiaoymin</groupId>-->
-<!--                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>-->
-<!--                <version>${knife4j.version}</version>-->
-<!--            </dependency>-->
-            <!--knife4j-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            knife4j
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt}</version>
             </dependency>
         </dependencies>
 
@@ -119,6 +143,7 @@
             <artifactId>redisson</artifactId>
             <version>${redisson.version}</version>
         </dependency>
+
         <!-- 数据库驱动包管理 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -126,7 +151,6 @@
             <version>${mysql.version}</version>
         </dependency>
     </dependencies>
-
     <build>
         <pluginManagement>
             <plugins>
