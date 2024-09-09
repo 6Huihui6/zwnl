@@ -42,7 +42,9 @@
         <redisson.version>3.16.7</redisson.version>
         <elasticsearch.version>8.1.0</elasticsearch.version>
         <hutool.version>5.7.17</hutool.version>
-        <knife4j.version>4.4.0</knife4j.version>
+<!--        <knife4j.version>4.0.0</knife4j.version>-->
+        <swagger.version>3.0.3</swagger.version>
+        <mysql.version>8.0.23</mysql.version>
 <!--     druid -springboot  1.2.20-->
     </properties>
 
@@ -81,10 +83,16 @@
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl-job-version}</version>
             </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.github.xiaoymin</groupId>-->
+<!--                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>-->
+<!--                <version>${knife4j.version}</version>-->
+<!--            </dependency>-->
+            <!--knife4j-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
         </dependencies>
 
@@ -111,6 +119,12 @@
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
             <version>${redisson.version}</version>
+        </dependency>
+        <!-- 数据库驱动包管理 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 

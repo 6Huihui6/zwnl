@@ -1,4 +1,4 @@
-package com.zwnl;
+package com.zwnl.user;
 
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @EnableScheduling
-//@MapperScan("com.tianji.learning.mapper")
+@MapperScan("com.zwnl.user.mapper")
 @Slf4j
 public class UserApplication {
     public static void main(String[] args) throws UnknownHostException {
