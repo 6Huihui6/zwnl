@@ -42,12 +42,12 @@
         <redisson.version>3.16.7</redisson.version>
         <elasticsearch.version>8.1.0</elasticsearch.version>
         <hutool.version>5.7.17</hutool.version>
-        <knife4j.version></knife4j.version>
+        <knife4j.version>3.0.3</knife4j.version>
         <swagger.version>3.0.3</swagger.version>
         <mysql.version>8.0.23</mysql.version>
         <jjwt>0.9.1</jjwt>
-        <fastjson.version>1.2.58</fastjson.version>
-        <fastjson.dataformat.version>2.9.9</fastjson.dataformat.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <fastjson.dataformat.version>2.13.5</fastjson.dataformat.version>
 <!--     druid -springboot  1.2.20-->
     </properties>
 
@@ -101,12 +101,11 @@
                 <artifactId>lombok</artifactId>
                 <optional>true</optional>
             </dependency>
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
-            knife4j
+<!--            <dependency>-->
+<!--                <groupId>com.github.xiaoymin</groupId>-->
+<!--                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>-->
+<!--                <version>${knife4j.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
