@@ -7,8 +7,8 @@ spring:
     url: jdbc:mysql://121.37.194.170:3306/zwnl-user?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: zwnl
-  application:
-    name: wlmtsys-user
+#  application:
+#    name: wlmtsys-user
 #  cloud:
 #    nacos:
 #      config:

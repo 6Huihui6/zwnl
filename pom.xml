@@ -42,7 +42,7 @@
         <redisson.version>3.16.7</redisson.version>
         <elasticsearch.version>8.1.0</elasticsearch.version>
         <hutool.version>5.7.17</hutool.version>
-<!--        <knife4j.version>4.0.0</knife4j.version>-->
+        <knife4j.version></knife4j.version>
         <swagger.version>3.0.3</swagger.version>
         <mysql.version>8.0.23</mysql.version>
         <jjwt>0.9.1</jjwt>
@@ -102,12 +102,12 @@
                 <artifactId>lombok</artifactId>
                 <optional>true</optional>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.github.xiaoymin</groupId>-->
-<!--                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>-->
-<!--                <version>${knife4j.version}</version>-->
-<!--            </dependency>-->
-            <!--knife4j-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            knife4j
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
