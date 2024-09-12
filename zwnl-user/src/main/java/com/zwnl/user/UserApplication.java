@@ -5,6 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
@@ -15,6 +16,7 @@ import java.net.UnknownHostException;
 @EnableScheduling
 @MapperScan("com.zwnl.user.mapper")
 @Slf4j
+//@EnableDiscoveryClient
 public class UserApplication {
     public static void main(String[] args) throws UnknownHostException {
         SpringApplication app = new SpringApplicationBuilder(UserApplication.class).build(args);

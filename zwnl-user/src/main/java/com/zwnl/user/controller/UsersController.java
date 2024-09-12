@@ -1,7 +1,7 @@
 package com.zwnl.user.controller;
 
-
-import com.zwnl.user.service.IUsersService;
+//
+//import com.zwnl.user.service.IUsersService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -25,12 +25,13 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "用户管理接口")
 public class UsersController {
 
-    private  final IUsersService usersService;
+//    private  final IUsersService usersService;
 
     @Operation(summary = "普通body请求")
     @GetMapping
     public String post() {
-        return usersService.post();
+//        return usersService.post();
+        return "post";
     }
 
 }

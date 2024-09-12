@@ -1,6 +1,6 @@
 server:
-  port: 8080
-
+  port: 9091
+#
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -8,14 +8,11 @@ spring:
     username: root
     password: zwnl
 #  application:
-#    name: wlmtsys-user
+#    name: zwnl-user
 #  cloud:
 #    nacos:
 #      config:
-#        import-check:
-#          enabled: false # 禁用导入检查
-#        server-addr: 192.168.200.130:8848 # Nacos 服务器地址
-#        file-extension: yml # 配置文件扩展名
+#        server-addr: 121.37.194.170:8848 # 配置中心服务器地址
 #      discovery:
-#        server-addr: 192.168.200.130:8848 # 服务发现服务器地址
+#        server-addr: 121.37.194.170:8848 # 服务发现服务器地址
 

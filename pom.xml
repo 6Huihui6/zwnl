@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
+        <version>3.2.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -35,8 +35,8 @@
 
         <mybatis.plus.version>3.5.6</mybatis.plus.version>
         <org.projectlombok.version>1.18.20</org.projectlombok.version>
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0</spring-cloud-alibaba.version>
+        <spring-cloud.version>2023.0.1</spring-cloud.version>
+        <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
         <mysql.version>8.0.23</mysql.version>
         <xxl-job-version>2.3.0</xxl-job-version>
         <redisson.version>3.16.7</redisson.version>
