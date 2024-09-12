@@ -55,16 +55,16 @@
     <dependencyManagement>
         <dependencies>
             <!-- fastjson -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-cbor</artifactId>
-                <version>${fastjson.dataformat.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>fastjson</artifactId>-->
+<!--                <version>${fastjson.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.fasterxml.jackson.dataformat</groupId>-->
+<!--                <artifactId>jackson-dataformat-cbor</artifactId>-->
+<!--                <version>${fastjson.dataformat.version}</version>-->
+<!--            </dependency>-->
             <!-- Spring Cloud 依赖包管理 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -91,11 +91,11 @@
                 <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
                 <version>${mybatis.plus.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.xuxueli</groupId>
-                <artifactId>xxl-job-core</artifactId>
-                <version>${xxl-job-version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.xuxueli</groupId>-->
+<!--                <artifactId>xxl-job-core</artifactId>-->
+<!--                <version>${xxl-job-version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -111,11 +111,11 @@
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.jsonwebtoken</groupId>
-                <artifactId>jjwt</artifactId>
-                <version>${jjwt}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>io.jsonwebtoken</groupId>-->
+<!--                <artifactId>jjwt</artifactId>-->
+<!--                <version>${jjwt}</version>-->
+<!--            </dependency>-->
         </dependencies>
 
     </dependencyManagement>
@@ -133,15 +133,15 @@
             <scope>test</scope>
         </dependency>
         <!--开启bootstrap文件读取-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.redisson</groupId>
-            <artifactId>redisson</artifactId>
-            <version>${redisson.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-bootstrap</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.redisson</groupId>-->
+<!--            <artifactId>redisson</artifactId>-->
+<!--            <version>${redisson.version}</version>-->
+<!--        </dependency>-->
 
         <!-- 数据库驱动包管理 -->
         <dependency>
