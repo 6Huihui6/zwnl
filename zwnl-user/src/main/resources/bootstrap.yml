@@ -27,6 +27,9 @@ spring:
           - data-id: shared-xxljob.yaml # 共享mq配置
             refresh: false
 zwnl:
+  wechat:
+    appid: ${zwnl.wechat.appid}
+    secret: ${zwnl.wechat.secret}
   swagger:
     enable: true
     enableResponseWrap: true
@@ -37,17 +40,9 @@ zwnl:
     contact-url: https://wlmtsys.com
     contact-email: 3103733088@qq.com
     version: v1.0
-#  auth:
-#    resource:
-#      enable: true
-#      excludeLoginPaths:
-#        - /students/register
-#        - /users/detail/{isStaff}
-#        - /users/list
-#        - GET:/users/{id}
-#        - /users/{id}/type
-#        - /users/ids
-#        - /users/me
+
   jdbc:
     database: zwnl_user
+
+
 

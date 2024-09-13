@@ -11,6 +11,7 @@
         <module name="zwnl-resume" />
         <module name="zwnl-common" />
         <module name="zwnl-gateway" />
+        <module name="zwnl-model" />
         <module name="zwnl-api" />
         <module name="zwnl-media" />
         <module name="zwnl-ports" />
@@ -27,6 +28,7 @@
       <module name="zwnl-gateway" options="-parameters" />
       <module name="zwnl-learning" options="-parameters" />
       <module name="zwnl-media" options="-parameters" />
+      <module name="zwnl-model" options="-parameters" />
       <module name="zwnl-ports" options="-parameters" />
       <module name="zwnl-resume" options="-parameters" />
       <module name="zwnl-user" options="-parameters" />

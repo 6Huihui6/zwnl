@@ -10,8 +10,8 @@ import org.springframework.core.env.Environment;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-@SpringBootApplication
 @MapperScan("com.zwnl.user.mapper")
+@SpringBootApplication
 @Slf4j
 public class UserApplication {
     public static void main(String[] args) throws UnknownHostException {
@@ -37,16 +37,3 @@ public class UserApplication {
     }
 }
 
-//import org.mybatis.spring.annotation.MapperScan;
-//import org.springframework.boot.SpringApplication;
-//import org.springframework.boot.autoconfigure.SpringBootApplication;
-//
-//@SpringBootApplication
-//@MapperScan("com.zwnl.user.mapper")
-//public class UserApplication {
-//    public static void main(String[] args) {
-////        SSLUtils.disableSSLVerification();
-//        // 启动程序
-//        SpringApplication.run(UserApplication.class, args);
-//    }
-//}

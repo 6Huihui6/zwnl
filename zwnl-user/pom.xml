@@ -50,24 +50,12 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-        <!--auth-sdk-->
         <dependency>
-            <groupId>com.tianji</groupId>
-            <artifactId>tj-auth-resource-sdk</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.zwnl</groupId>
+            <artifactId>zwnl-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--api-->
-        <dependency>
-            <groupId>com.tianji</groupId>
-            <artifactId>tj-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.tianji</groupId>
-            <artifactId>tj-message-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <!--loadbalancer-->
+        <!--auth-sdk--><!--loadbalancer-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
