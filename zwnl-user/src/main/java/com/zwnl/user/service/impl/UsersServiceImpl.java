@@ -17,8 +17,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements IUsersService {
 
-    @Override
-    public String post() {
-        return "post";
-    }
 }

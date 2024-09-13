@@ -1,3 +1,5 @@
+create database zwnl ;
+use zwnl;
 CREATE TABLE users (
                        user_id INT AUTO_INCREMENT PRIMARY KEY comment '用户ID',             -- 用户ID (主键)
                        username VARCHAR(255) NOT NULL UNIQUE comment '用户名',              -- 用户名
