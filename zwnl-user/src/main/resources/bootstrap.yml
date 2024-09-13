@@ -3,15 +3,10 @@ server:
   tomcat:
     uri-encoding: UTF-8   #服务编码
 spring:
-  datasource:
-    url: jdbc:mysql://121.37.194.170:3306/zwnl_user?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: zwnl
   profiles:
     active: dev
   application:
-    name: zwnl-user
+    name: user-service
   cloud:
     nacos:
       config:
@@ -31,32 +26,28 @@ spring:
             refresh: false
           - data-id: shared-xxljob.yaml # 共享mq配置
             refresh: false
-    client:
-      hostname: localhost
-tj:
+zwnl:
   swagger:
     enable: true
     enableResponseWrap: true
-    package-path: com.tianji.user.controller
-    title: 天机学堂 - 用户中心接口文档
+    package-path: com.zwnl.user.controller
+    title: 职位你来 - 用户中心接口文档
     description: 该服务用户管理、用户信息管理
-    contact-name: 传智教育·研究院
-    contact-url: http://www.itcast.cn/
-    contact-email: zhanghuyi@itcast.cn
+    contact-name: 职位你来·研究院
+    contact-url: https://wlmtsys.com
+    contact-email: 3103733088@qq.com
     version: v1.0
-  auth:
-    resource:
-      enable: true
-      excludeLoginPaths:
-        - /students/register
-        - /users/detail/{isStaff}
-        - /users/list
-        - GET:/users/{id}
-        - /users/{id}/type
-        - /users/ids
-        - /users/me
-#  jdbc:
-#    database: zwnl_user
 #  auth:
 #    resource:
 #      enable: true
+#      excludeLoginPaths:
+#        - /students/register
+#        - /users/detail/{isStaff}
+#        - /users/list
+#        - GET:/users/{id}
+#        - /users/{id}/type
+#        - /users/ids
+#        - /users/me
+  jdbc:
+    database: zwnl_user
+

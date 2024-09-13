@@ -86,11 +86,11 @@
                 <version>${mybatis-plus.version}</version>
             </dependency>
             <!--knife4j-->
-<!--            <dependency>-->
-<!--                <groupId>com.github.xiaoymin</groupId>-->
-<!--                <artifactId>knife4j-spring-boot-starter</artifactId>-->
-<!--                <version>${swagger.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
             <!--腾讯云-->
 <!--            <dependency>-->
 <!--                <groupId>com.tencentcloudapi</groupId>-->
