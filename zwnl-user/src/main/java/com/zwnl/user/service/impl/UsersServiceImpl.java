@@ -62,7 +62,6 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
                     .build();
             this.save(user);
         }
-
         //返回这个用户对象
         return user;
     }
