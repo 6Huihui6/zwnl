@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>zwnl-model</artifactId>
+    <artifactId>zwnl-utils</artifactId>
     <packaging>jar</packaging>
 
-    <name>zwnl-model</name>
+    <name>zwnl-utils</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -24,27 +24,9 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-        <!--hutool工具包-->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>${hutool.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-core</artifactId>
-            <version>${mybatis-plus.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-            <version>${mybatis-plus.version}</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>com.zwnl</groupId>
-            <artifactId>zwnl-common</artifactId>
+            <artifactId>zwnl-model</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

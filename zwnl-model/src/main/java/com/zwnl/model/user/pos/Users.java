@@ -1,16 +1,20 @@
-package com.zwnl.common.domain.po;
+package com.zwnl.model.user.pos;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+import com.zwnl.model.user.enums.UserRole;
+import com.zwnl.model.user.enums.UserStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -44,13 +48,13 @@ public class Users implements Serializable {
     private String password;
 
     @ApiModelProperty(value = "用户角色")
-    private String role;
+    private UserRole role;
 
     @ApiModelProperty(value = "用户头像")
     private String avatarUrl;
 
     @ApiModelProperty(value = "用户状态")
-    private String status;
+    private UserStatus status;
 
     @ApiModelProperty(value = "创建时间")
     private LocalDateTime createdTime;
@@ -63,5 +67,8 @@ public class Users implements Serializable {
 
     @ApiModelProperty(value = "openid")
     private String openid;
+
+    @ApiModelProperty(value = "phone")
+    private String phone;
 
 }

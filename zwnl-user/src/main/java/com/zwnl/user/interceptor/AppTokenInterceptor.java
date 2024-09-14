@@ -1,8 +1,8 @@
 package com.zwnl.user.interceptor;
 
 
-import com.zwnl.common.domain.po.Users;
-import com.zwnl.common.thread.AppThreadLocalUtil;
+import com.zwnl.model.user.pos.Users;
+import com.zwnl.utils.thread.AppThreadLocalUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;

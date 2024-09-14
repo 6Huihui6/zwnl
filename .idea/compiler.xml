@@ -16,6 +16,7 @@
         <module name="zwnl-media" />
         <module name="zwnl-ports" />
         <module name="zwnl-admin" />
+        <module name="zwnl-utils" />
         <module name="zwnl-user" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,7 @@
       <module name="zwnl-ports" options="-parameters" />
       <module name="zwnl-resume" options="-parameters" />
       <module name="zwnl-user" options="-parameters" />
+      <module name="zwnl-utils" options="-parameters" />
     </option>
   </component>
 </project>

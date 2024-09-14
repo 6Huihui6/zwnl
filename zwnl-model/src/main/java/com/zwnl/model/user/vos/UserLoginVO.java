@@ -1,4 +1,4 @@
-package com.zwnl.user.domain.vos;
+package com.zwnl.model.user.vos;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

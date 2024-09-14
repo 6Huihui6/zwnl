@@ -16,4 +16,7 @@ public class MessageConstant {
     public static final String PASSWORD_EDIT_FAILED = "密码修改失败";
 
     public static final String ALREADY_EXISTS ="该账号已存在" ;
+
+    public static final String PARAM_ERROR = "参数错误";
+
 }

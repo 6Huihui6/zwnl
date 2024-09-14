@@ -1,8 +1,9 @@
 package com.zwnl.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zwnl.common.domain.po.Users;
-import com.zwnl.user.domain.dtos.UserLoginDTO;
+
+import com.zwnl.model.user.dtos.UserLoginDTO;
+import com.zwnl.model.user.pos.Users;
 
 /**
  * <p>
@@ -20,4 +21,10 @@ public interface IUsersService extends IService<Users> {
      * @return
      */
     Users wxLogin(UserLoginDTO userLoginDTO);
+
+    /**
+     * zhuye注册
+     * @param users
+     */
+    void register(Users users);
 }

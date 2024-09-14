@@ -1,7 +1,7 @@
-package com.zwnl.common.thread;
+package com.zwnl.utils.thread;
 
 
-import com.zwnl.common.domain.po.Users;
+import com.zwnl.model.user.pos.Users;
 
 public class AppThreadLocalUtil {
 

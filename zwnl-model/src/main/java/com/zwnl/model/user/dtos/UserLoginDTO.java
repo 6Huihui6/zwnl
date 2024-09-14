@@ -1,4 +1,4 @@
-package com.zwnl.user.domain.dtos;
+package com.zwnl.model.user.dtos;
 
 import lombok.Data;
 

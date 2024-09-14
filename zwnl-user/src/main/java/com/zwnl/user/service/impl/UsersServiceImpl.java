@@ -2,17 +2,16 @@ package com.zwnl.user.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.zwnl.common.domain.po.Users;
 import com.zwnl.common.exceptions.LoginFailedException;
 import com.zwnl.common.utils.HttpClientUtil;
+import com.zwnl.model.user.pos.Users;
 import com.zwnl.user.constant.MessageConstant;
-import com.zwnl.user.domain.dtos.UserLoginDTO;
+import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.user.mapper.UsersMapper;
 import com.zwnl.user.properties.WeChatProperties;
 import com.zwnl.user.service.IUsersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -67,6 +66,26 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         //返回这个用户对象
         return user;
     }
+
+    /**
+     *账号密码注册
+     *
+     * @param users
+     */
+    @Override
+    public void register(Users users) {
+        //判断当前用户是否为新用户
+        Users user = this.lambdaQuery().eq(Users::getPhone, users.getPhone()).one();
+        if(user != null){
+            throw new LoginFailedException(MessageConstant.ALREADY_EXISTS);
+        }
+        //保存用户信息
+        if (users.getPhone()!=null&&users.getPassword()!=null){
+            users.setCreatedTime(LocalDateTime.now());
+            save(users);
+        }
+    }
+
     /**
      * 调用微信接口服务，获取微信用户的openid
      * @param code
