@@ -5,21 +5,21 @@ package com.zwnl.user.controller;
 
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.common.utils.AppJwtUtil;
-import com.zwnl.model.user.pos.Users;
-import com.zwnl.user.constant.JwtClaimsConstant;
+import com.zwnl.model.user.dtos.UserDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
+import com.zwnl.model.user.pos.Users;
+import com.zwnl.model.user.vos.UserDetailVO;
 import com.zwnl.model.user.vos.UserLoginVO;
-import com.zwnl.user.properties.JwtProperties;
+import com.zwnl.user.constant.JwtClaimsConstant;
+import com.zwnl.user.service.IUserDetailService;
 import com.zwnl.user.service.IUsersService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -37,19 +37,20 @@ import java.util.Map;
 public class UsersController {
 
     private  final IUsersService usersService;
-    private final  JwtProperties jwtProperties;
+    private  final IUserDetailService userDetailService;
+
 
 @PostMapping("/login")
 @ApiOperation("微信登录")
-public ResponseResult<UserLoginVO> login(@RequestBody UserLoginDTO userLoginDTO){
+public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
     log.info("微信用户登录：{}",userLoginDTO.getCode());
 
     //微信登录
     Users user = usersService.wxLogin(userLoginDTO);
 
     //为微信用户生成jwt令牌
-    Map<String, Object> claims = new HashMap<>();
-    claims.put(JwtClaimsConstant.USER_ID,user.getUserId());
+//    Map<String, Object> claims = new HashMap<>();
+//    claims.put(JwtClaimsConstant.USER_ID,user.getUserId());
     String token = AppJwtUtil.getToken(Long.valueOf(JwtClaimsConstant.USER_ID));
 
     UserLoginVO userLoginVO = UserLoginVO.builder()
@@ -63,11 +64,20 @@ public ResponseResult<UserLoginVO> login(@RequestBody UserLoginDTO userLoginDTO)
 
 @PostMapping("/register")
 @ApiOperation("用户注册")
-public ResponseResult<String> register(@RequestBody Users users) {
+public ResponseResult register(@RequestBody Users users) {
     log.info("用户注册：{}", users);
     usersService.register(users);
     return ResponseResult.okResult("注册成功");
 }
 
-
+    @ApiOperation("获取当前登录用户信息")
+    @GetMapping(value = "/me")
+    public UserDetailVO me() {
+        return usersService.myInfo();
+    }
+    @ApiOperation("更新用户信息")
+    @PutMapping("/{id}")
+    public void updateUser(@RequestBody @Valid UserDTO userDTO){
+        usersService.updateUser(userDTO);
+    }
 }

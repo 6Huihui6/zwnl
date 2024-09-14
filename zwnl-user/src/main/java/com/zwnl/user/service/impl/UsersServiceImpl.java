@@ -2,21 +2,30 @@ package com.zwnl.user.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.zwnl.common.enums.UserType;
 import com.zwnl.common.exceptions.LoginFailedException;
-import com.zwnl.common.utils.HttpClientUtil;
+import com.zwnl.common.utils.*;
+import com.zwnl.model.user.dtos.UserDTO;
+import com.zwnl.model.user.pos.UserDetail;
 import com.zwnl.model.user.pos.Users;
+import com.zwnl.model.user.vos.UserDetailVO;
 import com.zwnl.user.constant.MessageConstant;
 import com.zwnl.model.user.dtos.UserLoginDTO;
+import com.zwnl.user.constant.UserErrorInfo;
 import com.zwnl.user.mapper.UsersMapper;
 import com.zwnl.user.properties.WeChatProperties;
+import com.zwnl.user.service.IUserDetailService;
 import com.zwnl.user.service.IUsersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zwnl.utils.thread.AppThreadLocalUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.zwnl.user.constant.UserErrorInfo.Msg.USER_ID_NOT_EXISTS;
 
 /**
  * <p>
@@ -34,6 +43,7 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
     public static final String WX_LOGIN = "https://api.weixin.qq.com/sns/jscode2session";
 
     private final WeChatProperties weChatProperties;
+    private final IUserDetailService detailService;
 
     /**
      * 微信登录
@@ -83,6 +93,51 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
             users.setCreatedTime(LocalDateTime.now());
             save(users);
         }
+    }
+
+    /**
+     * 获取用户详情
+     *
+     * @return
+     */
+    @Override
+    public UserDetailVO myInfo() {
+        // 1.获取登录用户id
+//        Long userId = UserContext.getUser();
+        Users user = AppThreadLocalUtil.getUser();
+        Long userId = Long.valueOf(user.getUserId());
+        if (userId == null) {
+            return null;
+        }
+        // 2.查询用户
+        UserDetail userDetail = detailService.queryByUserId(userId);
+        AssertUtils.isNotNull(userDetail,USER_ID_NOT_EXISTS);
+        // 3.封装vo
+        // 3.1.基本信息
+        UserDetailVO vo = BeanUtils.toBean(userDetail, UserDetailVO.class);
+        return vo;
+    }
+
+    /**
+     * 更新用户信息
+     *
+     * @param userDTO
+     */
+    @Override
+    public void updateUser(UserDTO userDTO) {
+        // 1.如果传递了手机号，则修改手机号
+        String cellphone = userDTO.getPhone();
+        if(StringUtils.isNotBlank(cellphone)){
+            Users user = new Users();
+            user.setUserId(userDTO.getUserId());
+            user.setPhone(cellphone);
+            user.setUsername(cellphone);
+            updateById(user);
+        }
+        // 2.修改详情
+        UserDetail detail = BeanUtils.toBean(userDTO, UserDetail.class);
+        detail.setType(null);
+        detailService.updateById(detail);
     }
 
     /**

@@ -2,8 +2,10 @@ package com.zwnl.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import com.zwnl.model.user.dtos.UserDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.Users;
+import com.zwnl.model.user.vos.UserDetailVO;
 
 /**
  * <p>
@@ -27,4 +29,16 @@ public interface IUsersService extends IService<Users> {
      * @param users
      */
     void register(Users users);
+
+    /**
+     * 获取用户详情
+     * @return
+     */
+    UserDetailVO myInfo();
+
+    /**
+     * 更新用户信息
+     * @param userDTO
+     */
+    void updateUser(UserDTO userDTO);
 }

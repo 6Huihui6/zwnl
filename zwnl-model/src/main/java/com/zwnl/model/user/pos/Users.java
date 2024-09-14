@@ -13,6 +13,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -47,7 +48,8 @@ public class Users implements Serializable {
     @ApiModelProperty(value = "密码")
     private String password;
 
-    @ApiModelProperty(value = "用户角色")
+    @ApiModelProperty(value = "用户角色-")
+    @NotNull(message = "用户角色不能为空")
     private UserRole role;
 
     @ApiModelProperty(value = "用户头像")
