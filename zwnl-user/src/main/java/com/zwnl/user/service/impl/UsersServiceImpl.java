@@ -2,21 +2,22 @@ package com.zwnl.user.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.zwnl.common.enums.UserType;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zwnl.common.exceptions.LoginFailedException;
-import com.zwnl.common.utils.*;
+import com.zwnl.common.utils.AssertUtils;
+import com.zwnl.common.utils.BeanUtils;
+import com.zwnl.common.utils.HttpClientUtil;
+import com.zwnl.common.utils.StringUtils;
 import com.zwnl.model.user.dtos.UserDTO;
+import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.UserDetail;
 import com.zwnl.model.user.pos.Users;
 import com.zwnl.model.user.vos.UserDetailVO;
 import com.zwnl.user.constant.MessageConstant;
-import com.zwnl.model.user.dtos.UserLoginDTO;
-import com.zwnl.user.constant.UserErrorInfo;
 import com.zwnl.user.mapper.UsersMapper;
 import com.zwnl.user.properties.WeChatProperties;
 import com.zwnl.user.service.IUserDetailService;
 import com.zwnl.user.service.IUsersService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zwnl.utils.thread.AppThreadLocalUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -120,7 +121,6 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
 
     /**
      * 更新用户信息
-     *
      * @param userDTO
      */
     @Override
