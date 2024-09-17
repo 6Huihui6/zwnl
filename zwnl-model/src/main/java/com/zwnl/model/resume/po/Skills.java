@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 
-import com.zwnl.model.resume.enums.proficGrade;
+import com.zwnl.model.resume.enums.ProficGrade;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -40,7 +40,7 @@ public class Skills implements Serializable {
     private String skillName;
 
     @ApiModelProperty(value = "熟练程度")
-    private proficGrade proficiency;
+    private ProficGrade proficiency;
 
 
 }

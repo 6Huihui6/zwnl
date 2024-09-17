@@ -2,7 +2,7 @@ package com.zwnl.model.user.enums;
 
 import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.zwnl.common.exceptions.BadRequestException;
-import com.zwnl.model.constant.UserErrorInfo;
+import com.zwnl.model.constant.ErrorInfo;
 import lombok.Getter;
 
 @Getter
@@ -30,6 +30,6 @@ public enum UserStatus {
         if (value == 3) {
             return BANNED;
         }
-        throw new BadRequestException(UserErrorInfo.Msg.INVALID_USER_STATUS);
+        throw new BadRequestException(ErrorInfo.Msg.INVALID_USER_STATUS);
     }
 }

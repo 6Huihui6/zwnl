@@ -1,6 +1,6 @@
 package com.zwnl.model.constant;
 
-public interface UserErrorInfo {
+public interface ErrorInfo {
     interface Msg {
         String INVALID_UN_OR_PW = "用户登录信息错误";
         String INVALID_UN = "用户名或手机号不能为空";
@@ -12,5 +12,8 @@ public interface UserErrorInfo {
         String USER_FROZEN = "账号已冻结";
         String PHONE_ALREADY_EXISTS = "手机号已存在";
         String INVALID_USER_STATUS = "用户状态不正确";
+         String INVALID_COMPANY_SIZE = "公司规模不正确";
+        String INVALID_COMPANY_NAME = "公司名称不能为空";
+        String INVALID_COMPANY_ADDRESS = "公司地址不能为空";
     }
 }

@@ -12,6 +12,20 @@ CREATE TABLE users (
                        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间', -- 更新时间
                        last_login TIMESTAMP NULL comment '最后登录时间'                          -- 最后登录时间
 ) comment '用户表';
+
+CREATE TABLE companies (
+                           company_id INT AUTO_INCREMENT PRIMARY KEY comment '公司ID', -- 公司ID (主键)
+                           name VARCHAR(255) NOT NULL comment '公司名称', -- 公司名称
+                           industry VARCHAR(255) comment '所属行业', -- 所属行业
+                           size ENUM('1-50', '51-200', '201-500', '501-1000', '1001+') comment '公司规模', -- 公司规模
+                           address VARCHAR(255) comment '公司地址', -- 公司地址
+                           contact_name VARCHAR(255) comment '联系人姓名', -- 联系人姓名
+                           contact_email VARCHAR(255) comment '联系人邮箱', -- 联系人邮箱
+                           contact_phone VARCHAR(20) comment '联系人电话', -- 联系人电话
+                           description TEXT comment '公司描述', -- 公司描述
+                           created_time datetime DEFAULT CURRENT_TIMESTAMP comment '创建时间', -- 创建时间
+                           updated_time datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间' -- 更新时间
+) comment '公司表';
 CREATE TABLE jobs (
                       job_id INT AUTO_INCREMENT PRIMARY KEY comment '职位ID',              -- 职位ID (主键)
                       title VARCHAR(255) NOT NULL comment '职位名称',                        -- 职位名称
@@ -21,8 +35,8 @@ CREATE TABLE jobs (
                       min_salary DECIMAL(10, 2) comment '最低薪资',                          -- 最低薪资
                       max_salary DECIMAL(10, 2) comment '最高薪资',                          -- 最高薪资
                       company_id INT comment '公司ID',                                     -- 公司ID (外键，关联companies表)
-                      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP comment '创建时间',     -- 创建时间
-                      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间'-- 更新时间
+                      created_time datetime DEFAULT CURRENT_TIMESTAMP comment '创建时间',     -- 创建时间
+                      updated_time datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '更新时间'-- 更新时间
 ) comment '职位表';
 CREATE TABLE applications (
                               application_id INT AUTO_INCREMENT PRIMARY KEY comment '申请ID',      -- 申请ID (主键)

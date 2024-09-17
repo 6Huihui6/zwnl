@@ -2,7 +2,7 @@ package com.zwnl.model.resume.VO;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.zwnl.model.resume.enums.proficGrade;
+import com.zwnl.model.resume.enums.ProficGrade;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -54,7 +54,7 @@ public class ResumesVO implements Serializable {
     private String skillName;
 
     @ApiModelProperty(value = "熟练程度")
-    private proficGrade proficiency;
+    private ProficGrade proficiency;
 
     @ApiModelProperty(value = "教育背景ID")
     @TableId(value = "education_id", type = IdType.AUTO)
