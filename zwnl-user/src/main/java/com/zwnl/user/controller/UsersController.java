@@ -1,5 +1,8 @@
 package com.zwnl.user.controller;
 
+//
+//import com.zwnl.user.service.IUsersService;
+
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.common.utils.AppJwtUtil;
 import com.zwnl.model.user.dtos.UserDTO;
@@ -36,12 +39,15 @@ public class UsersController {
     private  final IUsersService usersService;
     private  final IUserDetailService userDetailService;
 
+
 @PostMapping("/login")
 @ApiOperation("微信登录")
 public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
     log.info("微信用户登录：{}",userLoginDTO.getCode());
+
     //微信登录
     Users user = usersService.wxLogin(userLoginDTO);
+
     //为微信用户生成jwt令牌
 //    Map<String, Object> claims = new HashMap<>();
 //    claims.put(JwtClaimsConstant.USER_ID,user.getUserId());
@@ -56,13 +62,15 @@ public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
 }
 
 
-    @PostMapping("/register")
-    @ApiOperation("用户注册")
-    public ResponseResult register(@RequestBody Users users) {
+
+@PostMapping("/register")
+@ApiOperation("用户注册")
+public ResponseResult register(@RequestBody Users users) {
     log.info("用户注册：{}", users);
     usersService.register(users);
     return ResponseResult.okResult("注册成功");
-    }
+}
+
     @ApiOperation("获取当前登录用户信息")
     @GetMapping(value = "/me")
     public UserDetailVO me() {

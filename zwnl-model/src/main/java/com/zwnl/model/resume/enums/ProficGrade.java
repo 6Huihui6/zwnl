@@ -1,31 +1,34 @@
-package com.zwnl.model.user.enums;
+package com.zwnl.model.resume.enums;
 
 import com.baomidou.mybatisplus.annotation.EnumValue;
-
 import com.zwnl.common.exceptions.BadRequestException;
 import com.zwnl.model.constant.ErrorInfo;
 import lombok.Getter;
 
 @Getter
-public enum UserRole {
-    FROZEN(0, "禁止使用"),
-    NORMAL(1, "已激活"),
+public enum ProficGrade {
+    beginner(1, "入门"),
+    intermediate(2, "熟练"),
+    expert(3, "精通"),
     ;
     @EnumValue
     int value;
     String desc;
 
-    UserRole(Integer value, String desc) {
+    ProficGrade(Integer value, String desc) {
         this.value = value;
         this.desc = desc;
     }
 
-    public static UserRole of(int value) {
-        if (value == 0) {
-            return FROZEN;
-        }
+    public static ProficGrade of(int value) {
         if (value == 1) {
-            return NORMAL;
+            return beginner;
+        }
+        if (value == 2) {
+            return intermediate;
+        }
+        if (value == 3) {
+            return expert;
         }
         throw new BadRequestException(ErrorInfo.Msg.INVALID_USER_STATUS);
     }
