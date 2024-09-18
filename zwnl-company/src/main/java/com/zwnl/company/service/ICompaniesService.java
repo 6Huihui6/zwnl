@@ -1,7 +1,8 @@
-package com.zwnl.resume.service;
+package com.zwnl.company.service;
 
-import com.zwnl.resume.domain.po.Companies;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.zwnl.model.company.po.Companies;
 
 /**
  * <p>
@@ -13,4 +14,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ICompaniesService extends IService<Companies> {
 
+    /**
+     * 删除公司
+     * @param id
+     */
+    void deleteCompany(Integer id);
 }

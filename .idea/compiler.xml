@@ -15,6 +15,7 @@
         <module name="zwnl-api" />
         <module name="zwnl-media" />
         <module name="zwnl-ports" />
+        <module name="zwnl-company" />
         <module name="zwnl-admin" />
         <module name="zwnl-utils" />
         <module name="zwnl-user" />
@@ -26,6 +27,7 @@
       <module name="zwnl-admin" options="-parameters" />
       <module name="zwnl-api" options="-parameters" />
       <module name="zwnl-common" options="-parameters" />
+      <module name="zwnl-company" options="-parameters" />
       <module name="zwnl-gateway" options="-parameters" />
       <module name="zwnl-learning" options="-parameters" />
       <module name="zwnl-media" options="-parameters" />
