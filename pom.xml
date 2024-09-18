@@ -20,6 +20,7 @@
         <module>zwnl-admin</module>
         <module>zwnl-model</module>
         <module>zwnl-utils</module>
+        <module>zwnl-company</module>
     </modules>
 
 

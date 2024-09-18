@@ -13,7 +13,9 @@ public interface ErrorInfo {
         String PHONE_ALREADY_EXISTS = "手机号已存在";
         String INVALID_USER_STATUS = "用户状态不正确";
          String INVALID_COMPANY_SIZE = "公司规模不正确";
+         String INVALID_COMPANY_STATUS = "公司状态不正确";
         String INVALID_COMPANY_NAME = "公司名称不能为空";
         String INVALID_COMPANY_ADDRESS = "公司地址不能为空";
+
     }
 }

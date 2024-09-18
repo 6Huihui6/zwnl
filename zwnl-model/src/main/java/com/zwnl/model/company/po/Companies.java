@@ -1,15 +1,18 @@
-package com.zwnl.resume.domain.po;
+package com.zwnl.model.company.po;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.zwnl.model.company.enums.CompanySize;
+import com.zwnl.model.company.enums.CompanyStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -32,14 +35,21 @@ public class Companies implements Serializable {
     @TableId(value = "company_id", type = IdType.AUTO)
     private Integer companyId;
 
+    @ApiModelProperty(value = "用户ID")
+    private Integer userId;
+
+
     @ApiModelProperty(value = "公司名称")
     private String name;
+
+    @ApiModelProperty(value = "公司状态--1为已上市，2未融资")
+    private CompanyStatus comstatus;
 
     @ApiModelProperty(value = "所属行业")
     private String industry;
 
     @ApiModelProperty(value = "公司规模1-5代表('1-50', '51-200', '201-500', '501-1000', '1001+')")
-    private Integer size;
+    private CompanySize size;
 
     @ApiModelProperty(value = "公司地址")
     private String address;
@@ -54,7 +64,7 @@ public class Companies implements Serializable {
     private String contactPhone;
 
     @ApiModelProperty(value = "公司描述")
-    private String description;
+    private String cdescription;
 
     @ApiModelProperty(value = "创建时间")
     private LocalDateTime createdTime;

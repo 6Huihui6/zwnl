@@ -1,7 +1,8 @@
-package com.zwnl.resume.mapper;
+package com.zwnl.company.mapper;
 
-import com.zwnl.resume.domain.po.Companies;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.zwnl.model.company.po.Companies;
 
 /**
  * <p>
