@@ -67,13 +67,36 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    <!--配置实用docker的Maven自动部署插件,配置的是内网ip-->
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>zwnl-user</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--docker的maven插件，官网：https://github.com/spotify/docker-maven-plugin-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <configuration>
+                    <!--配置私有仓库的位置,根据实际情况填写,访问地址要能被访问到-->
+                    <imageName>121.37.194.170:5000/${project.artifactId}:${project.version}</imageName>
+                    <baseImage>jdk17</baseImage>
+                    <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>target
+                            </directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <dockerHost>http://121.37.194.170:2375</dockerHost>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 </project>
