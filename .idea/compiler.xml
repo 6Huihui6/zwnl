@@ -7,20 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zwnl-learning" />
-        <module name="zwnl-resume" />
         <module name="zwnl-common" />
         <module name="zwnl-gateway" />
+        <module name="zwnl-company" />
+        <module name="zwnl-user" />
+        <module name="zwnl-learning" />
+        <module name="zwnl-resume" />
         <module name="zwnl-model" />
         <module name="zwnl-api" />
         <module name="zwnl-media" />
         <module name="zwnl-ports" />
-        <module name="zwnl-company" />
         <module name="zwnl-admin" />
         <module name="zwnl-utils" />
-        <module name="zwnl-user" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zwnl-search" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -34,6 +37,7 @@
       <module name="zwnl-model" options="-parameters" />
       <module name="zwnl-ports" options="-parameters" />
       <module name="zwnl-resume" options="-parameters" />
+      <module name="zwnl-search" options="-parameters" />
       <module name="zwnl-user" options="-parameters" />
       <module name="zwnl-utils" options="-parameters" />
     </option>
