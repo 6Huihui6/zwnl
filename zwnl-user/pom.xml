@@ -72,28 +72,31 @@
         <finalName>zwnl-user</finalName>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <!--docker的maven插件，官网：https://github.com/spotify/docker-maven-plugin-->
-            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <!--配置私有仓库的位置,根据实际情况填写,访问地址要能被访问到-->
-                    <imageName>121.37.194.170:5000/${project.artifactId}:${project.version}</imageName>
-                    <baseImage>jdk17</baseImage>
-                    <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
+                    <imageName>zwnl-user/${project.artifactId}:${project.version}</imageName>
+                    <dockerHost>http://121.37.194.170:2375</dockerHost>
+                    <baseImage>java:17</baseImage>
+                    <entryPoint>["java", "-jar","/${project.build.finalName}.jar"]
+                    </entryPoint>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
-                            <directory>target
-                            </directory>
+                            <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://121.37.194.170:2375</dockerHost>
                 </configuration>
             </plugin>
         </plugins>
