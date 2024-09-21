@@ -118,4 +118,40 @@ public class ResumesServiceImpl extends ServiceImpl<ResumesMapper, Resumes> impl
         workExperiencesService.updateById(workExperiences);
         return ResponseResult.okResult(200, "更新成功");
     }
+
+    /**
+     * 查询简历
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public ResponseResult<ResumesVO> queryResumeById(Integer id) {
+        Resumes resumes = this.getById(id);
+        //封装简历VO
+        ResumesVO resumesVO = BeanUtils.copyBean(resumes, ResumesVO.class);
+        //封装简历详细信息
+        Skills skills = skillsService.lambdaQuery().eq(Skills::getResumeId, id).one();
+        BeanUtils.copyBean(skills, ResumesVO.class);
+        //封装简历教育经历
+        Educations educations = educationsService.lambdaQuery().eq(Educations::getResumeId, id).one();
+        BeanUtils.copyProperties(educations, resumesVO);
+        //封装简历工作经历
+        WorkExperiences workExperiences = workExperiencesService.lambdaQuery().eq(WorkExperiences::getResumeId, id).one();
+        BeanUtils.copyProperties(workExperiences, resumesVO);
+        return ResponseResult.okResult(resumesVO);
+    }
+
+    /**
+     * 下载简历
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public ResponseResult<String> downloadResume(Integer id) {
+        return null;
+    }
+
+
 }

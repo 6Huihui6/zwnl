@@ -35,4 +35,18 @@ public interface IResumesService extends IService<Resumes> {
      * @return
      */
     ResponseResult updateResume(ResumesDTO resumesDTO);
+
+    /**
+     * 查询简历
+     * @param id
+     * @return
+     */
+    ResponseResult<ResumesVO> queryResumeById(Integer id);
+
+    /**
+     * 下载简历
+     * @param id
+     * @return
+     */
+    ResponseResult<String> downloadResume(Integer id);
 }

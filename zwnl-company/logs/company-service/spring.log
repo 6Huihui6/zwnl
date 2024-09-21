@@ -1,0 +1,809 @@
+18:48:41.143-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+18:48:41.956-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:48:41.960-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:48:41.992-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+18:48:42.334-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+18:48:46.964-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:48:47.084-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:48:47.183-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:48:47.184-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:48:47.184-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:48:48.231-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 11.568 seconds (JVM running for 12.631)
+18:48:48.235-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+18:48:48.236-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+18:48:48.236-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+18:48:48.236-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+18:48:48.237-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:48:48.237-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+18:48:48.237-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+18:48:48.237-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+18:48:48.237-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+18:48:48.727-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:48:49.213-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:48:49.222-[DESKTOP-44TL0F9][sys]--DEBUG 1980 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs WHERE job_id=?
+18:48:49.250-[DESKTOP-44TL0F9][sys]--DEBUG 1980 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==> Parameters: 1(Integer)
+18:48:49.302-[DESKTOP-44TL0F9][sys]--DEBUG 1980 --- [           main] c.z.c.mapper.JobsMapper.selectById       : <==      Total: 0
+18:48:49.837-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:48:49.837-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:48:49.837-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:48:49.838-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:48:49.853-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:48:49.854-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+18:48:49.854-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+18:48:51.129-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+18:48:54.144-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+18:48:54.144-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+18:48:57.176-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+18:48:57.176-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+18:48:57.176-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+18:48:57.177-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+18:48:57.177-[DESKTOP-44TL0F9][sys]-- WARN 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+18:48:57.177-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+18:48:57.177-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+18:48:57.177-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+18:48:57.183-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:48:57.370-[DESKTOP-44TL0F9][sys]-- INFO 1980 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:50:58.041-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+18:50:58.825-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:50:58.828-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:50:58.851-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+18:50:59.149-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+18:51:03.539-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:51:03.631-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:51:03.721-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:51:03.724-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:51:03.724-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:51:03.894-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:51:03.898-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:51:04.140-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.714 seconds (JVM running for 10.773)
+18:51:04.145-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+18:51:04.146-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+18:51:04.146-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+18:51:04.147-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+18:51:04.526-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:51:05.273-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:51:05.284-[DESKTOP-44TL0F9][sys]--DEBUG 10652 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs WHERE job_id=?
+18:51:05.305-[DESKTOP-44TL0F9][sys]--DEBUG 10652 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==> Parameters: 1(Integer)
+18:51:05.434-[DESKTOP-44TL0F9][sys]--DEBUG 10652 --- [           main] c.z.c.mapper.JobsMapper.selectById       : <==      Total: 1
+18:51:05.725-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:51:05.725-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:51:05.725-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:51:05.726-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:51:05.747-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:51:05.747-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+18:51:05.747-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+18:51:08.762-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+18:51:11.795-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+18:51:11.795-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+18:51:13.740-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+18:51:13.743-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+18:51:13.743-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+18:51:13.744-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+18:51:13.744-[DESKTOP-44TL0F9][sys]-- WARN 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+18:51:13.744-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+18:51:13.744-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+18:51:13.744-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+18:51:13.747-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:51:14.070-[DESKTOP-44TL0F9][sys]-- INFO 10652 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:54:17.538-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+18:54:18.604-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:54:18.608-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:54:18.643-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+18:54:18.950-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+18:54:25.841-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:54:25.985-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:54:26.165-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:54:26.170-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:54:26.172-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:54:26.353-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:54:26.357-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:54:26.791-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 13.164 seconds (JVM running for 15.037)
+18:54:26.796-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+18:54:26.798-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+18:54:26.799-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+18:54:26.802-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+18:54:26.802-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:54:26.803-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+18:54:26.803-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+18:54:26.803-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+18:54:26.803-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+18:54:27.457-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:54:27.931-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:54:27.940-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs WHERE job_id=?
+18:54:27.979-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==> Parameters: 1(Integer)
+18:54:28.052-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.JobsMapper.selectById       : <==      Total: 1
+18:54:28.070-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==>  Preparing: SELECT company_id,user_id,name,comstatus,industry,size,address,contact_name,contact_email,contact_phone,cdescription,created_time,updated_time FROM companies WHERE company_id=?
+18:54:28.072-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==> Parameters: 1(Integer)
+18:54:28.136-[DESKTOP-44TL0F9][sys]--DEBUG 13960 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : <==      Total: 1
+18:54:28.406-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:54:28.406-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:54:28.407-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:54:28.407-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:54:28.427-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:54:28.428-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+18:54:28.428-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+18:54:31.443-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+18:54:34.459-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+18:54:34.459-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+18:54:36.195-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+18:54:36.196-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+18:54:36.196-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+18:54:36.196-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+18:54:36.196-[DESKTOP-44TL0F9][sys]-- WARN 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+18:54:36.196-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+18:54:36.197-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+18:54:36.197-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+18:54:36.199-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:54:36.446-[DESKTOP-44TL0F9][sys]-- INFO 13960 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:55:21.220-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+18:55:21.961-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+18:55:21.964-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+18:55:21.994-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+18:55:22.333-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+18:55:27.160-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:55:27.263-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:55:27.371-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:55:27.372-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:55:27.372-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:55:27.491-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:55:27.495-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:55:27.771-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 10.254 seconds (JVM running for 11.295)
+18:55:27.775-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+18:55:27.776-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+18:55:27.776-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+18:55:27.776-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+18:55:27.777-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:55:27.777-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+18:55:27.777-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+18:55:27.777-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+18:55:27.777-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+18:55:28.185-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:55:28.563-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:55:28.569-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs WHERE job_id=?
+18:55:28.593-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==> Parameters: 1(Integer)
+18:55:28.667-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.JobsMapper.selectById       : <==      Total: 1
+18:55:28.677-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==>  Preparing: SELECT company_id,user_id,name,comstatus,industry,size,address,contact_name,contact_email,contact_phone,cdescription,created_time,updated_time FROM companies WHERE company_id=?
+18:55:28.678-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==> Parameters: 1(Integer)
+18:55:28.740-[DESKTOP-44TL0F9][sys]--DEBUG 16280 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : <==      Total: 1
+18:55:28.971-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:55:28.971-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:55:28.972-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:55:28.972-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:55:28.988-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:55:28.988-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+18:55:28.988-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+18:55:32.027-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+18:55:35.053-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+18:55:35.054-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+18:55:37.392-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+18:55:37.393-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+18:55:37.393-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+18:55:37.394-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+18:55:37.394-[DESKTOP-44TL0F9][sys]-- WARN 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+18:55:37.394-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+18:55:37.394-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+18:55:37.394-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+18:55:37.398-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:55:37.579-[DESKTOP-44TL0F9][sys]-- INFO 16280 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:41:36.885-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:41:37.759-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:41:37.763-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:41:37.795-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+20:41:38.118-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:41:42.818-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:41:42.942-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:41:43.054-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:41:43.055-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:41:43.055-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:41:43.193-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:41:43.197-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:41:43.440-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 10.079 seconds (JVM running for 11.133)
+20:41:43.444-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:41:43.445-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:41:43.445-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:41:43.445-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:41:43.445-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:41:43.446-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:41:43.446-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:41:43.446-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:41:43.446-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:41:44.128-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:41:44.128-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:41:44.128-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:41:44.129-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:41:44.145-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:41:44.145-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:41:44.145-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:41:44.276-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:41:47.301-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:41:47.303-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:41:50.338-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:41:50.339-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:41:50.339-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:41:50.340-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:41:50.341-[DESKTOP-44TL0F9][sys]-- WARN 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:41:50.341-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:41:50.342-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:41:50.342-[DESKTOP-44TL0F9][sys]-- INFO 23724 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:56:32.050-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:56:32.840-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:56:32.843-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:56:32.863-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+20:56:33.131-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:56:37.425-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:56:37.529-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:56:37.615-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:56:37.616-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:56:37.616-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:56:37.763-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:56:37.767-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:56:37.981-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.5 seconds (JVM running for 10.554)
+20:56:37.984-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:56:37.985-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:56:37.987-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:56:37.988-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:56:38.772-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:56:38.772-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:56:38.772-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:56:38.773-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:56:38.786-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:56:38.786-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:56:38.786-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:56:38.846-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:56:41.865-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:56:41.866-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:56:44.889-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:56:44.890-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:56:44.891-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:56:44.892-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:56:44.893-[DESKTOP-44TL0F9][sys]-- WARN 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:56:44.893-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:56:44.893-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:56:44.893-[DESKTOP-44TL0F9][sys]-- INFO 23536 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:58:28.342-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:58:29.148-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:58:29.151-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:58:29.185-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+20:58:29.480-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:58:33.943-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:58:34.049-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:58:34.139-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:58:34.139-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:58:34.140-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:58:34.298-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:58:34.301-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:58:34.501-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.755 seconds (JVM running for 10.886)
+20:58:34.504-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:58:34.505-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:58:34.505-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:58:34.505-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:58:34.505-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:58:34.505-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:58:34.507-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:58:34.507-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:58:34.507-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:58:35.051-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:58:35.051-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:58:35.051-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:58:35.052-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:58:35.068-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:58:35.069-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:58:35.069-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:58:35.399-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:58:38.419-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:58:38.420-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:58:41.439-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:58:41.439-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- WARN 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:58:41.440-[DESKTOP-44TL0F9][sys]-- INFO 24768 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:58:43.809-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:58:44.559-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:58:44.563-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:58:44.591-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+20:58:44.904-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:58:49.103-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:58:49.194-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:58:49.285-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:58:49.285-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:58:49.286-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:58:49.403-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:58:49.406-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:58:49.621-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.58 seconds (JVM running for 10.577)
+20:58:49.626-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:58:49.626-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:58:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:58:50.110-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:58:50.110-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:58:50.110-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:58:50.110-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:58:50.126-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:58:50.126-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:58:50.126-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:58:50.456-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:58:53.477-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:58:53.478-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:58:56.517-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:58:56.517-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:58:56.518-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:58:56.518-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:58:56.518-[DESKTOP-44TL0F9][sys]-- WARN 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:58:56.518-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:58:56.518-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:58:56.519-[DESKTOP-44TL0F9][sys]-- INFO 19832 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:59:11.212-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:59:11.935-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:59:11.937-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:59:11.966-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+20:59:12.278-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:59:16.618-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:59:16.726-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:59:16.821-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:59:16.821-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:59:16.822-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:59:16.926-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:59:16.929-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:59:17.186-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.608 seconds (JVM running for 10.542)
+20:59:17.190-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:59:17.191-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:59:17.191-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:59:17.191-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:59:17.192-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:59:17.192-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:59:17.192-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:59:17.192-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:59:17.192-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:59:17.682-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20:59:18.212-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+20:59:18.219-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs WHERE job_id=?
+20:59:18.247-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.JobsMapper.selectById       : ==> Parameters: 1(Integer)
+20:59:18.318-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.JobsMapper.selectById       : <==      Total: 1
+20:59:18.329-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==>  Preparing: SELECT company_id,user_id,name,comstatus,industry,size,address,contact_name,contact_email,contact_phone,cdescription,created_time,updated_time FROM companies WHERE company_id=?
+20:59:18.330-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : ==> Parameters: 1(Integer)
+20:59:18.390-[DESKTOP-44TL0F9][sys]--DEBUG 18256 --- [           main] c.z.c.mapper.CompaniesMapper.selectById  : <==      Total: 1
+20:59:18.572-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:59:18.572-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:59:18.572-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:59:18.572-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:59:18.594-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:59:18.594-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:59:18.594-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:59:21.620-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:59:24.654-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:59:24.654-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:59:26.839-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:59:26.840-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:59:26.840-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:59:26.840-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:59:26.840-[DESKTOP-44TL0F9][sys]-- WARN 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:59:26.841-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:59:26.841-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:59:26.841-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:59:26.845-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:59:27.088-[DESKTOP-44TL0F9][sys]-- INFO 18256 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:59:30.860-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+20:59:31.703-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:59:31.706-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:59:31.725-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+20:59:31.999-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+20:59:36.307-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:59:36.399-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:59:36.485-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:59:36.486-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:59:36.486-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:59:36.601-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:59:36.605-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:59:36.821-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.441 seconds (JVM running for 10.508)
+20:59:36.826-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:59:36.827-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+20:59:36.828-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:59:36.828-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+20:59:37.377-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:59:37.377-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:59:37.377-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:59:37.377-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:59:37.395-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:59:37.395-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:59:37.395-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:59:37.665-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:59:40.685-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:59:40.688-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:59:43.709-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:59:43.710-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:59:43.711-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:59:43.711-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:59:43.712-[DESKTOP-44TL0F9][sys]-- WARN 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:59:43.712-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:59:43.713-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:59:43.713-[DESKTOP-44TL0F9][sys]-- INFO 23044 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:05:06.121-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:05:06.898-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:05:06.900-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:05:06.924-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+21:05:07.230-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:05:11.526-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:05:11.615-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:05:11.703-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:05:11.704-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:05:11.704-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:05:11.831-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:05:11.834-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:05:12.077-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.77 seconds (JVM running for 10.854)
+21:05:12.082-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+21:05:12.083-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+21:05:12.084-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:05:12.084-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+21:05:12.670-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:05:12.670-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:05:12.670-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:05:12.672-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:05:12.694-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:05:12.694-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:05:12.694-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:05:12.911-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:05:15.919-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:05:15.919-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:05:18.942-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:05:18.942-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:05:18.942-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:05:18.943-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:05:18.943-[DESKTOP-44TL0F9][sys]-- WARN 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:05:18.943-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:05:18.943-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:05:18.943-[DESKTOP-44TL0F9][sys]-- INFO 24320 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:05:39.353-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:05:40.120-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:05:40.122-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:05:40.153-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+21:05:40.483-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:05:44.789-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:05:44.897-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:05:44.997-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:05:44.999-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:05:44.999-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:05:45.095-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:05:45.099-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:05:45.329-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.617 seconds (JVM running for 10.662)
+21:05:45.332-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:05:45.333-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+21:05:45.919-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:05:45.919-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:05:45.919-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:05:45.920-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:05:45.935-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:05:45.935-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:05:45.935-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:05:46.188-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:05:49.209-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:05:49.210-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:05:52.235-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:05:52.235-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:05:52.235-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:05:52.236-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:05:52.236-[DESKTOP-44TL0F9][sys]-- WARN 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:05:52.236-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:05:52.236-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:05:52.236-[DESKTOP-44TL0F9][sys]-- INFO 21264 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:27:27.246-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:27:27.946-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:27:27.947-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:27:27.965-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+21:27:28.219-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:27:30.647-[DESKTOP-44TL0F9][sys]-- WARN 25304 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:27:30.648-[DESKTOP-44TL0F9][sys]-- WARN 25304 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:27:32.576-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:27:32.669-[DESKTOP-44TL0F9][sys]-- WARN 25304 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:27:32.761-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:27:32.762-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:27:32.762-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:27:32.780-[DESKTOP-44TL0F9][sys]-- WARN 25304 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'nacosWatch'; nested exception is java.lang.RuntimeException: ErrCode:-400, ErrMsg:Shutdown in progress
+21:27:32.800-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:27:32.800-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:27:32.800-[DESKTOP-44TL0F9][sys]-- INFO 25304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:27:32.808-[DESKTOP-44TL0F9][sys]--ERROR 25304 --- [           main] c.a.cloud.nacos.discovery.NacosWatch     : namingService unsubscribe failed, properties:NacosDiscoveryProperties{serverAddr='121.37.194.170:8848', username='', password='', endpoint='', namespace='a0d35c99-931b-4959-b25c-65d69043123c', watchDelay=30000, logName='', service='company-service', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='121.37.194.170', networkInterface='', port=-1, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}
+java.lang.RuntimeException: ErrCode:-400, ErrMsg:Exception java.lang.IllegalStateException: Shutdown in progress [in thread "main"]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:101) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:89) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:52) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.stop(NacosWatch.java:175) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.destroy(NacosWatch.java:206) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.2.jar:2.7.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.22.jar:5.3.22]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:na]
+Caused by: com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:63) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:98) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	... 89 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:60) ~[nacos-api-1.4.2.jar:na]
+	... 91 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.alibaba.nacos.common.notify.NotifyCenter
+	at com.alibaba.nacos.client.naming.core.HostReactor.<init>(HostReactor.java:118) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:96) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-1.4.2.jar:na]
+	... 97 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalStateException: Shutdown in progress [in thread "main"]
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66) ~[na:na]
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:216) ~[na:na]
+	at com.alibaba.nacos.common.utils.ThreadUtils.addShutdownHook(ThreadUtils.java:147) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.notify.NotifyCenter.<clinit>(NotifyCenter.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.<init>(HostReactor.java:118) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:96) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-1.4.2.jar:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:60) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-api-1.4.2.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:98) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:89) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:52) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.start(NacosWatch.java:131) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.1.0.jar:2021.0.1.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.22.jar:5.3.22]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.22.jar:5.3.22]
+	... 77 common frames omitted
+21:28:36.068-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:28:36.831-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:28:36.834-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:28:36.858-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+21:28:37.172-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:28:41.712-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:28:41.827-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:28:41.923-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:28:41.924-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:28:41.924-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:28:42.071-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:28:42.075-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+21:28:42.344-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.974 seconds (JVM running for 10.988)
+21:28:42.348-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+21:28:42.349-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+21:28:42.349-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:28:42.350-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+21:28:42.812-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+21:28:43.398-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+21:28:43.404-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) AS total FROM jobs
+21:28:43.426-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : ==> Parameters: 
+21:28:43.482-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : <==      Total: 1
+21:28:43.487-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.mapper.JobsMapper.selectPage       : ==>  Preparing: SELECT job_id,title,description,requirements,location,min_salary,max_salary,company_id,created_time,updated_time FROM jobs LIMIT ?
+21:28:43.488-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.mapper.JobsMapper.selectPage       : ==> Parameters: 200(Long)
+21:28:43.508-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.mapper.JobsMapper.selectPage       : <==      Total: 9
+21:28:43.804-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) AS total FROM jobs
+21:28:43.804-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : ==> Parameters: 
+21:28:43.819-[DESKTOP-44TL0F9][sys]--DEBUG 24820 --- [           main] c.z.c.m.JobsMapper.selectPage_mpCount    : <==      Total: 1
+21:28:43.835-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:28:43.835-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:28:43.835-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:28:43.835-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:28:43.853-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:28:43.853-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:28:43.853-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:28:46.875-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:28:49.902-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:28:49.902-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:28:51.940-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:28:51.941-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:28:51.941-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:28:51.941-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:28:51.941-[DESKTOP-44TL0F9][sys]-- WARN 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:28:51.942-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:28:51.942-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:28:51.942-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:28:51.944-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+21:28:52.286-[DESKTOP-44TL0F9][sys]-- INFO 24820 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+21:29:03.858-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:29:04.711-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:29:04.715-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:29:04.747-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+21:29:05.056-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:29:09.436-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:29:09.540-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:29:09.620-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:29:09.621-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:29:09.621-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:29:09.740-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:29:09.745-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:29:10.000-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 10.012 seconds (JVM running for 10.977)
+21:29:10.004-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+21:29:10.005-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:29:10.006-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+21:29:10.658-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:29:10.658-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:29:10.659-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:29:10.659-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:29:10.675-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:29:10.679-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:29:10.679-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:29:10.827-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:29:13.849-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:29:13.850-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:29:16.875-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:29:16.876-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:29:16.877-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:29:16.878-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:29:16.879-[DESKTOP-44TL0F9][sys]-- WARN 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:29:16.879-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:29:16.879-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:29:16.879-[DESKTOP-44TL0F9][sys]-- INFO 6668 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:29:24.477-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.zwnl.company.es.TestEsDocument       : The following 1 profile is active: "local"
+21:29:25.220-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:29:25.223-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:29:25.242-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+21:29:25.485-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51b335ab-5ec1-36f6-9c78-39e707bb62bc
+21:29:29.892-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:29:29.997-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:29:30.093-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:29:30.094-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:29:30.094-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:29:30.216-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:29:30.220-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:29:30.454-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] com.zwnl.company.es.TestEsDocument       : Started TestEsDocument in 9.698 seconds (JVM running for 10.744)
+21:29:30.458-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
+21:29:30.458-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+21:29:30.458-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-local.yaml+DEFAULT_GROUP
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:29:30.460-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-local.yaml, group=DEFAULT_GROUP
+21:29:30.831-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:29:30.831-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:29:30.831-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:29:30.832-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:29:30.845-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:29:30.845-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:29:30.845-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:29:31.307-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:29:34.321-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:29:34.322-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:29:37.336-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:29:37.336-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:29:37.336-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:29:37.337-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:29:37.338-[DESKTOP-44TL0F9][sys]-- WARN 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:29:37.338-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:29:37.338-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:29:37.338-[DESKTOP-44TL0F9][sys]-- INFO 24512 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop

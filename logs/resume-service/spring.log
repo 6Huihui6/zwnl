@@ -11060,3 +11060,304 @@ java.net.SocketException: Software caused connection abort: no further informati
 	External: 	http://192.168.1.164:9092
 	Profile(s): 	[dev]
 ---------------------------------------------------------------------------------------
+22:42:34.937-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.zwnl.resume.ResumeApplication        : The following 1 profile is active: "dev"
+22:42:35.526-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:42:35.529-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:42:35.549-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+22:42:35.823-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2174fcd4-d399-3511-99bc-e2b7cf982d11
+22:42:36.353-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+22:42:36.354-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+22:42:36.354-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:42:36.355-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:42:36.378-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+22:42:36.389-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:42:36.389-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:42:36.546-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:42:36.547-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1593 ms
+22:42:38.198-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22:42:38.266-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:42:38.267-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+22:42:38.267-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:42:38.422-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+22:42:38.426-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9092, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@resume-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:42:38.427-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:42:38.481-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resume-service 121.37.194.170:9092 register finished
+22:42:38.819-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.zwnl.resume.ResumeApplication        : Started ResumeApplication in 5.582 seconds (JVM running for 6.369)
+22:42:38.822-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service+DEFAULT_GROUP
+22:42:38.822-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service, group=DEFAULT_GROUP, cnt=1
+22:42:38.822-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service, group=DEFAULT_GROUP
+22:42:38.822-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service-dev.yaml+DEFAULT_GROUP
+22:42:38.822-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+22:42:38.823-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service-dev.yaml, group=DEFAULT_GROUP
+22:42:38.823-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service.yaml+DEFAULT_GROUP
+22:42:38.823-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service.yaml, group=DEFAULT_GROUP, cnt=1
+22:42:38.823-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service.yaml, group=DEFAULT_GROUP
+22:42:38.824-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [           main] com.zwnl.resume.ResumeApplication        : --/
+---------------------------------------------------------------------------------------
+	Application 'resume-service' is running! Access URLs:
+	Local: 		http://localhost:9092
+	External: 	http://10.64.37.5:9092
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+22:42:39.438-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:42:39.441-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:43:06.225-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:43:06.226-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:43:06.227-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+22:43:36.912-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [nio-9092-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:43:37.496-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [nio-9092-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:43:37.585-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:43:37.603-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:43:37.629-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:43:37.687-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [nio-9092-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @77c2494c
+22:43:37.694-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:43:37.694-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:43:37.766-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:43:37.771-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:43:37.771-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:43:37.809-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:43:37.815-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:43:37.815-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:43:37.866-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-2] c.z.r.m.W.selectList                     : <==      Total: 1
+22:47:36.190-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:47:36.190-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:47:36.200-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:47:36.202-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:47:36.202-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:47:36.249-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:47:36.251-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:47:36.251-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:47:36.262-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:47:36.264-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:47:36.265-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:47:36.277-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-3] c.z.r.m.W.selectList                     : <==      Total: 1
+22:47:37.312-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:47:37.313-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:47:37.324-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:47:37.326-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:47:37.326-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:47:37.376-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:47:37.377-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:47:37.378-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:47:37.389-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:47:37.390-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:47:37.391-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:47:37.404-[DESKTOP-44TL0F9][sys]--DEBUG 8544 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : <==      Total: 1
+22:47:56.185-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:47:56.185-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:47:56.185-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:47:56.186-[DESKTOP-44TL0F9][sys]-- WARN 8544 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:47:56.233-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:47:56.234-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@resume-service:121.37.194.170:9092 from beat map.
+22:47:56.234-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c deregistering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+22:47:56.288-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:47:56.288-[DESKTOP-44TL0F9][sys]-- INFO 8544 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:48:00.490-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.zwnl.resume.ResumeApplication        : The following 1 profile is active: "dev"
+22:48:01.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:48:01.078-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:48:01.099-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+22:48:01.328-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2174fcd4-d399-3511-99bc-e2b7cf982d11
+22:48:01.758-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+22:48:01.759-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+22:48:01.759-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:48:01.759-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:48:01.763-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+22:48:01.771-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:48:01.771-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:48:01.878-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:48:01.879-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1373 ms
+22:48:03.425-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22:48:03.494-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:48:03.495-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+22:48:03.495-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:48:03.650-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+22:48:03.653-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9092, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@resume-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:48:03.654-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:48:03.700-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resume-service 121.37.194.170:9092 register finished
+22:48:04.071-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.zwnl.resume.ResumeApplication        : Started ResumeApplication in 5.317 seconds (JVM running for 6.406)
+22:48:04.074-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service+DEFAULT_GROUP
+22:48:04.074-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service, group=DEFAULT_GROUP, cnt=1
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service, group=DEFAULT_GROUP
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service-dev.yaml+DEFAULT_GROUP
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service-dev.yaml, group=DEFAULT_GROUP
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service.yaml+DEFAULT_GROUP
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service.yaml, group=DEFAULT_GROUP, cnt=1
+22:48:04.075-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service.yaml, group=DEFAULT_GROUP
+22:48:04.077-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [           main] com.zwnl.resume.ResumeApplication        : --/
+---------------------------------------------------------------------------------------
+	Application 'resume-service' is running! Access URLs:
+	Local: 		http://localhost:9092
+	External: 	http://10.64.37.5:9092
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+22:48:04.674-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:48:04.677-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:48:13.564-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:48:13.564-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:48:13.565-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+22:48:13.597-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [nio-9092-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:48:14.059-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [nio-9092-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:48:14.100-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:48:14.118-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:48:14.170-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:48:42.219-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [nio-9092-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @4e50c791
+22:48:42.255-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:48:42.256-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:48:42.322-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:49:24.703-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:49:24.704-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> []
+22:49:24.765-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:49:24.766-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:49:24.809-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:49:24.890-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:49:24.890-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:49:24.908-[DESKTOP-44TL0F9][sys]--DEBUG 2828 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : <==      Total: 1
+22:49:38.012-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ing.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@resume-service', metadata={preserved.register.source=SPRING_CLOUD}}
+22:49:42.035-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:49:42.038-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:50:57.187-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:50:57.187-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:50:57.187-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:50:57.188-[DESKTOP-44TL0F9][sys]-- WARN 2828 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:50:57.241-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:50:57.242-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@resume-service:121.37.194.170:9092 from beat map.
+22:50:57.243-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c deregistering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+22:50:57.271-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:50:57.271-[DESKTOP-44TL0F9][sys]-- INFO 2828 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:51:00.556-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.zwnl.resume.ResumeApplication        : The following 1 profile is active: "dev"
+22:51:01.090-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:51:01.092-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:51:01.108-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+22:51:01.286-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2174fcd4-d399-3511-99bc-e2b7cf982d11
+22:51:01.710-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+22:51:01.711-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+22:51:01.711-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:51:01.711-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:51:01.714-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+22:51:01.721-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:51:01.721-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:51:01.818-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:51:01.818-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
+22:51:03.249-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22:51:03.316-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:51:03.316-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+22:51:03.316-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:51:03.456-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+22:51:03.460-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9092, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@resume-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:51:03.461-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:51:03.520-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resume-service 121.37.194.170:9092 register finished
+22:51:03.839-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.zwnl.resume.ResumeApplication        : Started ResumeApplication in 4.617 seconds (JVM running for 5.278)
+22:51:03.842-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service+DEFAULT_GROUP
+22:51:03.842-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service, group=DEFAULT_GROUP, cnt=1
+22:51:03.843-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service, group=DEFAULT_GROUP
+22:51:03.843-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service-dev.yaml+DEFAULT_GROUP
+22:51:03.843-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+22:51:03.843-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service-dev.yaml, group=DEFAULT_GROUP
+22:51:03.843-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service.yaml+DEFAULT_GROUP
+22:51:03.844-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service.yaml, group=DEFAULT_GROUP, cnt=1
+22:51:03.844-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service.yaml, group=DEFAULT_GROUP
+22:51:03.845-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [           main] com.zwnl.resume.ResumeApplication        : --/
+---------------------------------------------------------------------------------------
+	Application 'resume-service' is running! Access URLs:
+	Local: 		http://localhost:9092
+	External: 	http://10.64.37.5:9092
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+22:51:04.468-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+22:51:04.470-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+22:51:14.229-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:51:14.229-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:51:14.231-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+22:51:14.256-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [nio-9092-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:51:14.713-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [nio-9092-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:51:14.808-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:51:14.825-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:51:14.900-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:51:14.951-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [nio-9092-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @4e50c791
+22:51:14.955-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:51:14.955-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:51:14.987-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:51:14.995-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:51:14.995-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:51:15.005-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:51:15.016-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:51:15.016-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:51:15.026-[DESKTOP-44TL0F9][sys]--DEBUG 6992 --- [nio-9092-exec-1] c.z.r.m.W.selectList                     : <==      Total: 1
+22:51:17.995-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:51:17.996-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:51:17.997-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:51:17.997-[DESKTOP-44TL0F9][sys]-- WARN 6992 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:51:18.056-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:51:18.057-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@resume-service:121.37.194.170:9092 from beat map.
+22:51:18.057-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c deregistering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+22:51:18.076-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:51:18.076-[DESKTOP-44TL0F9][sys]-- INFO 6992 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:54:50.447-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.zwnl.resume.ResumeApplication        : The following 1 profile is active: "dev"
+22:54:50.982-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:54:50.984-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:54:51.000-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+22:54:51.160-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2174fcd4-d399-3511-99bc-e2b7cf982d11
+22:54:51.587-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+22:54:51.588-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+22:54:51.588-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:54:51.589-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:54:51.592-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+22:54:51.599-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:54:51.600-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:54:51.716-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:54:51.716-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+22:54:53.072-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+22:54:53.134-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:54:53.134-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+22:54:53.136-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:54:53.252-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9092 (http) with context path ''
+22:54:53.256-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9092, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@resume-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:54:53.257-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:54:53.302-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resume-service 121.37.194.170:9092 register finished
+22:54:53.618-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.zwnl.resume.ResumeApplication        : Started ResumeApplication in 4.603 seconds (JVM running for 5.056)
+22:54:53.621-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service+DEFAULT_GROUP
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service, group=DEFAULT_GROUP, cnt=1
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service, group=DEFAULT_GROUP
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service-dev.yaml+DEFAULT_GROUP
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service-dev.yaml, group=DEFAULT_GROUP
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] resume-service.yaml+DEFAULT_GROUP
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=resume-service.yaml, group=DEFAULT_GROUP, cnt=1
+22:54:53.622-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=resume-service.yaml, group=DEFAULT_GROUP
+22:54:53.624-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [           main] com.zwnl.resume.ResumeApplication        : --/
+---------------------------------------------------------------------------------------
+	Application 'resume-service' is running! Access URLs:
+	Local: 		http://localhost:9092
+	External: 	http://10.64.37.5:9092
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+22:54:54.276-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:54:54.279-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@resume-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9092#DEFAULT#DEFAULT_GROUP@@resume-service","ip":"121.37.194.170","port":9092,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@resume-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:55:13.697-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:55:13.698-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:55:13.699-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+22:55:17.052-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [nio-9092-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:55:17.612-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [nio-9092-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:55:17.700-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.ResumesMapper.selectById    : ==>  Preparing: SELECT resume_id,seeker_id,title,summary,contact_info,resume_file_url,created_time,updated_time FROM resumes WHERE resume_id=?
+22:55:17.716-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.ResumesMapper.selectById    : ==> Parameters: 8(Integer)
+22:55:17.803-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.ResumesMapper.selectById    : <==      Total: 1
+22:55:17.857-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [nio-9092-exec-5] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @77c2494c
+22:55:17.862-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.SkillsMapper.selectList     : ==>  Preparing: SELECT skill_id,resume_id,skill_name,proficiency FROM skills WHERE (resume_id = ?)
+22:55:17.863-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.SkillsMapper.selectList     : ==> Parameters: 8(Integer)
+22:55:17.886-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.mapper.SkillsMapper.selectList     : <==      Total: 1
+22:55:17.890-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.EducationsMapper.selectList      : ==>  Preparing: SELECT education_id,resume_id,institution_name,degree,major,start_date,end_date FROM educations WHERE (resume_id = ?)
+22:55:17.890-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.EducationsMapper.selectList      : ==> Parameters: 8(Integer)
+22:55:17.899-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.EducationsMapper.selectList      : <==      Total: 1
+22:55:17.905-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.W.selectList                     : ==>  Preparing: SELECT experience_id,resume_id,company_name,position,cstart_date,cend_date,responsibilities FROM work_experiences WHERE (resume_id = ?)
+22:55:17.905-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.W.selectList                     : ==> Parameters: 8(Integer)
+22:55:17.916-[DESKTOP-44TL0F9][sys]--DEBUG 608 --- [nio-9092-exec-5] c.z.r.m.W.selectList                     : <==      Total: 1
+23:38:56.065-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+23:38:56.066-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+23:38:56.067-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+23:38:56.069-[DESKTOP-44TL0F9][sys]-- WARN 608 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+23:38:56.175-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+23:38:56.176-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@resume-service:121.37.194.170:9092 from beat map.
+23:38:56.176-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c deregistering service DEFAULT_GROUP@@resume-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9092, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+23:38:56.189-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+23:38:56.189-[DESKTOP-44TL0F9][sys]-- INFO 608 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
