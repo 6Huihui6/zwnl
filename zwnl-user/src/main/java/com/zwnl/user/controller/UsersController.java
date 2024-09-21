@@ -76,9 +76,9 @@ public ResponseResult register(@RequestBody Users users) {
     public UserDetailVO me() {
         return usersService.myInfo();
     }
-    @ApiOperation("更新用户信息")
-    @PutMapping("/{id}")
-    public void updateUser(@RequestBody @Valid UserDTO userDTO){
-        usersService.updateUser(userDTO);
-    }
+//    @ApiOperation("更新用户信息")
+//    @PutMapping("/{id}")
+//    public void updateUser(@RequestBody @Valid UserDTO userDTO){
+//        usersService.updateUser(userDTO);
+//    }
 }
