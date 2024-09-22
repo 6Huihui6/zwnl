@@ -1,6 +1,6 @@
 #! /bin/sh
 cd /usr/local/src/script || exit 1
-BASE_PATH='/var/lib/jenkins/workspace/zwnl'
+BASE_PATH='/var/lib/jenkins/workspace/zwnl-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
