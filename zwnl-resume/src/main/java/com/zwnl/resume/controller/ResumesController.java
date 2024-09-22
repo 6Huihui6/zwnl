@@ -45,6 +45,25 @@ public class ResumesController {
         return  resumesService.updateResume(resumesDTO);
     }
 
+    @GetMapping("/{id}")
+    @ApiOperation("公司端---查询用户简历详情")
+    public ResponseResult<ResumesVO> queryResumeById(@PathVariable("id") Integer id) {
+        return  resumesService.queryResumeById(id);
+        }
+
+
+        @GetMapping("/{id}/download")
+        @ApiOperation("下载用户简历")
+        public ResponseResult<String> downloadResume(@PathVariable("id") Integer id) {
+            return  resumesService.downloadResume(id);
+        }
+
+//        @GetMapping("/{label}")
+//        @ApiOperation("根据标签查询简历")
+//        public ResponseResult<ResumesVO> queryResumeByLabel(@PathVariable("label") String label) {
+//            return  resumesService.queryResumeByLabel(label);
+//        }
+
 
 
 

@@ -21,6 +21,7 @@
         <module>zwnl-model</module>
         <module>zwnl-utils</module>
         <module>zwnl-company</module>
+        <module>zwnl-search</module>
     </modules>
 
 
