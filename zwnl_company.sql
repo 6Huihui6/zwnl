@@ -1,9 +1,11 @@
-create database zwnl_company ;
+create database if not exists zwnl_company;
+
 use zwnl_company;
-create table if not exists zwnl_company.companies
+create table if not exists companies
 (
     company_id    int auto_increment comment '公司ID'
         primary key,
+    user_id       int                                null,
     name          varchar(255)                       not null comment '公司名称',
     industry      varchar(255)                       null comment '所属行业',
     size          tinyint  default 1                 null comment '公司规模1-5代表(''1-50'', ''51-200'', ''201-500'', ''501-1000'', ''1001+'')',
@@ -18,7 +20,7 @@ create table if not exists zwnl_company.companies
 )
     comment '公司表';
 
-create table if not exists zwnl_company.jobs
+create table if not exists jobs
 (
     job_id       int auto_increment comment '职位ID'
         primary key,
@@ -34,11 +36,18 @@ create table if not exists zwnl_company.jobs
 )
     comment '职位表';
 
-CREATE TABLE IF NOT EXISTS zwnl_company.job_views (
-                                                      view_id      INT AUTO_INCREMENT COMMENT '浏览记录ID'
-                                                          PRIMARY KEY,
-                                                      job_id      INT                           NOT NULL COMMENT '职位ID',
-                                                      viewed_at   DATETIME                      NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '浏览时间',
-                                                      FOREIGN KEY (job_id) REFERENCES zwnl_company.jobs (job_id) ON DELETE CASCADE
-) COMMENT '职位浏览记录表';
+create table if not exists job_views
+(
+    view_id     int auto_increment comment '浏览记录ID'
+        primary key,
+    job_id      int                                not null comment '职位ID',
+    viewed_time datetime default CURRENT_TIMESTAMP not null comment '浏览时间',
+    constraint job_views_ibfk_1
+        foreign key (job_id) references jobs (job_id)
+            on delete cascade
+)
+    comment '职位浏览记录表';
+
+create index job_id
+    on job_views (job_id);
 
