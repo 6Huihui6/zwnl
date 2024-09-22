@@ -1,4 +1,4 @@
-FROM openjdk:17.0.12
+FROM openjdk:17-jre
 LABEL maintainer="研究院研发组 <research-maint@itcast.cn>"
 ENV JAVA_OPTS=""
 # 设定时区
