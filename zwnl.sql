@@ -1,4 +1,4 @@
-create database zwnl ;
+# create database zwnl ;
 use zwnl;
 CREATE TABLE users (
                        user_id INT AUTO_INCREMENT PRIMARY KEY comment '用户ID',             -- 用户ID (主键)
@@ -48,8 +48,6 @@ CREATE TABLE applications (
                               status ENUM('applied', 'interview', 'hired', 'rejected') DEFAULT 'applied' comment '申请状态',  -- 申请状态
                               applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP comment '申请时间'    -- 申请时间
 ) comment '申请表';
-create database zwnl_resumes ;
-use zwnl_resumes;
 CREATE TABLE resumes (
                          resume_id INT AUTO_INCREMENT PRIMARY KEY comment '简历ID',            -- 简历ID (主键)
                          seeker_id INT comment '求职者ID',                                       -- 求职者ID (外键，关联users表)
