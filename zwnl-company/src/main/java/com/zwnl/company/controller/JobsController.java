@@ -1,6 +1,5 @@
 package com.zwnl.company.controller;
 
-
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.company.service.IJobsService;
 import com.zwnl.model.company.dtos.JobsDTO;
