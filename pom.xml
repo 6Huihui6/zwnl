@@ -22,6 +22,7 @@
         <module>zwnl-utils</module>
         <module>zwnl-company</module>
         <module>zwnl-search</module>
+        <module>zwnl-basic</module>
     </modules>
 
 
