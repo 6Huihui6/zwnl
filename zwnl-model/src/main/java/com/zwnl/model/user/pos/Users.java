@@ -73,4 +73,7 @@ public class Users implements Serializable {
     @ApiModelProperty(value = "phone")
     private String phone;
 
+    @ApiModelProperty(value = "是否在线，1为在线")
+    private Integer isOnline;
+
 }
