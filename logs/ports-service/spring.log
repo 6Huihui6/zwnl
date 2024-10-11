@@ -1,0 +1,106 @@
+15:18:28.991-[ROG][sys]-- INFO 39576 --- [           main] com.zwnl.ports.PortsApplication          : The following 1 profile is active: "dev"
+15:18:29.608-[ROG][sys]-- INFO 39576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:18:29.610-[ROG][sys]-- INFO 39576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:18:29.630-[ROG][sys]-- INFO 39576 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+15:18:29.872-[ROG][sys]-- INFO 39576 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0e1767b0-0ce6-3945-881c-b64abb6b14c2
+15:18:30.483-[ROG][sys]-- INFO 39576 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9094 (http)
+15:18:30.496-[ROG][sys]-- INFO 39576 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:18:30.496-[ROG][sys]-- INFO 39576 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+15:18:30.622-[ROG][sys]-- INFO 39576 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:18:30.624-[ROG][sys]-- INFO 39576 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+15:18:32.815-[ROG][sys]-- WARN 39576 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15:18:32.861-[ROG][sys]-- INFO 39576 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+15:18:32.862-[ROG][sys]-- INFO 39576 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+15:18:32.862-[ROG][sys]-- INFO 39576 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+15:18:32.987-[ROG][sys]-- INFO 39576 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9094 (http) with context path ''
+15:18:32.991-[ROG][sys]-- INFO 39576 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9094, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@ports-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:18:32.992-[ROG][sys]-- INFO 39576 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@ports-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9094, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:18:33.010-[ROG][sys]-- INFO 39576 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP ports-service 121.37.194.170:9094 register finished
+15:18:33.366-[ROG][sys]-- INFO 39576 --- [           main] com.zwnl.ports.PortsApplication          : Started PortsApplication in 5.896 seconds (JVM running for 6.257)
+15:18:33.370-[ROG][sys]-- INFO 39576 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service.yaml+DEFAULT_GROUP
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service.yaml, group=DEFAULT_GROUP, cnt=1
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service.yaml, group=DEFAULT_GROUP
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service+DEFAULT_GROUP
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service, group=DEFAULT_GROUP, cnt=1
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service, group=DEFAULT_GROUP
+15:18:33.371-[ROG][sys]-- INFO 39576 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service-dev.yaml+DEFAULT_GROUP
+15:18:33.372-[ROG][sys]-- INFO 39576 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+15:18:33.372-[ROG][sys]-- INFO 39576 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service-dev.yaml, group=DEFAULT_GROUP
+15:18:34.012-[ROG][sys]-- INFO 39576 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9094#DEFAULT#DEFAULT_GROUP@@ports-service","ip":"121.37.194.170","port":9094,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ports-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:18:34.015-[ROG][sys]-- INFO 39576 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9094#DEFAULT#DEFAULT_GROUP@@ports-service","ip":"121.37.194.170","port":9094,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ports-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:23:11.928-[ROG][sys]-- WARN 39576 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:23:11.928-[ROG][sys]-- WARN 39576 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:23:11.928-[ROG][sys]-- WARN 39576 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:23:11.928-[ROG][sys]-- WARN 39576 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:23:11.946-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:23:11.946-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@ports-service:121.37.194.170:9094 from beat map.
+15:23:11.946-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@ports-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9094, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+15:23:11.964-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:23:11.964-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+15:23:14.235-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+15:23:14.235-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+15:23:14.639-[ROG][sys]-- INFO 39576 --- [.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9094#DEFAULT#DEFAULT_GROUP@@ports-service","ip":"121.37.194.170","port":9094,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ports-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:23:14.640-[ROG][sys]-- INFO 39576 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> []
+15:23:14.640-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+15:23:17.665-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+15:23:17.665-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+15:23:17.665-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+15:23:17.665-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+15:23:17.665-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+15:23:17.666-[ROG][sys]-- WARN 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+15:23:17.666-[ROG][sys]-- WARN 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+15:23:17.666-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+15:23:17.666-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+15:23:17.666-[ROG][sys]-- INFO 39576 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+15:23:17.935-[ROG][sys]-- INFO 23692 --- [           main] com.zwnl.ports.PortsApplication          : The following 1 profile is active: "dev"
+15:23:18.434-[ROG][sys]-- INFO 23692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:23:18.435-[ROG][sys]-- INFO 23692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:23:18.451-[ROG][sys]-- INFO 23692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+15:23:18.668-[ROG][sys]-- INFO 23692 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dc624f68-a815-362d-a763-cc90cfac1fca
+15:23:19.150-[ROG][sys]-- INFO 23692 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9094 (http)
+15:23:19.158-[ROG][sys]-- INFO 23692 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:23:19.158-[ROG][sys]-- INFO 23692 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+15:23:19.257-[ROG][sys]-- INFO 23692 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:23:19.257-[ROG][sys]-- INFO 23692 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1311 ms
+15:23:20.600-[ROG][sys]-- WARN 23692 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15:23:20.665-[ROG][sys]-- INFO 23692 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+15:23:20.666-[ROG][sys]-- INFO 23692 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+15:23:20.666-[ROG][sys]-- INFO 23692 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+15:23:20.766-[ROG][sys]-- INFO 23692 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9094 (http) with context path ''
+15:23:20.769-[ROG][sys]-- INFO 23692 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9094, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@ports-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+15:23:20.769-[ROG][sys]-- INFO 23692 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@ports-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9094, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+15:23:20.796-[ROG][sys]-- INFO 23692 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP ports-service 121.37.194.170:9094 register finished
+15:23:21.094-[ROG][sys]-- INFO 23692 --- [           main] com.zwnl.ports.PortsApplication          : Started PortsApplication in 4.363 seconds (JVM running for 4.886)
+15:23:21.096-[ROG][sys]-- INFO 23692 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service.yaml+DEFAULT_GROUP
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service.yaml, group=DEFAULT_GROUP, cnt=1
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service.yaml, group=DEFAULT_GROUP
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service+DEFAULT_GROUP
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service, group=DEFAULT_GROUP, cnt=1
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service, group=DEFAULT_GROUP
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] ports-service-dev.yaml+DEFAULT_GROUP
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=ports-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+15:23:21.097-[ROG][sys]-- INFO 23692 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=ports-service-dev.yaml, group=DEFAULT_GROUP
+15:23:21.788-[ROG][sys]-- INFO 23692 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9094#DEFAULT#DEFAULT_GROUP@@ports-service","ip":"121.37.194.170","port":9094,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ports-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:23:21.791-[ROG][sys]-- INFO 23692 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@ports-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9094#DEFAULT#DEFAULT_GROUP@@ports-service","ip":"121.37.194.170","port":9094,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ports-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+15:29:36.273-[ROG][sys]-- WARN 23692 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:29:36.273-[ROG][sys]-- WARN 23692 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:29:36.274-[ROG][sys]-- WARN 23692 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:29:36.274-[ROG][sys]-- WARN 23692 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:29:36.291-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:29:36.292-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@ports-service:121.37.194.170:9094 from beat map.
+15:29:36.292-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@ports-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9094, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+15:29:36.546-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:29:36.546-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+15:29:37.485-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+15:29:37.485-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+15:29:40.502-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+15:29:43.514-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+15:29:43.514-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+15:29:43.514-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+15:29:43.514-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+15:29:43.514-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+15:29:43.515-[ROG][sys]-- WARN 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+15:29:43.515-[ROG][sys]-- WARN 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+15:29:43.515-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+15:29:43.515-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+15:29:43.515-[ROG][sys]-- INFO 23692 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
