@@ -1,0 +1,3 @@
+com\zwnl\gateway\filter\AuthorizeFilter.class
+com\zwnl\gateway\util\AppJwtUtil.class
+com\zwnl\gateway\GatewayApplication.class
