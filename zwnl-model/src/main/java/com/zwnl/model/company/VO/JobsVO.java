@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.zwnl.model.company.enums.CompanySize;
+import com.zwnl.model.company.enums.CompanyStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -91,5 +92,13 @@ public class JobsVO implements Serializable {
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime updatedTime;
 
+    @ApiModelProperty(value = "logo")
+    private String image;
+
+    @ApiModelProperty(value = "是否在线，1为在线")
+    private Integer isOnline;
+
+    @ApiModelProperty(value = "公司状态--1为已上市，2未融资")
+    private CompanyStatus comstatus;
 
 }

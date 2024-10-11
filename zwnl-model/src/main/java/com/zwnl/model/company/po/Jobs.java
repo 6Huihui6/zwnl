@@ -52,6 +52,12 @@ public class Jobs implements Serializable {
     @ApiModelProperty(value = "最高薪资")
     private BigDecimal maxSalary;
 
+    @ApiModelProperty(value = "薪资范围")
+    private String salary;
+
+    @ApiModelProperty(value = "学历要求")
+    private String education;
+
     @ApiModelProperty(value = "公司ID")
     private Integer companyId;
 
