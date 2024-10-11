@@ -41,7 +41,7 @@ fi
 IMAGE_NAME="${CONTAINER_NAME}:latest"
 echo "copy xx.jar from ${BASE_PATH}/${PROJECT_PATH}"
 rm -f app.jar
-cp ${BASE_PATH}/${PROJECT_PATH}/target/${PROJECT_NAME}.jar ./app.jar ||  exit 1
+sudo cp ${BASE_PATH}/${PROJECT_PATH}/target/${PROJECT_NAME}.jar ./app.jar ||  exit 1
 
 echo "begin to build ${PROJECT_NAME} image ！！"
 
