@@ -1,0 +1,181 @@
+18:24:55.243-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.z.w.gateway.WemediaGatewayAplication   : The following 1 profile is active: "dev"
+18:24:57.105-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e082eac1-6cbb-3354-a347-c96fb2ee4e8b
+18:24:57.975-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+18:24:57.975-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+18:24:57.975-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+18:24:57.975-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+18:24:57.976-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:24:58.329-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:24:58.330-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:24:58.330-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:24:58.639-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+18:24:58.943-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-web-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+18:24:58.944-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+18:24:58.955-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-web-service 121.37.194.170:10000 register finished
+18:24:58.996-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.z.w.gateway.WemediaGatewayAplication   : Started WemediaGatewayAplication in 6.556 seconds (JVM running for 7.521)
+18:24:58.998-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service-dev.yaml+DEFAULT_GROUP
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service.yaml+DEFAULT_GROUP
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service.yaml, group=DEFAULT_GROUP
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service+DEFAULT_GROUP
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service, group=DEFAULT_GROUP, cnt=1
+18:24:59.000-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service, group=DEFAULT_GROUP
+18:24:59.459-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+18:24:59.464-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+18:25:22.356-[DESKTOP-44TL0F9][sys]-- WARN 26096 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:25:22.356-[DESKTOP-44TL0F9][sys]-- WARN 26096 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:25:22.357-[DESKTOP-44TL0F9][sys]-- WARN 26096 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:25:22.357-[DESKTOP-44TL0F9][sys]-- WARN 26096 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:25:22.366-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:25:22.367-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@gateway-web-service:121.37.194.170:10000 from beat map.
+18:25:22.367-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+18:25:22.382-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:25:22.382-[DESKTOP-44TL0F9][sys]-- INFO 26096 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:39:14.086-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.z.w.gateway.WemediaGatewayAplication   : The following 1 profile is active: "dev"
+18:39:14.701-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e082eac1-6cbb-3354-a347-c96fb2ee4e8b
+18:39:15.627-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+18:39:15.627-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+18:39:15.628-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+18:39:15.629-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:39:15.629-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+18:39:15.629-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:39:16.020-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:39:16.021-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:39:16.021-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:39:16.312-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+18:39:16.687-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-web-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+18:39:16.689-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+18:39:16.726-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-web-service 121.37.194.170:10000 register finished
+18:39:16.758-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.z.w.gateway.WemediaGatewayAplication   : Started WemediaGatewayAplication in 4.251 seconds (JVM running for 4.852)
+18:39:16.761-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service-dev.yaml+DEFAULT_GROUP
+18:39:16.762-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+18:39:16.762-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP
+18:39:16.762-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service.yaml+DEFAULT_GROUP
+18:39:16.762-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:39:16.762-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service.yaml, group=DEFAULT_GROUP
+18:39:16.763-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service+DEFAULT_GROUP
+18:39:16.763-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service, group=DEFAULT_GROUP, cnt=1
+18:39:16.763-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service, group=DEFAULT_GROUP
+18:39:17.240-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:39:17.247-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:39:24.296-[DESKTOP-44TL0F9][sys]-- WARN 26788 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:39:24.296-[DESKTOP-44TL0F9][sys]-- WARN 26788 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:39:24.297-[DESKTOP-44TL0F9][sys]-- WARN 26788 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:39:24.297-[DESKTOP-44TL0F9][sys]-- WARN 26788 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:39:24.303-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:39:24.303-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@gateway-web-service:121.37.194.170:10000 from beat map.
+18:39:24.303-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+18:39:24.312-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:39:24.313-[DESKTOP-44TL0F9][sys]-- INFO 26788 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:40:44.229-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.zwnl.gateway.GatewayApplication  : The following 1 profile is active: "dev"
+18:40:44.980-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a97355d-4191-3f67-bf03-63166c875db2
+18:40:46.044-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+18:40:46.044-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+18:40:46.045-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+18:40:46.045-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+18:40:46.045-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+18:40:46.045-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+18:40:46.046-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+18:40:46.046-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+18:40:46.046-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+18:40:46.047-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+18:40:46.047-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+18:40:46.047-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:40:46.047-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+18:40:46.048-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:40:46.418-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:40:46.418-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:40:46.418-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:40:46.641-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+18:40:46.942-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-web-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+18:40:46.943-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+18:40:46.956-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-web-service 121.37.194.170:10000 register finished
+18:40:46.995-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.zwnl.gateway.GatewayApplication  : Started GatewayApplication in 4.24 seconds (JVM running for 4.755)
+18:40:46.999-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service-dev.yaml+DEFAULT_GROUP
+18:40:47.000-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+18:40:47.000-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP
+18:40:47.000-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service.yaml+DEFAULT_GROUP
+18:40:47.000-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:40:47.000-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service.yaml, group=DEFAULT_GROUP
+18:40:47.001-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service+DEFAULT_GROUP
+18:40:47.001-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service, group=DEFAULT_GROUP, cnt=1
+18:40:47.001-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service, group=DEFAULT_GROUP
+18:40:47.002-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [           main] com.zwnl.gateway.GatewayApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'gateway-web-service' is running! Access URLs:
+	Local: 		http://localhost:10000
+	External: 	http://10.64.37.5:10000
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+18:40:47.563-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:40:47.567-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:40:55.681-[DESKTOP-44TL0F9][sys]-- WARN 28856 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+18:40:55.681-[DESKTOP-44TL0F9][sys]-- WARN 28856 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+18:40:55.681-[DESKTOP-44TL0F9][sys]-- WARN 28856 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+18:40:55.682-[DESKTOP-44TL0F9][sys]-- WARN 28856 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+18:40:55.692-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+18:40:55.692-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@gateway-web-service:121.37.194.170:10000 from beat map.
+18:40:55.693-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+18:40:55.746-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+18:40:55.746-[DESKTOP-44TL0F9][sys]-- INFO 28856 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+18:43:32.646-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.zwnl.gateway.GatewayApplication      : The following 1 profile is active: "dev"
+18:43:33.223-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=02071e3e-4565-3785-9923-a8360a4fe5bc
+18:43:34.146-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+18:43:34.146-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+18:43:34.146-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+18:43:34.146-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+18:43:34.146-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+18:43:34.147-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:43:34.507-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:43:34.508-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+18:43:34.508-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+18:43:34.758-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+18:43:35.059-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-web-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+18:43:35.060-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@gateway-web-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+18:43:35.082-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-web-service 121.37.194.170:10000 register finished
+18:43:35.120-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.zwnl.gateway.GatewayApplication      : Started GatewayApplication in 3.973 seconds (JVM running for 4.442)
+18:43:35.123-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service-dev.yaml+DEFAULT_GROUP
+18:43:35.124-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+18:43:35.124-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service-dev.yaml, group=DEFAULT_GROUP
+18:43:35.124-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service.yaml+DEFAULT_GROUP
+18:43:35.124-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service.yaml, group=DEFAULT_GROUP, cnt=1
+18:43:35.124-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service.yaml, group=DEFAULT_GROUP
+18:43:35.125-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] gateway-web-service+DEFAULT_GROUP
+18:43:35.125-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=gateway-web-service, group=DEFAULT_GROUP, cnt=1
+18:43:35.125-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-web-service, group=DEFAULT_GROUP
+18:43:35.126-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [           main] com.zwnl.gateway.GatewayApplication      : --/
+---------------------------------------------------------------------------------------
+	Application 'gateway-web-service' is running! Access URLs:
+	Local: 		http://localhost:10000
+	External: 	http://10.64.37.5:10000
+	Profile(s): 	[dev]
+---------------------------------------------------------------------------------------
+18:43:35.629-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+18:43:35.632-[DESKTOP-44TL0F9][sys]-- INFO 21872 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-web-service@@DEFAULT -> [{"instanceId":"121.37.194.170#10000#DEFAULT#DEFAULT_GROUP@@gateway-web-service","ip":"121.37.194.170","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-web-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
