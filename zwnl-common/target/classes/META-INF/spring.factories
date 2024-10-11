@@ -6,4 +6,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
  com.zwnl.common.autoconfigure.mybatis.MybatisConfig,\
  com.zwnl.common.autoconfigure.redisson.RedissonConfig,\
  com.zwnl.common.autoconfigure.swagger.Knife4jConfiguration, \
- com.zwnl.common.autoconfigure.xxljob.XxlJobConfig
+ com.zwnl.common.autoconfigure.xxljob.XxlJobConfig, \
+ com.zwnl.common.redis.CacheService

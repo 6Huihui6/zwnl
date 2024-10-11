@@ -11,6 +11,7 @@
         <module name="zwnl-common" />
         <module name="zwnl-gateway" />
         <module name="zwnl-company" />
+        <module name="minio-faststart" />
         <module name="zwnl-user" />
         <module name="zwnl-learning" />
         <module name="zwnl-resume" />
@@ -25,8 +26,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="minio-faststart" options="-parameters" />
       <module name="zwnl-admin" options="-parameters" />
       <module name="zwnl-api" options="-parameters" />
+      <module name="zwnl-basic" options="" />
       <module name="zwnl-common" options="-parameters" />
       <module name="zwnl-company" options="-parameters" />
       <module name="zwnl-gateway" options="-parameters" />
