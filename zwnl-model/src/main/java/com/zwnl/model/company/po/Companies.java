@@ -72,11 +72,5 @@ public class Companies implements Serializable {
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime updatedTime;
 
-    @ApiModelProperty(value = "是否在线，1为在线")
-    private Integer isOnline;
-
-    @ApiModelProperty(value = "logo")
-    private String image;
-
 
 }

@@ -13,7 +13,6 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.List;
 
 /**
  * <p>
@@ -54,9 +53,6 @@ public class JobsDTO implements Serializable {
     @ApiModelProperty(value = "最高薪资")
     private BigDecimal maxSalary;
 
-    @ApiModelProperty(value = "薪资范围")
-    private String salary;
-
     @ApiModelProperty(value = "公司ID")
     private Integer companyId;
 
@@ -75,9 +71,6 @@ public class JobsDTO implements Serializable {
     @ApiModelProperty(value = "公司地址")
     private String address;
 
-    @ApiModelProperty(value = "logo")
-    private String image;
-
     @ApiModelProperty(value = "联系人姓名")
     private String contactName;
 
@@ -92,12 +85,5 @@ public class JobsDTO implements Serializable {
 
     @ApiModelProperty(value = "公司状态--1为已上市，2未融资")
     private CompanyStatus comstatus;
-
-    @ApiModelProperty(value = "学历要求")
-    private String education;
-
-    @ApiModelProperty(value = "技能要求")
-    private List<String> skill;
-
 
 }

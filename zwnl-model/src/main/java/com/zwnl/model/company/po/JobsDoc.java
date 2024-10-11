@@ -78,8 +78,5 @@ public class JobsDoc implements Serializable {
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime updatedTime;
 
-    @ApiModelProperty(value = "logo")
-    private String image;
-
 
 }
