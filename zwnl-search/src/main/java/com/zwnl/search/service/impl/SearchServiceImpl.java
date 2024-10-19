@@ -2,10 +2,7 @@ package com.zwnl.search.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONUtil;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.zwnl.company.service.IJobsService;
 import com.zwnl.model.company.dtos.JobsDTO;
-import com.zwnl.model.company.po.Jobs;
 import com.zwnl.model.company.po.JobsDoc;
 import com.zwnl.search.service.ISearchService;
 import lombok.RequiredArgsConstructor;
