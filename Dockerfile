@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-buster
 LABEL maintainer="研究院研发组 <research-maint@itcast.cn>"
 ENV JAVA_OPTS=""
 # 设定时区
