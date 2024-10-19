@@ -1,6 +1,6 @@
 #! /bin/sh
 cd /usr/local/src/script || exit 1
-BASE_PATH='/var/lib/jenkins/workspace/zwnl-build'
+BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
@@ -41,7 +41,7 @@ fi
 IMAGE_NAME="${CONTAINER_NAME}:latest"
 echo "copy xx.jar from ${BASE_PATH}/${PROJECT_PATH}"
 rm -f app.jar
-cp ${BASE_PATH}/${PROJECT_PATH}/target/${PROJECT_NAME}.jar ./app.jar ||  exit 1
+sudo cp ${BASE_PATH}/${PROJECT_PATH}/target/${PROJECT_NAME}.jar ./app.jar ||  exit 1
 
 echo "begin to build ${PROJECT_NAME} image ！！"
 
@@ -58,7 +58,7 @@ if [ "$DEBUG_PORT" = "0" ]; then
   docker run -d --name ${CONTAINER_NAME} \
    -p "${PORT}:${PORT}" \
    -e JAVA_OPTS="${JAVA_OPTS}" \
-   --memory 300m --memory-swap -1 \
+   --memory 512m --memory-swap -1 \
    --network zwnl ${IMAGE_NAME} \
   || exit 1
 else

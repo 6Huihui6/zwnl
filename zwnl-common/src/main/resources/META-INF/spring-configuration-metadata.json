@@ -91,7 +91,7 @@
       "name": "zwnl.mq.host",
       "type": "java.lang.String",
       "description": "rabbitmq的地址",
-      "defaultValue": "192.168.150.101"
+      "defaultValue": "121.37.194.170"
     },
     {
       "name": "zwnl.mq.port",

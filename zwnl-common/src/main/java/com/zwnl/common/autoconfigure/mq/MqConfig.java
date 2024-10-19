@@ -30,6 +30,7 @@ import static com.zwnl.common.constants.MqConstants.Queue.ERROR_QUEUE_TEMPLATE;
 
 
 @Configuration
+
 @ConditionalOnClass(value = {MessageConverter.class, AmqpTemplate.class})
 public class MqConfig implements EnvironmentAware{
 

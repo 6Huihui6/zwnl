@@ -8,8 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zwnl-search" />
+        <module name="xxl-job-core" />
         <module name="zwnl-common" />
         <module name="zwnl-gateway" />
+        <module name="xxl-job-executor-sample-frameless" />
         <module name="zwnl-company" />
         <module name="minio-faststart" />
         <module name="zwnl-user" />
@@ -21,8 +23,13 @@
         <module name="zwnl-ports" />
         <module name="zwnl-admin" />
         <module name="zwnl-utils" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-springboot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xxl-job" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

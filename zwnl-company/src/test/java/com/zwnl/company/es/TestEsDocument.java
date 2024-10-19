@@ -41,12 +41,12 @@ public class TestEsDocument {
     @Test
     void testIndex() throws IOException {
         //1、在数据库中查询数据
-        Jobs jobs = jobsService.getById(1);
+        Jobs jobs = jobsService.getById(49);
         Companies companies = companiesService.getById(jobs.getCompanyId());
         JobsDoc jobsDoc = BeanUtil.copyProperties(jobs, JobsDoc.class);
         BeanUtil.copyProperties(companies, jobsDoc);
         //2、获取请求
-        IndexRequest request = new IndexRequest("jobs").id(jobsDoc.getJobId());
+        IndexRequest request = new IndexRequest("jobs").id(String.valueOf(jobsDoc.getJobId()));
 
         //3、准备请求参数
         request.source(JSONUtil.toJsonStr(jobsDoc),XContentType.JSON);

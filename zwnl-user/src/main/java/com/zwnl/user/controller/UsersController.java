@@ -72,7 +72,7 @@ public ResponseResult register(@RequestBody Users users) {
 }
 
     @ApiOperation("获取当前登录用户信息")
-    @GetMapping(value = "/me")
+    @GetMapping( "/me")
     public UserDetailVO me() {
         return usersService.myInfo();
     }

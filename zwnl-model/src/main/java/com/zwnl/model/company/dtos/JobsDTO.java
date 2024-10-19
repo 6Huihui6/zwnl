@@ -96,8 +96,8 @@ public class JobsDTO implements Serializable {
     @ApiModelProperty(value = "学历要求")
     private String education;
 
-    @ApiModelProperty(value = "技能要求")
-    private List<String> skill;
+    @ApiModelProperty(value = "技能要求,多个技能用逗号隔开")
+    private String skills;
 
 
 }
