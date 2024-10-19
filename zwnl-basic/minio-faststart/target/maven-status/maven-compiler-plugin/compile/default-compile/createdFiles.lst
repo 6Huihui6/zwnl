@@ -1,0 +1,5 @@
+com\zwnl\minio\service\impl\MinIOFileStorageService.class
+com\zwnl\minio\config\MinIOConfigProperties.class
+com\zwnl\minio\service\FileStorageService.class
+META-INF\spring-configuration-metadata.json
+com\zwnl\minio\config\MinIOConfig.class
