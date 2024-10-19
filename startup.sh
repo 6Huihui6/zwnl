@@ -1,6 +1,6 @@
 #! /bin/sh
 cd /usr/local/src/script || exit 1
-BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-build'
+BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-bulid'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
@@ -58,7 +58,7 @@ if [ "$DEBUG_PORT" = "0" ]; then
   docker run -d --name ${CONTAINER_NAME} \
    -p "${PORT}:${PORT}" \
    -e JAVA_OPTS="${JAVA_OPTS}" \
-   --memory 512m --memory-swap -1 \
+   --memory 1024m --memory-swap -1 \
    --network zwnl ${IMAGE_NAME} \
   || exit 1
 else
