@@ -35,7 +35,7 @@ public interface MqConstants {
         /*课程有关的 RoutingKey*/
         String JOBS_NEW_KEY = "jobs.new";
         String JOBS_KEY_TEMPLATE = "jobs.changed";
-        String COMPANY_KEY_TEMPLATE = "company.changed";
+        String JOBS_LIST_KEY = "jobs.list.changed";
         String COURSE_UP_KEY = "course.up";
         String COURSE_DOWN_KEY = "course.down";
         String COURSE_EXPIRE_KEY = "course.expire";

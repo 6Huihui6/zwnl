@@ -109,7 +109,7 @@ public class JobsServiceImpl extends ServiceImpl<JobsMapper, Jobs> implements IJ
         }
         rabbitMqHelper.send(
                 JOBS_EXCHANGE,
-                COMPANY_KEY_TEMPLATE,
+                JOBS_LIST_KEY,
                 jobsDTOList
         );
     }

@@ -36,9 +36,9 @@ public class JobsChangeListener {
     }
 
     @RabbitListener(bindings = @QueueBinding(
-            value = @Queue(name = "zwnl.jobs.queue", durable = "true"),
+            value = @Queue(name = "zwnl.jobs.list", durable = "true"),
             exchange = @Exchange(name = JOBS_EXCHANGE, type = ExchangeTypes.TOPIC),
-            key = COMPANY_KEY_TEMPLATE
+            key = JOBS_LIST_KEY
     ))
     public void JobsListUpdate(List<JobsDTO> jobsDTOList) throws IOException {
         log.info("SyncArticleListener,message={}", jobsDTOList);
