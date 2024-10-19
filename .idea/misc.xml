@@ -12,6 +12,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/zwnl-basic/xxl-job/pom.xml" />
         <option value="$PROJECT_DIR$/zwnl-gateway/zwnl-web-gateway/pom.xml" />
       </set>
     </option>
