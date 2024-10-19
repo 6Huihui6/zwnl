@@ -1,7 +1,11 @@
 package com.zwnl.company.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.zwnl.model.company.dtos.JobsDTO;
 import com.zwnl.model.company.po.Jobs;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,6 @@ import com.zwnl.model.company.po.Jobs;
  */
 public interface JobsMapper extends BaseMapper<Jobs> {
 
+//    @Select("SELECT jobs.*, companies.* FROM jobs LEFT JOIN companies ON jobs.company_id = companies.company_id")
+//    List<JobsDTO> getAllJobs();
 }

@@ -14,6 +14,7 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>minio-faststart</module>
+        <module>xxl-job</module>
     </modules>
 
     <properties>

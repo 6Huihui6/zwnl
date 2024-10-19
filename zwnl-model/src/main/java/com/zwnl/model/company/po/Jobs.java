@@ -67,5 +67,6 @@ public class Jobs implements Serializable {
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime updatedTime;
 
-
+    @ApiModelProperty(value = "职位标签")
+    private String skills;
 }

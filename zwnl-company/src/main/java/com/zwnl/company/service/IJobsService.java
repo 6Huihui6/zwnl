@@ -1,9 +1,13 @@
 package com.zwnl.company.service;
 
+import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.model.company.VO.JobsVO;
 import com.zwnl.model.company.dtos.JobsDTO;
 import com.zwnl.model.company.po.Jobs;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -26,4 +30,23 @@ public interface IJobsService extends IService<Jobs> {
      * @param jobsDTO
      */
     void updateJob(JobsDTO jobsDTO);
+
+
+    /**
+     * 获取所有职位信息
+     * @return
+     */
+    List<JobsVO> getAllJobs();
+
+    /**
+     * 根据id获取职位信息
+     * @param jobId
+     * @return
+     */
+    ResponseResult<JobsVO> getJobById(Integer jobId);
+
+    /**
+     * 更新职位列表
+     */
+    void updateJobList();
 }

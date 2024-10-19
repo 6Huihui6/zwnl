@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.net.InetAddress;
@@ -15,6 +16,7 @@ import java.net.UnknownHostException;
 @SpringBootApplication
 @EnableTransactionManagement
 @Slf4j
+@EnableScheduling
 public class CompanyApplication {
     public static void main(String[] args) throws UnknownHostException {
         SpringApplication app = new SpringApplicationBuilder(CompanyApplication.class).build(args);

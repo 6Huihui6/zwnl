@@ -2,8 +2,8 @@ package com.zwnl.common.constants;
 
 public interface MqConstants {
     interface Exchange{
-        /*课程有关的交换机*/
-        String COURSE_EXCHANGE = "course.topic";
+        /*岗位有关的交换机*/
+        String JOBS_EXCHANGE = "jobs.topic";
 
         /*订单有关的交换机*/
         String ORDER_EXCHANGE = "order.topic";
@@ -33,7 +33,9 @@ public interface MqConstants {
     }
     interface Key{
         /*课程有关的 RoutingKey*/
-        String COURSE_NEW_KEY = "course.new";
+        String JOBS_NEW_KEY = "jobs.new";
+        String JOBS_KEY_TEMPLATE = "jobs.changed";
+        String COMPANY_KEY_TEMPLATE = "company.changed";
         String COURSE_UP_KEY = "course.up";
         String COURSE_DOWN_KEY = "course.down";
         String COURSE_EXPIRE_KEY = "course.expire";
@@ -56,7 +58,7 @@ public interface MqConstants {
         String NOTE_GATHERED = "note.gathered";
 
         /*点赞的RoutingKey*/
-        String LIKED_TIMES_KEY_TEMPLATE = "{}.times.changed";
+
         /*问答*/
         String QA_LIKED_TIMES_KEY = "QA.times.changed";
         /*笔记*/

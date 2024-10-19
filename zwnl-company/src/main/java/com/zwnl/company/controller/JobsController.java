@@ -1,7 +1,9 @@
 package com.zwnl.company.controller;
 
 import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.common.enums.AppHttpCodeEnum;
 import com.zwnl.company.service.IJobsService;
+import com.zwnl.model.company.VO.JobsVO;
 import com.zwnl.model.company.dtos.JobsDTO;
 import com.zwnl.model.company.po.Jobs;
 import io.swagger.annotations.Api;
@@ -9,6 +11,8 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * <p>
@@ -27,8 +31,16 @@ public class JobsController {
 
     private final IJobsService jobsService;
 
+
+    @GetMapping("/list")
+    @ApiOperation("查询所有职位信息")
+    public ResponseResult<List<JobsVO>> getAllJobs() {
+        return  ResponseResult.okResult(jobsService.getAllJobs());
+    }
+
+
     @PostMapping
-    @ApiOperation("保存职位信息")
+    @ApiOperation("保存职位信息,公司的详细信息可以不传，公司id必传")
     public ResponseResult saveJob(@RequestBody JobsDTO JobsDTO) {
         log.info("保存职位信息：{}", JobsDTO);
         jobsService.saveJob(JobsDTO);
@@ -37,8 +49,8 @@ public class JobsController {
 
     @PostMapping("/delete")
     @ApiOperation("删除职位信息")
-    public ResponseResult deleteJob(@RequestBody JobsDTO JobsDTO) {
-        jobsService.removeById(JobsDTO.getJobId());
+    public ResponseResult deleteJob(@RequestParam("jobId") Integer jobId  ) {
+        jobsService.removeById(jobId);
         return ResponseResult.okResult(200, "删除成功");
     }
 
@@ -50,9 +62,8 @@ public class JobsController {
     }
     @GetMapping("/{jobId}")
     @ApiOperation("查询职位信息")
-    public ResponseResult getJobById(@PathVariable("jobId") Long jobId) {
-        Jobs Jobs = jobsService.getById(jobId);
-        return ResponseResult.okResult(Jobs);
+    public ResponseResult<JobsVO> getJobById(@PathVariable("jobId") Integer jobId) {
+        return jobsService.getJobById(jobId);
     }
 
 
