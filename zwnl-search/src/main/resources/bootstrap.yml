@@ -30,9 +30,9 @@ zwnl:
   swagger:
     enable: true
     enableResponseWrap: true
-    package-path: com.zwnl.resume.controller
-    title: 职位你来 - 简历中心接口文档
-    description: 该服务简历管理、简历信息管理
+    package-path: com.zwnl.search.controller
+    title: 职位你来 - 搜索中心接口文档
+    description: 该服务提供职位搜索相关接口
     contact-name: 职位你来·研究院
     contact-url: https://wlmtsys.com
     contact-email: 3103733088@qq.com
