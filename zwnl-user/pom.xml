@@ -66,6 +66,11 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.zwnl</groupId>
+            <artifactId>zwnl-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <!--配置实用docker的Maven自动部署插件,配置的是内网ip-->
 <!--    <build>-->
