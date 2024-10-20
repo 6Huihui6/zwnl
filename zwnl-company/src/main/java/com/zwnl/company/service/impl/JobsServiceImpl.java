@@ -105,7 +105,7 @@ public class JobsServiceImpl extends ServiceImpl<JobsMapper, Jobs> implements IJ
 
         for (JobsDTO jobsDTO : jobsDTOList) {
             Companies company = companiesMap.get(jobsDTO.getCompanyId());
-            BeanUtils.copyProperties(company, jobsDTO);
+            BeanUtils.copyProperties(company, jobsDTO, "createdTime");
         }
         rabbitMqHelper.send(
                 JOBS_EXCHANGE,
