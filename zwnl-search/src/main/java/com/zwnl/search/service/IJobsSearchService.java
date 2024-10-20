@@ -4,6 +4,8 @@ package com.zwnl.search.service;
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.model.search.dtos.UserSearchDto;
 
+import java.io.IOException;
+
 public interface IJobsSearchService {
 
     /**
@@ -11,5 +13,5 @@ public interface IJobsSearchService {
      * @param dto
      * @return
      */
-    ResponseResult search(UserSearchDto dto);
+    ResponseResult search(UserSearchDto dto) throws IOException;
 }
