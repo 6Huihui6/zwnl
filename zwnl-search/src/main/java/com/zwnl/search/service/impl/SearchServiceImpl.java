@@ -88,11 +88,6 @@ public class SearchServiceImpl  implements ISearchService {
         BulkRequest request = new BulkRequest();
         log.info("jobsDTOList size:{}",jobsDTOList.size());
         for (JobsDTO jobsDTO : jobsDTOList) {
-//            // 对于更新操作，使用doc_as_upsert参数
-//            UpdateRequest updateRequest = new UpdateRequest(indexName, documentId)
-//                    .doc(BeanUtil.copyProperties(jobsDTO, JobsDoc.class), XContentType.JSON) // 添加更新内容
-//                    .docAsUpsert(true); // 如果文档不存在，则插入
-//
             request.add(new IndexRequest("jobs").id(jobsDTO.getJobId().toString())
                     .source(JSONUtil.toJsonStr(BeanUtil.copyProperties(jobsDTO, JobsDoc.class)),XContentType.JSON));
         }

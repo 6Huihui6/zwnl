@@ -5,7 +5,10 @@ import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.common.enums.AppHttpCodeEnum;
 import com.zwnl.common.utils.StringUtils;
 import com.zwnl.model.search.dtos.UserSearchDto;
+import com.zwnl.model.user.pos.Users;
 import com.zwnl.search.service.IJobsSearchService;
+import com.zwnl.search.service.IUserSearchService;
+import com.zwnl.utils.thread.AppThreadLocalUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.search.SearchRequest;
@@ -34,6 +37,7 @@ import java.util.Map;
 public class JobsSearchServiceImpl implements IJobsSearchService {
 
         private final RestHighLevelClient client;
+        private final IUserSearchService userSearchService;
 
 
     /**
@@ -46,8 +50,14 @@ public class JobsSearchServiceImpl implements IJobsSearchService {
         if (dto == null || StringUtils.isBlank(dto.getSearchWords())) {
             return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_REQUIRE);
         }
-        //异步调用保存用户搜索记录
-//        saveSearchRecord(dto);
+//        异步调用保存用户搜索记录
+        Users user = AppThreadLocalUtil.getUser();
+
+        //异步调用 保存搜索记录
+        if(user != null && dto.getFromIndex() == 0){
+            userSearchService.insert(dto.getSearchWords(), user.getUserId());
+        }
+
         //设置查询条件
         SearchRequest searchRequest = new SearchRequest("jobs");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
