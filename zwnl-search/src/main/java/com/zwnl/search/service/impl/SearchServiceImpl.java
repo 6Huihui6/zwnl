@@ -2,11 +2,15 @@ package com.zwnl.search.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONUtil;
+import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.common.enums.AppHttpCodeEnum;
 import com.zwnl.model.company.dtos.JobsDTO;
 import com.zwnl.model.company.po.JobsDoc;
 import com.zwnl.search.service.ISearchService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.client.RequestOptions;
@@ -18,6 +22,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class SearchServiceImpl  implements ISearchService {
@@ -75,17 +80,25 @@ public class SearchServiceImpl  implements ISearchService {
     @Override
     public void jobsListChange(List<JobsDTO> jobsDTOList) throws IOException {
         if (jobsDTOList == null || jobsDTOList.isEmpty()) {
-            return;
+            log.info("jobsDTOList is empty");
+            return ;
         }
         //1、准备请求
         //2、准备请求
         BulkRequest request = new BulkRequest();
+        log.info("jobsDTOList size:{}",jobsDTOList.size());
         for (JobsDTO jobsDTO : jobsDTOList) {
-            request.add(new IndexRequest("Jobs").id(jobsDTO.getJobId().toString())
+//            // 对于更新操作，使用doc_as_upsert参数
+//            UpdateRequest updateRequest = new UpdateRequest(indexName, documentId)
+//                    .doc(BeanUtil.copyProperties(jobsDTO, JobsDoc.class), XContentType.JSON) // 添加更新内容
+//                    .docAsUpsert(true); // 如果文档不存在，则插入
+//
+            request.add(new IndexRequest("jobs").id(jobsDTO.getJobId().toString())
                     .source(JSONUtil.toJsonStr(BeanUtil.copyProperties(jobsDTO, JobsDoc.class)),XContentType.JSON));
         }
         //3、发送请求
-        client.bulk(request,RequestOptions.DEFAULT);
+        BulkResponse bulk = client.bulk(request, RequestOptions.DEFAULT);
+        log.info("sync jobsListChange response:{}",bulk.toString());
     }
 
 }

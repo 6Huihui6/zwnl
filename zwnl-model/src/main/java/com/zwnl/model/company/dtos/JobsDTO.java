@@ -13,6 +13,7 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -99,5 +100,7 @@ public class JobsDTO implements Serializable {
     @ApiModelProperty(value = "技能要求,多个技能用逗号隔开")
     private String skills;
 
+    @ApiModelProperty(value = "创建时间")
+    private LocalDateTime createdTime;
 
 }

@@ -41,7 +41,7 @@ public class JobsChangeListener {
             key = JOBS_LIST_KEY
     ))
     public void JobsListUpdate(List<JobsDTO> jobsDTOList) throws IOException {
-        log.info("SyncArticleListener,message={}", jobsDTOList);
+        log.info("JobsListListener,message={}", jobsDTOList);
         searchService.jobsListChange(jobsDTOList);
     }
 
