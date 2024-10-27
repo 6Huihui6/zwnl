@@ -1,6 +1,6 @@
 create database if not exists zwnl_resumes;
 use zwnl_resumes;
-create table if not exists educations
+create table educations
 (
     education_id     int auto_increment comment '教育背景ID'
         primary key,
@@ -13,7 +13,7 @@ create table if not exists educations
 )
     comment '教育经历表';
 
-create table if not exists resumes
+create table resumes
 (
     resume_id       int auto_increment comment '简历ID'
         primary key,
@@ -27,7 +27,7 @@ create table if not exists resumes
 )
     comment '简历表';
 
-create table if not exists skills
+create table skills
 (
     skill_id    int auto_increment comment '技能ID'
         primary key,
@@ -37,7 +37,7 @@ create table if not exists skills
 )
     comment '技能表';
 
-create table if not exists work_experiences
+create table work_experiences
 (
     experience_id    int auto_increment comment '工作经历ID'
         primary key,
@@ -50,3 +50,9 @@ create table if not exists work_experiences
 )
     comment '工作经历表';
 
+INSERT INTO zwnl_resumes.educations (education_id, resume_id, institution_name, degree, major, start_date, end_date) VALUES (1, 1, 'zdfh', 'dzfh', 'zdfh', '2024-10-11', '2024-10-11');
+
+INSERT INTO zwnl_resumes.resumes (resume_id, seeker_id, title, summary, contact_info, resume_file_url, created_time, updated_time) VALUES (1, 1, 'gcfyfh ', 'sedryg sdf', 'sdfh', 'sdfhg', '2024-10-11 22:37:45', '2024-10-11 23:10:03');
+INSERT INTO zwnl_resumes.skills (skill_id, resume_id, skill_name, proficiency) VALUES (1, 2, 'xfghkj', 1);
+
+INSERT INTO zwnl_resumes.work_experiences (experience_id, resume_id, company_name, position, cstart_date, cend_date, responsibilities) VALUES (1, 1, 'xfgj ', 'fgjfdgj', '2024-10-11', '2024-10-11', 'dcfxzh');

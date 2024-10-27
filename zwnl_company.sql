@@ -1,26 +1,28 @@
 create database if not exists zwnl_company;
 
 use zwnl_company;
-create table if not exists companies
+create table companies
 (
     company_id    int auto_increment comment '公司ID'
         primary key,
-    user_id       int                                null,
-    name          varchar(255)                       not null comment '公司名称',
-    industry      varchar(255)                       null comment '所属行业',
-    size          tinyint  default 1                 null comment '公司规模1-5代表(''1-50'', ''51-200'', ''201-500'', ''501-1000'', ''1001+'')',
-    address       varchar(255)                       null comment '公司地址',
-    contact_name  varchar(255)                       null comment '联系人姓名',
-    contact_email varchar(255)                       null comment '联系人邮箱',
-    contact_phone varchar(20)                        null comment '联系人电话',
-    cdescription  text                               null comment '公司描述',
-    created_time  datetime default CURRENT_TIMESTAMP null comment '创建时间',
-    updated_time  datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
-    comstatus     tinyint  default 1                 null comment '公司阶段--1为已上市 --2为未融资'
+    user_id       int                                  null,
+    name          varchar(255)                         not null comment '公司名称',
+    industry      varchar(255)                         null comment '所属行业',
+    size          tinyint    default 1                 null comment '公司规模1-5代表(''1-50'', ''51-200'', ''201-500'', ''501-1000'', ''1001+'')',
+    address       varchar(255)                         null comment '公司地址',
+    contact_name  varchar(255)                         null comment '联系人姓名',
+    contact_email varchar(255)                         null comment '联系人邮箱',
+    contact_phone varchar(20)                          null comment '联系人电话',
+    cdescription  text                                 null comment '公司描述',
+    created_time  datetime   default CURRENT_TIMESTAMP null comment '创建时间',
+    updated_time  datetime   default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
+    comstatus     tinyint    default 1                 null comment '公司阶段--1为已上市 --2为未融资',
+    is_online     tinyint(1) default 0                 null comment '是否在线，1为在线',
+    image         varchar(250)                         null comment '公司图片'
 )
     comment '公司表';
 
-create table if not exists jobs
+create table jobs
 (
     job_id       int auto_increment comment '职位ID'
         primary key,
@@ -32,11 +34,14 @@ create table if not exists jobs
     max_salary   decimal(10, 2)                     null comment '最高薪资',
     company_id   int                                null comment '公司ID',
     created_time datetime default CURRENT_TIMESTAMP null comment '创建时间',
-    updated_time datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间'
+    updated_time datetime default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP comment '更新时间',
+    salary       varchar(250)                       null comment '薪资范围',
+    education    varchar(200)                       null comment '学历',
+    skills       varchar(500)                       null
 )
     comment '职位表';
 
-create table if not exists job_views
+create table job_views
 (
     view_id     int auto_increment comment '浏览记录ID'
         primary key,
@@ -50,4 +55,125 @@ create table if not exists job_views
 
 create index job_id
     on job_views (job_id);
+
+create table jobs_skills
+(
+    id       int auto_increment
+        primary key,
+    job_id   int          not null,
+    skills   varchar(200) null,
+    skill_id int          null
+);
+INSERT INTO zwnl_company.companies (company_id, user_id, name, industry, size, address, contact_name, contact_email, contact_phone, cdescription, created_time, updated_time, comstatus, is_online, image) VALUES (1, 1, '穿越火线', 'gck', 5, 'dyfji', 'gvjxcgf', 'fgjf', '34674585678', 'fxgj', '2024-10-15 15:18:13', '2024-10-17 19:36:38', 1, 1, null);
+
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (1, '黑马今天又来了', '黑马和黑马头条今天又来了，中国引来jin', 'fxgjhfgj', 'fxtgjfgj', 3000.00, 60000.00, 1, '2024-10-15 15:19:01', '2024-10-20 15:26:13', 'gykmj', 'fxtjfj', 'fgxdjhn');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (2, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-16 23:58:46', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (3, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:02:27', '2024-10-17 15:53:48', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (4, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:10:21', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (5, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:12:06', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (6, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:16:36', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (7, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:18:42', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (8, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:21:10', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (9, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 00:22:09', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (10, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 14:43:12', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (11, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 14:46:26', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (12, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 14:46:34', '2024-10-17 15:53:48', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (13, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 14:46:38', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (14, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 14:46:42', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (15, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 15:18:45', '2024-10-17 15:53:49', null, null, 'drhsghdsf');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (16, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:15:12', '2024-10-17 16:15:12', null, null, null);
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (17, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:16:25', '2024-10-17 16:16:25', null, null, null);
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (18, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:17:01', '2024-10-17 16:17:01', null, null, null);
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (19, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:18:24', '2024-10-17 16:18:24', null, null, null);
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (20, 'sdgfgsdg', '黑马今天又来了', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:20:25', '2024-10-20 15:36:53', null, null, null);
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (21, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:21:28', '2024-10-17 16:21:28', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (22, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:24:06', '2024-10-17 16:24:06', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (23, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:25:51', '2024-10-17 16:25:51', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (24, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:28:41', '2024-10-17 16:28:41', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (25, 'sdgfgsdg', '黑马今天又来了', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:29:24', '2024-10-20 15:36:53', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (26, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:29:59', '2024-10-17 16:29:59', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (27, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:31:22', '2024-10-17 16:31:22', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (28, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:31:55', '2024-10-17 16:31:55', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (29, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:32:26', '2024-10-17 16:32:26', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (30, 'sdgfgsdg', '黑马今天又来了', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:32:56', '2024-10-20 15:36:53', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (31, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:33:43', '2024-10-17 16:33:43', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (32, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:42:04', '2024-10-17 16:42:04', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (33, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:49:30', '2024-10-17 16:49:30', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (34, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 16:54:14', '2024-10-17 16:54:14', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (35, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:04:57', '2024-10-17 17:04:57', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (36, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:05:09', '2024-10-17 17:05:09', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (37, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:05:17', '2024-10-17 17:05:17', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (38, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:14:41', '2024-10-17 17:14:41', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (39, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:16:23', '2024-10-17 17:16:23', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (40, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:23:02', '2024-10-17 17:23:02', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (41, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:27:47', '2024-10-17 17:27:47', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (42, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:30:57', '2024-10-17 17:30:57', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (43, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:36:03', '2024-10-17 17:36:03', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (44, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:36:25', '2024-10-17 17:36:25', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (45, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:37:51', '2024-10-17 17:37:51', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (46, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:45:59', '2024-10-17 17:45:59', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (47, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:46:20', '2024-10-17 17:46:20', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (48, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:46:41', '2024-10-17 17:46:41', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (49, '777uyl888888', '543yio;l4', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 17:47:26', '2024-10-17 19:46:40', null, null, 'dz6y667ylyl676fhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (50, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:01:47', '2024-10-17 18:01:47', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (51, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:07:45', '2024-10-17 18:07:45', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (52, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:07:45', '2024-10-17 18:07:45', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (53, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:07:51', '2024-10-17 18:07:51', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (54, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:14:13', '2024-10-17 18:14:13', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (55, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:16:38', '2024-10-17 18:16:38', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (56, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 18:21:30', '2024-10-17 18:21:30', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (57, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:19:34', '2024-10-17 19:19:34', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (58, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:47:51', '2024-10-17 19:47:51', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (59, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:48:18', '2024-10-17 19:48:18', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (60, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:49:33', '2024-10-17 19:49:33', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (61, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:49:45', '2024-10-17 19:49:45', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (62, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:50:16', '2024-10-17 19:50:16', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (63, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:51:08', '2024-10-17 19:51:08', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (64, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:51:44', '2024-10-17 19:51:44', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (65, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:53:04', '2024-10-17 19:53:04', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (66, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 19:53:30', '2024-10-17 19:53:30', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (67, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:14:32', '2024-10-17 20:14:32', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (68, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:14:41', '2024-10-17 20:14:41', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (69, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:15:00', '2024-10-17 20:15:00', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (70, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:15:06', '2024-10-17 20:15:06', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (71, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:16:14', '2024-10-17 20:16:14', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (72, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:16:21', '2024-10-17 20:16:21', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (73, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:17:09', '2024-10-17 20:17:09', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (74, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:17:13', '2024-10-17 20:17:13', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (75, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:17:52', '2024-10-17 20:17:52', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (76, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:17:55', '2024-10-17 20:17:55', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (77, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:18:24', '2024-10-17 20:18:24', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (78, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:18:32', '2024-10-17 20:18:32', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (79, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:19:48', '2024-10-17 20:19:48', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (80, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:19:50', '2024-10-17 20:19:50', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (81, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:20:41', '2024-10-17 20:20:41', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (82, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:23:54', '2024-10-17 20:23:54', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (83, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:23:57', '2024-10-17 20:23:57', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (84, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:06', '2024-10-17 20:25:06', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (85, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:10', '2024-10-17 20:25:10', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (86, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:14', '2024-10-17 20:25:14', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (87, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:17', '2024-10-17 20:25:17', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (88, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:19', '2024-10-17 20:25:19', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (89, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:40', '2024-10-17 20:25:40', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (90, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:45', '2024-10-17 20:25:45', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (91, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:55', '2024-10-17 20:25:55', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (92, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:56', '2024-10-17 20:25:56', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (93, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:58', '2024-10-17 20:25:58', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (94, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:25:59', '2024-10-17 20:25:59', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (95, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:26:42', '2024-10-17 20:26:42', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (96, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:26:46', '2024-10-17 20:26:46', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (97, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:26:47', '2024-10-17 20:26:47', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (98, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:26:48', '2024-10-17 20:26:48', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (99, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:28:58', '2024-10-17 20:28:58', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (100, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:29:17', '2024-10-17 20:29:17', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (101, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:31:29', '2024-10-17 20:31:29', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (102, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:49:28', '2024-10-17 20:49:28', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (103, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:49:32', '2024-10-17 20:49:32', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (104, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:49:58', '2024-10-17 20:49:58', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (105, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:49:58', '2024-10-17 20:49:58', null, null, 'dzfhht');
+INSERT INTO zwnl_company.jobs (job_id, title, description, requirements, location, min_salary, max_salary, company_id, created_time, updated_time, salary, education, skills) VALUES (106, 'sdgfgsdg', '5434', 'ftxdu', 'kkik', null, null, 1, '2024-10-17 20:49:59', '2024-10-17 20:49:59', null, null, 'dzfhht');
+
+
+INSERT INTO zwnl_company.jobs_skills (id, job_id, skills, skill_id) VALUES (1, 1, 'gfsdg,gfsdg', 1);
+INSERT INTO zwnl_company.jobs_skills (id, job_id, skills, skill_id) VALUES (2, 1, 'dtr6usrtu', 2);
 
