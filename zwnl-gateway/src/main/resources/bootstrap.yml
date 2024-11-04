@@ -108,6 +108,6 @@ spring:
 
 logging:
   level:
-    com.tianji: debug
+    com.zwnl: debug
 
 
