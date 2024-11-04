@@ -1,6 +1,6 @@
 #! /bin/sh
 cd /usr/local/src/script || exit 1
-BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-bulid'
+BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
@@ -59,7 +59,7 @@ if [ "$DEBUG_PORT" = "0" ]; then
    -p "${PORT}:${PORT}" \
    -e JAVA_OPTS="${JAVA_OPTS}" \
    --memory 1024m --memory-swap -1 \
-   --network zwnl ${IMAGE_NAME} \
+   --network wlmtsys ${IMAGE_NAME} \
   || exit 1
 else
   echo "run in debug mode"
@@ -67,7 +67,7 @@ else
    -p "${PORT}:${PORT}" \
    -p ${DEBUG_PORT}:5005 \
    -e JAVA_OPTS="${JAVA_OPTS}" \
-   --network zwnl ${IMAGE_NAME} \
+   --network wlmtsys ${IMAGE_NAME} \
   || exit 1
 fi
 echo "container is running now !! ^_^"

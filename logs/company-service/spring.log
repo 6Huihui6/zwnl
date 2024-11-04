@@ -1,437 +1,387 @@
-00:04:16.143-[DESKTOP-44TL0F9][sys]-- WARN 27624 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:04:16.143-[DESKTOP-44TL0F9][sys]-- WARN 27624 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:04:16.154-[DESKTOP-44TL0F9][sys]-- WARN 27624 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:04:16.154-[DESKTOP-44TL0F9][sys]-- WARN 27624 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:04:16.225-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
-00:04:16.240-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='company-service', registryValue='http://10.64.37.5:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
-00:04:16.240-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destory.
-00:04:16.240-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
-00:04:16.240-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-00:04:16.240-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
-00:04:16.243-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-00:04:16.243-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:04:16.243-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@company-service:121.37.194.170:9093 from beat map.
-00:04:16.243-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-00:04:16.252-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:04:16.252-[DESKTOP-44TL0F9][sys]-- INFO 27624 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-00:04:27.779-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:04:29.288-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:04:29.294-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:04:29.325-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-00:04:29.877-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:04:30.886-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:04:30.888-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:04:30.889-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:04:30.890-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:04:30.900-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:04:30.924-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:04:30.924-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:04:31.398-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:04:31.399-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3582 ms
-00:04:34.904-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:04:34.909-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:04:37.839-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:04:37.910-[DESKTOP-44TL0F9][sys]-- WARN 13044 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:04:37.971-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@22c4151b[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:04:38.223-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:04:38.224-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:04:38.225-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:04:38.352-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
-00:04:38.394-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-00:04:38.398-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:04:38.401-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-00:04:38.413-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-00:04:39.402-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:04:39.408-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:04:39.711-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:04:40.120-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 18.415 seconds (JVM running for 19.883)
-00:04:40.124-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-00:04:40.127-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-00:04:40.127-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-00:04:40.128-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-00:04:40.128-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-00:04:40.129-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-00:04:40.130-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-00:04:40.130-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-00:04:40.130-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-00:04:40.131-[DESKTOP-44TL0F9][sys]-- INFO 13044 --- [           main] com.zwnl.company.CompanyApplication      : --/
+20:45:53.031-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
+20:45:53.899-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:45:53.908-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:45:53.938-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+20:45:54.216-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
+20:45:54.878-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
+20:45:54.880-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+20:45:54.880-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20:45:54.880-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:45:54.907-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+20:45:54.922-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:45:54.923-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+20:45:55.128-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:45:55.129-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2073 ms
+20:45:56.852-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+20:45:56.855-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+20:45:59.036-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:45:59.087-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:45:59.117-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@788a7567[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
+20:45:59.288-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:45:59.289-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:45:59.290-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:45:59.406-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+20:45:59.597-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
+20:45:59.607-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.242.119', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+20:45:59.608-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.242.119', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+20:45:59.661-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.242.119:9093 register finished
+20:46:00.589-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.242.119#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.242.119","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:46:00.593-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.242.119#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.242.119","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+20:46:00.907-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:46:01.205-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 12.378 seconds (JVM running for 13.516)
+20:46:01.208-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] company-service+DEFAULT_GROUP
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
+20:46:01.209-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
+20:46:01.210-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:46:01.210-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
+20:46:01.211-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [           main] com.zwnl.company.CompanyApplication      : --/
 ---------------------------------------------------------------------------------------
 	Application 'company-service' is running! Access URLs:
 	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
+	External: 	http://192.168.1.119:9093
 	Profile(s): 	[dev]
 ---------------------------------------------------------------------------------------
-00:11:40.942-[DESKTOP-44TL0F9][sys]-- WARN 13044 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:11:40.942-[DESKTOP-44TL0F9][sys]-- WARN 13044 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:11:40.942-[DESKTOP-44TL0F9][sys]-- WARN 13044 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:11:40.942-[DESKTOP-44TL0F9][sys]-- WARN 13044 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:11:52.236-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:11:53.830-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:11:53.833-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:11:53.878-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-00:11:54.524-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:11:55.657-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:11:55.659-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:11:55.661-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:11:55.662-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:11:55.674-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:11:55.698-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:11:55.698-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:11:56.097-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:11:56.098-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3825 ms
-00:11:59.398-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:11:59.405-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:12:02.939-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:12:03.036-[DESKTOP-44TL0F9][sys]-- WARN 10144 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:12:03.090-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@63b4a896[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:12:03.430-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:12:03.431-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:12:03.432-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:12:03.625-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
-00:12:03.702-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:12:03.707-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:12:03.729-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-00:12:03.735-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:12:03.736-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-00:12:03.749-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-00:12:04.736-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [.naming.updater] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:12:04.737-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [.naming.updater] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:12:04.739-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:12:05.256-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:12:05.859-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 19.465 seconds (JVM running for 20.97)
-00:12:05.865-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-00:12:05.867-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-00:12:05.867-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-00:12:05.868-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-00:12:05.868-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-00:12:05.868-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-00:12:05.869-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-00:12:05.869-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-00:12:05.869-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-00:12:05.871-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [           main] com.zwnl.company.CompanyApplication      : --/
----------------------------------------------------------------------------------------
-	Application 'company-service' is running! Access URLs:
-	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
-	Profile(s): 	[dev]
----------------------------------------------------------------------------------------
-00:17:02.514-[DESKTOP-44TL0F9][sys]-- WARN 10144 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:17:02.514-[DESKTOP-44TL0F9][sys]-- WARN 10144 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:17:02.514-[DESKTOP-44TL0F9][sys]-- WARN 10144 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:17:02.514-[DESKTOP-44TL0F9][sys]-- WARN 10144 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:17:02.664-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
-00:17:02.676-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='company-service', registryValue='http://10.64.37.5:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
-00:17:02.676-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destory.
-00:17:02.676-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
-00:17:02.676-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-00:17:02.676-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
-00:17:02.679-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-00:17:02.679-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:17:02.682-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@company-service:121.37.194.170:9093 from beat map.
-00:17:02.682-[DESKTOP-44TL0F9][sys]-- INFO 10144 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-00:17:12.285-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:17:13.299-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:17:13.305-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:17:13.331-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-00:17:13.729-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:17:14.408-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:17:14.409-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:17:14.409-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:17:14.410-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:17:14.417-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:17:14.428-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:17:14.428-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:17:14.664-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:17:14.664-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2348 ms
-00:17:16.842-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:17:16.844-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:17:19.140-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:17:19.196-[DESKTOP-44TL0F9][sys]-- WARN 30308 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:17:19.245-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@22c4151b[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:17:19.496-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:17:19.497-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:17:19.497-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:17:19.652-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9980
-00:17:19.686-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-00:17:19.690-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:17:19.692-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-00:17:19.703-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-00:17:20.697-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:17:20.701-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:17:20.994-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:17:21.400-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 13.892 seconds (JVM running for 15.199)
-00:17:21.403-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-00:17:21.404-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-00:17:21.404-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-00:17:21.405-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-00:17:21.405-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-00:17:21.406-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-00:17:21.406-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-00:17:21.406-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-00:17:21.406-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-00:17:21.408-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [           main] com.zwnl.company.CompanyApplication      : --/
----------------------------------------------------------------------------------------
-	Application 'company-service' is running! Access URLs:
-	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
-	Profile(s): 	[dev]
----------------------------------------------------------------------------------------
-00:21:07.296-[DESKTOP-44TL0F9][sys]-- WARN 30308 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:21:07.297-[DESKTOP-44TL0F9][sys]-- WARN 30308 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:21:07.300-[DESKTOP-44TL0F9][sys]-- WARN 30308 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:21:07.303-[DESKTOP-44TL0F9][sys]-- WARN 30308 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:21:07.408-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
-00:21:07.426-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='company-service', registryValue='http://10.64.37.5:9980/'}, registryResult:ReturnT [code=200, msg=null, content=null]
-00:21:07.427-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destory.
-00:21:07.427-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
-00:21:07.427-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-00:21:07.428-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
-00:21:07.428-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-00:21:07.429-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:21:07.429-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@company-service:121.37.194.170:9093 from beat map.
-00:21:07.429-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-00:21:07.439-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:21:07.439-[DESKTOP-44TL0F9][sys]-- INFO 30308 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-00:24:40.628-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:24:43.521-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:24:43.530-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:24:43.616-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
-00:24:44.512-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:24:45.470-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:24:46.758-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:24:46.761-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:24:46.761-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:24:46.763-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:24:46.802-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:24:46.832-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:24:46.833-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:24:47.797-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:24:47.798-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7108 ms
-00:24:48.836-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:24:48.844-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:24:48.923-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
-00:24:49.888-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:24:51.768-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:24:51.771-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:24:51.772-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:24:51.773-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:24:51.787-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:24:51.817-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:24:51.817-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:24:52.515-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:24:52.515-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6988 ms
-00:24:53.553-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:24:53.558-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:24:57.203-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:24:57.207-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:24:57.988-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:24:58.141-[DESKTOP-44TL0F9][sys]-- WARN 20788 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:24:58.239-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@58e46572[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:24:58.655-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:24:58.656-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:24:58.657-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:24:58.914-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9980
-00:24:58.970-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-00:24:58.986-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:24:58.989-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-00:24:59.003-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-00:24:59.991-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:25:00.000-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:25:00.630-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:25:01.155-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:25:01.321-[DESKTOP-44TL0F9][sys]-- WARN 27036 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:25:01.460-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@62525579[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:25:01.684-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 28.532 seconds (JVM running for 31.315)
-00:25:01.697-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-00:25:01.700-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-00:25:01.701-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-00:25:01.703-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-00:25:01.704-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-00:25:01.704-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-00:25:01.705-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-00:25:01.705-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-00:25:01.705-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-00:25:01.709-[DESKTOP-44TL0F9][sys]-- INFO 20788 --- [           main] com.zwnl.company.CompanyApplication      : --/
----------------------------------------------------------------------------------------
-	Application 'company-service' is running! Access URLs:
-	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
-	Profile(s): 	[dev]
----------------------------------------------------------------------------------------
-00:25:02.009-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:25:02.010-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:25:02.012-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:25:02.365-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:25:02.374-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-00:25:02.383-[DESKTOP-44TL0F9][sys]-- WARN 27036 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9093 is already in use
-00:25:02.417-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
-00:25:02.418-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-00:25:02.419-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
-00:25:02.420-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-00:25:02.421-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-00:25:02.421-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-00:25:02.421-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-00:25:03.402-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-00:25:06.463-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-00:25:06.464-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-00:25:09.484-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-00:25:09.485-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-00:25:09.485-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-00:25:09.486-[DESKTOP-44TL0F9][sys]-- WARN 27036 --- [           main] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
-00:25:09.487-[DESKTOP-44TL0F9][sys]-- WARN 27036 --- [           main] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
-00:25:09.488-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
-00:25:09.488-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
-00:25:09.488-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-00:25:09.489-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:25:09.490-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:25:09.490-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:25:09.520-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-00:25:09.550-[DESKTOP-44TL0F9][sys]-- INFO 27036 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-00:25:09.601-[DESKTOP-44TL0F9][sys]--ERROR 27036 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 9093 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 9093 or configure this application to listen on another port.
-
-00:29:18.115-[DESKTOP-44TL0F9][sys]-- WARN 20788 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:29:18.115-[DESKTOP-44TL0F9][sys]-- WARN 20788 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:29:18.118-[DESKTOP-44TL0F9][sys]-- WARN 20788 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:29:18.115-[DESKTOP-44TL0F9][sys]-- WARN 20788 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:29:30.993-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-00:29:32.951-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-00:29:32.958-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-00:29:33.010-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-00:29:33.643-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-00:29:35.160-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-00:29:35.162-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-00:29:35.162-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-00:29:35.162-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-00:29:35.171-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-00:29:35.189-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-00:29:35.191-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-00:29:35.574-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-00:29:35.575-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4555 ms
-00:29:39.435-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-00:29:39.439-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-00:29:42.820-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:29:42.899-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-00:29:42.958-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@b89cbf9[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-00:29:43.212-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:29:43.213-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-00:29:43.213-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-00:29:43.318-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
-00:29:43.369-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:29:43.379-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":false,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:29:43.396-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-00:29:43.400-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:29:43.401-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-00:29:43.413-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-00:29:44.403-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [.naming.updater] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-00:29:44.405-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [.naming.updater] com.alibaba.nacos.client.naming          : modified ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:29:44.407-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:29:44.701-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-00:29:45.086-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 20.438 seconds (JVM running for 22.066)
-00:29:45.090-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-00:29:45.091-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-00:29:45.091-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-00:29:45.091-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-00:29:45.091-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-00:29:45.091-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-00:29:45.092-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-00:29:45.092-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-00:29:45.092-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-00:29:45.094-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [           main] com.zwnl.company.CompanyApplication      : --/
----------------------------------------------------------------------------------------
-	Application 'company-service' is running! Access URLs:
-	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
-	Profile(s): 	[dev]
----------------------------------------------------------------------------------------
-00:34:22.969-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:34:22.970-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:34:23.033-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:34:23.036-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:34:23.596-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
-00:34:23.626-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='company-service', registryValue='http://10.64.37.5:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
-00:34:23.627-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destory.
-00:34:23.627-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
-00:34:23.629-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-00:34:23.630-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
-00:34:23.632-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-00:34:23.633-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:34:23.635-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@company-service:121.37.194.170:9093 from beat map.
-00:34:23.635-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-00:34:23.659-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:34:23.660-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-00:34:25.058-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:34:25.061-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@company-service@@DEFAULT -> []
-00:34:25.749-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-00:34:25.750-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-00:34:27.089-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-00:34:30.124-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-00:34:30.125-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-00:34:30.126-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-00:34:30.128-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-00:34:30.128-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-00:34:30.129-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
-00:34:30.129-[DESKTOP-44TL0F9][sys]-- WARN 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
-00:34:30.130-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
-00:34:30.130-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
-00:34:30.131-[DESKTOP-44TL0F9][sys]-- INFO 25496 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-15:10:03.613-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.zwnl.company.CompanyApplication      : The following 1 profile is active: "dev"
-15:10:04.924-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:10:04.931-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:10:04.979-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-15:10:05.607-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0e4b32c-3293-3512-8ac5-35aacbf82f4e
-15:10:06.788-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9093 (http)
-15:10:06.791-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:10:06.791-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:10:06.792-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:10:06.801-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:10:06.826-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:10:06.826-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-15:10:07.120-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:10:07.120-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3480 ms
-15:10:09.350-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
-15:10:09.353-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.z.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
-15:10:11.826-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:10:11.901-[DESKTOP-44TL0F9][sys]-- WARN 17064 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-15:10:11.942-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:updateJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@12dd3501[class com.zwnl.company.job.UpdateJobsTask#updateJobList]
-15:10:12.161-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-15:10:12.162-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-15:10:12.162-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-15:10:12.297-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
-15:10:12.361-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9093 (http) with context path ''
-15:10:12.370-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9093, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@company-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-15:10:12.373-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-15:10:12.387-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP company-service 121.37.194.170:9093 register finished
-15:10:13.417-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-15:10:13.423-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.194.170","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-15:10:13.588-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-15:10:13.946-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.zwnl.company.CompanyApplication      : Started CompanyApplication in 15.124 seconds (JVM running for 16.56)
-15:10:13.950-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service-dev.yaml+DEFAULT_GROUP
-15:10:13.952-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-15:10:13.952-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service-dev.yaml, group=DEFAULT_GROUP
-15:10:13.953-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service+DEFAULT_GROUP
-15:10:13.953-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service, group=DEFAULT_GROUP, cnt=1
-15:10:13.953-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service, group=DEFAULT_GROUP
-15:10:13.955-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] company-service.yaml+DEFAULT_GROUP
-15:10:13.955-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=company-service.yaml, group=DEFAULT_GROUP, cnt=1
-15:10:13.955-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=company-service.yaml, group=DEFAULT_GROUP
-15:10:13.956-[DESKTOP-44TL0F9][sys]-- INFO 17064 --- [           main] com.zwnl.company.CompanyApplication      : --/
----------------------------------------------------------------------------------------
-	Application 'company-service' is running! Access URLs:
-	Local: 		http://localhost:9093
-	External: 	http://10.64.37.5:9093
-	Profile(s): 	[dev]
----------------------------------------------------------------------------------------
+20:51:26.714-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:51:26.714-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:51:26.717-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+20:52:09.976-[DESKTOP-44TL0F9][sys]--ERROR 9296 --- [io-9093-exec-10] c.z.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /jobs -> 
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.zwnl.model.company.enums.CompanyStatus` value (but could if coercion was enabled using `CoercionConfig`); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot coerce empty String ("") to `com.zwnl.model.company.enums.CompanyStatus` value (but could if coercion was enabled using `CoercionConfig`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 16] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["comstatus"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.zwnl.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot coerce empty String ("") to `com.zwnl.model.company.enums.CompanyStatus` value (but could if coercion was enabled using `CoercionConfig`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 16] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["comstatus"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadCoercion(DeserializationContext.java:1806) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._checkCoercionFail(StdDeserializer.java:1477) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer._deserializeAltString(EnumDeserializer.java:305) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer._fromString(EnumDeserializer.java:230) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer.deserialize(EnumDeserializer.java:198) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:391) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380) ~[spring-web-5.3.22.jar:5.3.22]
+	... 54 common frames omitted
+20:55:22.250-[DESKTOP-44TL0F9][sys]--ERROR 9296 --- [nio-9093-exec-1] c.z.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /jobs -> 
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 15, column: 11] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["size"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.zwnl.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 15, column: 11] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["size"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdNumberException(DeserializationContext.java:2003) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdNumberValue(DeserializationContext.java:1264) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer._fromInteger(EnumDeserializer.java:270) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer.deserialize(EnumDeserializer.java:210) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:391) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380) ~[spring-web-5.3.22.jar:5.3.22]
+	... 54 common frames omitted
+20:55:30.363-[DESKTOP-44TL0F9][sys]--ERROR 9296 --- [nio-9093-exec-7] c.z.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /jobs -> 
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 15, column: 11] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["size"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.zwnl.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.zwnl.model.company.enums.CompanySize` from number 5: index value outside legal index range [0..4]
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 15, column: 11] (through reference chain: com.zwnl.model.company.dtos.JobsDTO["size"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdNumberException(DeserializationContext.java:2003) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdNumberValue(DeserializationContext.java:1264) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer._fromInteger(EnumDeserializer.java:270) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.EnumDeserializer.deserialize(EnumDeserializer.java:210) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:391) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380) ~[spring-web-5.3.22.jar:5.3.22]
+	... 54 common frames omitted
+20:56:18.910-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-8] c.z.company.controller.JobsController    : 保存职位信息：JobsDTO(jobId=null, title=太费劲, description=投影光刻机, requirements=天即可, location=广州, minSalary=0, maxSalary=0, salary=34, companyId=1, userId=null, name=发帖, industry=反应快, size=SIZE_1001_PLUS, address=广州, image=null, contactName=null, contactEmail=null, contactPhone=null, cdescription=就给大家, comstatus=UN_FINANCED, education=运动, skills=国家的丰台警方，官方插件, createdTime=null)
+20:56:18.942-[DESKTOP-44TL0F9][sys]--ERROR 9296 --- [nio-9093-exec-8] c.z.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /jobs -> 
+java.lang.NullPointerException: Cannot invoke "com.zwnl.model.user.pos.Users.getUserId()" because "user" is null
+	at com.zwnl.company.service.impl.JobsServiceImpl.saveJob(JobsServiceImpl.java:54) ~[classes/:na]
+	at com.zwnl.company.service.impl.JobsServiceImpl$$FastClassBySpringCGLIB$$5e9e59e1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
+	at com.zwnl.company.service.impl.JobsServiceImpl$$EnhancerBySpringCGLIB$$523ea731.saveJob(<generated>) ~[classes/:na]
+	at com.zwnl.company.controller.JobsController.saveJob(JobsController.java:46) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.zwnl.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+20:58:48.598-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-2] c.z.company.controller.JobsController    : 保存职位信息：JobsDTO(jobId=null, title=太费劲, description=投影光刻机, requirements=天即可, location=广州, minSalary=0, maxSalary=0, salary=34, companyId=1, userId=null, name=发帖, industry=反应快, size=SIZE_1001_PLUS, address=广州, image=null, contactName=null, contactEmail=null, contactPhone=null, cdescription=就给大家, comstatus=UN_FINANCED, education=运动, skills=国家的丰台警方，官方插件, createdTime=null)
+20:58:48.699-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20:58:49.071-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+20:58:49.080-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.zwnl.company.mapper.JobsMapper.insert  : ==>  Preparing: INSERT INTO jobs ( title, description, requirements, location, min_salary, max_salary, salary, education, company_id, skills ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+20:58:49.113-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.zwnl.company.mapper.JobsMapper.insert  : ==> Parameters: 太费劲(String), 投影光刻机(String), 天即可(String), 广州(String), 0(BigDecimal), 0(BigDecimal), 34(String), 运动(String), 1(Integer), 国家的丰台警方，官方插件(String)
+20:58:49.134-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.zwnl.company.mapper.JobsMapper.insert  : <==    Updates: 1
+20:58:49.151-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.z.c.mapper.CompaniesMapper.selectById  : ==>  Preparing: SELECT company_id,user_id,name,comstatus,industry,size,address,contact_name,contact_email,contact_phone,cdescription,created_time,updated_time,is_online,image FROM companies WHERE company_id=?
+20:58:49.152-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.z.c.mapper.CompaniesMapper.selectById  : ==> Parameters: 1(Integer)
+20:58:49.178-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.z.c.mapper.CompaniesMapper.selectById  : <==      Total: 1
+20:58:49.184-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [nio-9093-exec-2] c.z.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：jobs.topic， RoutingKey：jobs.new， message：JobsDTO(jobId=107, title=太费劲, description=投影光刻机, requirements=天即可, location=广州, minSalary=0, maxSalary=0, salary=34, companyId=1, userId=1, name=穿越火线, industry=gck, size=SIZE_1001_PLUS, address=dyfji, image=null, contactName=gvjxcgf, contactEmail=fgjf, contactPhone=34674585678, cdescription=fxgj, comstatus=ON_SHELF, education=运动, skills=国家的丰台警方，官方插件, createdTime=2024-10-15T15:18:13)
+20:58:49.203-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [121.37.242.119:5672]
+20:58:49.304-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [nio-9093-exec-2] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2cbc2db2:0/SimpleConnection@47f79321 [delegate=amqp://zwnl@121.37.242.119:5672/, localPort= 63007]
+20:59:47.900-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [io-9093-exec-10] c.z.company.controller.JobsController    : 保存职位信息：JobsDTO(jobId=null, title=太费劲, description=投影光刻机, requirements=天即可, location=广州, minSalary=0, maxSalary=0, salary=34, companyId=1, userId=null, name=发帖, industry=反应快, size=SIZE_1001_PLUS, address=广州, image=null, contactName=null, contactEmail=null, contactPhone=null, cdescription=就给大家, comstatus=UN_FINANCED, education=运动, skills=国家的丰台警方，官方插件, createdTime=null)
+20:59:47.913-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.zwnl.company.mapper.JobsMapper.insert  : ==>  Preparing: INSERT INTO jobs ( title, description, requirements, location, min_salary, max_salary, salary, education, company_id, skills ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+20:59:47.915-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.zwnl.company.mapper.JobsMapper.insert  : ==> Parameters: 太费劲(String), 投影光刻机(String), 天即可(String), 广州(String), 0(BigDecimal), 0(BigDecimal), 34(String), 运动(String), 1(Integer), 国家的丰台警方，官方插件(String)
+20:59:47.935-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.zwnl.company.mapper.JobsMapper.insert  : <==    Updates: 1
+20:59:47.938-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.z.c.mapper.CompaniesMapper.selectById  : ==>  Preparing: SELECT company_id,user_id,name,comstatus,industry,size,address,contact_name,contact_email,contact_phone,cdescription,created_time,updated_time,is_online,image FROM companies WHERE company_id=?
+20:59:47.939-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.z.c.mapper.CompaniesMapper.selectById  : ==> Parameters: 1(Integer)
+20:59:47.947-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.z.c.mapper.CompaniesMapper.selectById  : <==      Total: 1
+20:59:47.947-[DESKTOP-44TL0F9][sys]--DEBUG 9296 --- [io-9093-exec-10] c.z.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：jobs.topic， RoutingKey：jobs.new， message：JobsDTO(jobId=108, title=太费劲, description=投影光刻机, requirements=天即可, location=广州, minSalary=0, maxSalary=0, salary=34, companyId=1, userId=1, name=穿越火线, industry=gck, size=SIZE_1001_PLUS, address=dyfji, image=null, contactName=gvjxcgf, contactEmail=fgjf, contactPhone=34674585678, cdescription=fxgj, comstatus=ON_SHELF, education=运动, skills=国家的丰台警方，官方插件, createdTime=2024-10-15T15:18:13)
+21:56:02.752-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:56:02.752-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:56:02.774-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [      Thread-17] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:56:02.783-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:56:03.041-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+21:56:03.053-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='company-service', registryValue='http://192.168.1.119:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+21:56:03.053-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destory.
+21:56:03.053-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+21:56:03.053-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+21:56:03.054-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destory.
+21:56:03.054-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+21:56:03.055-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+21:56:03.055-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@company-service:121.37.242.119:9093 from beat map.
+21:56:03.056-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@company-service with instance: Instance{instanceId='null', ip='121.37.242.119', port=9093, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+21:56:03.065-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+21:56:03.065-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:56:05.146-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:56:05.147-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:56:05.625-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@company-service@@DEFAULT -> [{"instanceId":"121.37.242.119#9093#DEFAULT#DEFAULT_GROUP@@company-service","ip":"121.37.242.119","port":9093,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@company-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+21:56:05.628-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@company-service@@DEFAULT -> []
+21:56:05.630-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:56:08.670-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:56:08.671-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:56:08.671-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:56:08.673-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:56:08.673-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:56:08.674-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:56:08.674-[DESKTOP-44TL0F9][sys]-- WARN 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:56:08.675-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:56:08.675-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:56:08.675-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:56:08.723-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+21:56:18.742-[DESKTOP-44TL0F9][sys]-- INFO 9296 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

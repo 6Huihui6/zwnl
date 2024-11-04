@@ -1,66 +1,52 @@
-15:16:47.902-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.zwnl.user.UserApplication            : The following 1 profile is active: "dev"
-15:16:48.659-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-15:16:48.663-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-15:16:48.690-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-15:16:48.969-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=75bc9bd7-2c04-3d5f-8c23-5ee25d1fc5ed
-15:16:49.620-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-15:16:49.622-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-15:16:49.622-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:16:49.622-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:16:49.627-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-15:16:49.641-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-15:16:49.641-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-15:16:49.785-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-15:16:49.785-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
-15:16:51.746-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-15:16:51.829-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-15:16:51.830-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-15:16:51.831-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-15:16:51.939-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9091#DEFAULT#DEFAULT_GROUP@@user-service","ip":"121.37.194.170","port":9091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-15:16:51.944-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"121.37.194.170#9091#DEFAULT#DEFAULT_GROUP@@user-service","ip":"121.37.194.170","port":9091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
-15:16:51.969-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
-15:16:51.974-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9091, ip='121.37.194.170', weight=1.0, serviceName='DEFAULT_GROUP@@user-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-15:16:51.976-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-15:16:51.985-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 121.37.194.170:9091 register finished
-15:16:52.399-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.zwnl.user.UserApplication            : Started UserApplication in 6.121 seconds (JVM running for 7.731)
-15:16:52.403-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] user-service.yaml+DEFAULT_GROUP
-15:16:52.404-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=user-service.yaml, group=DEFAULT_GROUP, cnt=1
-15:16:52.404-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
-15:16:52.404-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] user-service-dev.yaml+DEFAULT_GROUP
-15:16:52.404-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=user-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
-15:16:52.404-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
-15:16:52.405-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.194.170_8848] [subscribe] user-service+DEFAULT_GROUP
-15:16:52.405-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.194.170_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
-15:16:52.405-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service, group=DEFAULT_GROUP
-15:16:52.406-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [           main] com.zwnl.user.UserApplication            : --/
+17:20:48.526-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.zwnl.user.UserApplication            : The following 1 profile is active: "dev"
+17:20:49.269-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+17:20:49.271-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:20:49.296-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+17:20:49.556-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df07ec7c-a96c-3ff8-9fa3-c6464f65d7f2
+17:20:50.098-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+17:20:50.099-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+17:20:50.099-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+17:20:50.099-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17:20:50.122-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+17:20:50.132-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:20:50.133-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:20:50.285-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:20:50.286-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1738 ms
+17:20:53.147-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+17:20:53.225-[DESKTOP-44TL0F9][sys]-- WARN 27172 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+17:20:53.311-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:20:53.311-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+17:20:53.312-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:20:53.460-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+17:20:53.464-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9091, ip='121.37.242.119', weight=1.0, serviceName='DEFAULT_GROUP@@user-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+17:20:53.466-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a registering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='121.37.242.119', port=9091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+17:20:53.487-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 121.37.242.119:9091 register finished
+17:20:54.476-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"121.37.242.119#9091#DEFAULT#DEFAULT_GROUP@@user-service","ip":"121.37.242.119","port":9091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:20:54.480-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"121.37.242.119#9091#DEFAULT#DEFAULT_GROUP@@user-service","ip":"121.37.242.119","port":9091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:20:54.702-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+17:20:54.908-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.zwnl.user.UserApplication            : Started UserApplication in 9.894 seconds (JVM running for 10.561)
+17:20:54.912-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] user-service.yaml+DEFAULT_GROUP
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=user-service.yaml, group=DEFAULT_GROUP, cnt=1
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] user-service-dev.yaml+DEFAULT_GROUP
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=user-service-dev.yaml, group=DEFAULT_GROUP, cnt=1
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] user-service+DEFAULT_GROUP
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+17:20:54.914-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=user-service, group=DEFAULT_GROUP
+17:20:54.915-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [           main] com.zwnl.user.UserApplication            : --/
 ---------------------------------------------------------------------------------------
 	Application 'user-service' is running! Access URLs:
 	Local: 		http://localhost:9091
-	External: 	http://10.64.37.5:9091
+	External: 	http://192.168.1.119:9091
 	Profile(s): 	[dev]
 ---------------------------------------------------------------------------------------
-15:19:29.780-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-15:19:29.780-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-15:19:29.782-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-15:26:37.541-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-15:26:37.541-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-15:26:37.542-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-15:26:37.543-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-15:26:37.591-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-15:26:37.592-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:121.37.194.170:9091 from beat map.
-15:26:37.592-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='121.37.194.170', port=9091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-15:26:37.640-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-15:26:37.641-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-15:26:40.384-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-15:26:40.385-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-15:26:43.396-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-15:26:46.417-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-15:26:46.418-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-15:26:46.418-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-15:26:46.418-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-15:26:46.419-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-15:26:46.419-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
-15:26:46.419-[DESKTOP-44TL0F9][sys]-- WARN 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
-15:26:46.420-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
-15:26:46.420-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
-15:26:46.420-[DESKTOP-44TL0F9][sys]-- INFO 19216 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+17:23:59.470-[DESKTOP-44TL0F9][sys]-- WARN 27172 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+17:23:59.470-[DESKTOP-44TL0F9][sys]-- WARN 27172 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+17:23:59.471-[DESKTOP-44TL0F9][sys]-- WARN 27172 --- [      Thread-12] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+17:23:59.471-[DESKTOP-44TL0F9][sys]-- WARN 27172 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+17:23:59.509-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+17:23:59.510-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@user-service:121.37.242.119:9091 from beat map.
+17:23:59.510-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] eaa454cf-2243-4e4f-8376-ac197696358a deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='121.37.242.119', port=9091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+17:23:59.520-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+17:23:59.521-[DESKTOP-44TL0F9][sys]-- INFO 27172 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
