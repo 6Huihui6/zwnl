@@ -3,9 +3,12 @@ spring:
     nacos:
       server-addr: 121.37.242.119:8848 # nacos注册中心
       discovery:
+        server-addr: 121.37.242.119:8848 # nacos注册中心
         namespace: eaa454cf-2243-4e4f-8376-ac197696358a
         group: DEFAULT_GROUP
         ip: 121.37.242.119
+        enabled: true
+
 zwnl:
   wechat:
     appid: wxdb4c2f3ec8ca382a

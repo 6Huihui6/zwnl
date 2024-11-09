@@ -49,7 +49,7 @@ spring:
           uri: lb://message-service
           predicates:
             - Path=/sms/**
-        - id: us
+        - id: user-service
           uri: lb://user-service
           predicates:
             - Path=/us/**
@@ -110,6 +110,7 @@ spring:
       discovery:
         locator:
           enabled: true # 开启服务发现功能
+          lowerCaseServiceId: true # 开启服务发现的小写模式
 #          lowerCaseServiceId: true # 开启服务发现的小写模式
 
 
