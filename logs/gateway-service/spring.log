@@ -58,3 +58,17 @@
 13:44:53.434-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
 13:44:53.434-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
 13:44:55.755-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+13:44:55.755-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+13:44:58.234-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"121.37.242.119#9091#DEFAULT#DEFAULT_GROUP@@user-service","ip":"121.37.242.119","port":9091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+13:44:58.237-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@user-service -> []
+13:44:58.779-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+13:45:01.815-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+13:45:01.816-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+13:45:01.816-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+13:45:01.816-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+13:45:01.816-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+13:45:01.816-[DESKTOP-44TL0F9][sys]-- WARN 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+13:45:01.817-[DESKTOP-44TL0F9][sys]-- WARN 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+13:45:01.817-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+13:45:01.817-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+13:45:01.817-[DESKTOP-44TL0F9][sys]-- INFO 20344 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
