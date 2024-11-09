@@ -2,6 +2,8 @@ package com.zwnl.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.model.user.dtos.PhoneLoginDTO;
 import com.zwnl.model.user.dtos.UserDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.Users;
@@ -41,4 +43,11 @@ public interface IUsersService extends IService<Users> {
      * @param userDTO
      */
     void updateUser(UserDTO userDTO);
+
+    /**
+     * 手机号登录
+     * @param phoneLoginDTO
+     * @return
+     */
+    ResponseResult phoneLogin(PhoneLoginDTO phoneLoginDTO);
 }

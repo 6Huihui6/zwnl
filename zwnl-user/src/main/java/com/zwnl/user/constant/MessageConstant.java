@@ -19,4 +19,5 @@ public class MessageConstant {
 
     public static final String PARAM_ERROR = "参数错误";
 
+    public static final String LOGIN_SUCCESS = "登录成功";
 }

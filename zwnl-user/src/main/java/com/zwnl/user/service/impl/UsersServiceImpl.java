@@ -3,11 +3,14 @@ package com.zwnl.user.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.common.enums.AppHttpCodeEnum;
 import com.zwnl.common.exceptions.LoginFailedException;
 import com.zwnl.common.utils.AssertUtils;
 import com.zwnl.common.utils.BeanUtils;
 import com.zwnl.common.utils.HttpClientUtil;
 import com.zwnl.common.utils.StringUtils;
+import com.zwnl.model.user.dtos.PhoneLoginDTO;
 import com.zwnl.model.user.dtos.UserDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.UserDetail;
@@ -138,6 +141,29 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         UserDetail detail = BeanUtils.toBean(userDTO, UserDetail.class);
         detail.setType(null);
         detailService.updateById(detail);
+    }
+
+    /**
+     * 手机号登录
+     *
+     * @param phoneLoginDTO
+     * @return
+     */
+    @Override
+    public ResponseResult phoneLogin(PhoneLoginDTO phoneLoginDTO) {
+        // 1.根据手机号查询用户
+        Users user = this.lambdaQuery().eq(Users::getPhone, phoneLoginDTO.getPhone()).one();
+        if (user == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.DATA_NOT_EXIST, MessageConstant.ACCOUNT_NOT_FOUND);
+        }
+        // 2.校验密码
+        if (!user.getPassword().equals(phoneLoginDTO.getPassword())) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.LOGIN_PASSWORD_ERROR, MessageConstant.PASSWORD_ERROR);
+        }
+        // 3.登录成功，设置用户信息到ThreadLocal
+        AppThreadLocalUtil.setUser(user);
+        // 4.返回登录成功结果
+        return ResponseResult.okResult(200, MessageConstant.LOGIN_SUCCESS);
     }
 
     /**

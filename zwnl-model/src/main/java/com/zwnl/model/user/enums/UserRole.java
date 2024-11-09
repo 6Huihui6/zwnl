@@ -8,8 +8,8 @@ import lombok.Getter;
 
 @Getter
 public enum UserRole {
-    FROZEN(0, "禁止使用"),
-    NORMAL(1, "已激活"),
+    FROZEN(0, "employer"),
+    NORMAL(1, "employee"),
     ;
     @EnumValue
     int value;

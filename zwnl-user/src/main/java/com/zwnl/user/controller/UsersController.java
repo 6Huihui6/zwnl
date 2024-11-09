@@ -1,11 +1,8 @@
 package com.zwnl.user.controller;
 
-//
-//import com.zwnl.user.service.IUsersService;
-
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.common.utils.AppJwtUtil;
-import com.zwnl.model.user.dtos.UserDTO;
+import com.zwnl.model.user.dtos.PhoneLoginDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.Users;
 import com.zwnl.model.user.vos.UserDetailVO;
@@ -19,8 +16,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-
 /**
  * <p>
  * 用户表 前端控制器
@@ -31,7 +26,7 @@ import javax.validation.Valid;
  */
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/users")
+//@RequestMapping("/users")
 @Api(tags = "用户管理接口")
 @Slf4j
 public class UsersController {
@@ -40,7 +35,7 @@ public class UsersController {
     private  final IUserDetailService userDetailService;
 
 
-@PostMapping("/login")
+@PostMapping("/login/wx")
 @ApiOperation("微信登录")
 public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
     log.info("微信用户登录：{}",userLoginDTO.getCode());
@@ -60,6 +55,19 @@ public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
             .build();
     return ResponseResult.okResult(userLoginVO);
 }
+
+@PostMapping("/login/phone")
+@ApiOperation("手机号登录")
+public ResponseResult phoneLogin(@RequestBody PhoneLoginDTO phoneLoginDTO){
+    log.info("手机号用户登录：{}",phoneLoginDTO.getPhone());
+    //手机号登录
+    return  usersService.phoneLogin(phoneLoginDTO);
+
+}
+
+
+
+
 
 
 
