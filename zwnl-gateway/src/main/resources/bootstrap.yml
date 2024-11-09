@@ -35,12 +35,11 @@ spring:
           uri: lb://media-service
           predicates:
             - Path=/ms/**
-        - id: as
-          uri: lb://auth-service
-          predicates:
-            - Path=/as/**
-          filters:
-            - PreserveHostHeader
+#        - id: as
+#          uri: lb://auth-service
+#          predicates:
+#            - Path=/as/**
+
         - id: ds
           uri: lb://data-service
           predicates:
@@ -53,6 +52,8 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/us/**
+          filters:
+            - PreserveHostHeader
         - id: cs
           uri: lb://course-service
           predicates:
