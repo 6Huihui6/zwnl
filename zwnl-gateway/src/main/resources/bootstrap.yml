@@ -1,4 +1,5 @@
 server:
+  forward-headers-strategy: framework # 转发请求头策略
   port: 10000 #端口
   tomcat:
     uri-encoding: UTF-8   #服务编码
@@ -110,27 +111,7 @@ spring:
         locator:
           enabled: true # 开启服务发现功能
 #          lowerCaseServiceId: true # 开启服务发现的小写模式
-#      loadbalancer:
-#        retry:
-#          enabled: true # 开启重试功能
-#          retries: 3 # 重试次数
-#          backoff:
-#            multiplier: 1.5 # 重试间隔倍数
-#            max-interval: 10000 # 最大重试间隔时间
-#            initial-interval: 1000 # 初始重试间隔时间
-#        filter:
-#          use-404-error-filter: true # 开启404错误过滤器
-#          use-500-error-filter: true # 开启500错误过滤器
-#      httpclient:
-#        pool:
-#          max-connections: 1000 # 最大连接数
-#          max-pending-connections: 100 # 最大等待连接数
-#          max-idle-time: 30000 # 最大空闲时间
-#          keep-alive: true # 开启长连接
-#          time-to-live: 180000 # 连接存活时间
-#          time-to-live-unit: MILLISECONDS # 连接存活时间单位
-#      server:
-#        forward-headers-strategy: framework # 转发请求头策略
+
 
 logging:
   level:
