@@ -5,7 +5,10 @@ spring:
       discovery:
         namespace: a0d35c99-931b-4959-b25c-65d69043123c
         group: DEFAULT_GROUP
-        ip: 121.37.242.119
+        ip: localhost
+        port: 10000
+#        secure: false
+#        register-enabled: true
 zwnl:
   wechat:
     appid: wxdb4c2f3ec8ca382a

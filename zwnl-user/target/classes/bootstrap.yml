@@ -44,5 +44,8 @@ zwnl:
   jdbc:
     database: zwnl_user
 
-
+logging:
+  level:
+    com.zwnl: debug
+    org.springframework: debug
 
