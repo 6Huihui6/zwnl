@@ -106,9 +106,9 @@ spring:
 #            allowedOrigins: "*" # 允许哪些网站跨域请求
             allowCredentials: true # 是否允许携带cookie
             maxAge: 360000 # 这次跨域检测的有效期
-#      discovery:
-#        locator:
-#          enabled: true # 开启服务发现功能
+      discovery:
+        locator:
+          enabled: true # 开启服务发现功能
 #          lowerCaseServiceId: true # 开启服务发现的小写模式
 #      loadbalancer:
 #        retry:
