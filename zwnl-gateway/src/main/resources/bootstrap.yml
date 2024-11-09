@@ -135,5 +135,7 @@ spring:
 logging:
   level:
     com.zwnl: debug
+    org.springframework.cloud.gateway: TRACE
+    reactor.netty.http.client: DEBUG
 
 
