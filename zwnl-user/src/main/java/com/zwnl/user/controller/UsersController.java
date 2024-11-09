@@ -26,10 +26,9 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequiredArgsConstructor
-//@RequestMapping("/users")
+@RequestMapping("/users")
 @Api(tags = "用户管理接口")
 @Slf4j
-@CrossOrigin
 public class UsersController {
 
     private  final IUsersService usersService;
