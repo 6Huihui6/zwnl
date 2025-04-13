@@ -23,6 +23,7 @@
         <module>zwnl-company</module>
         <module>zwnl-search</module>
         <module>zwnl-basic</module>
+        <module>zwnl-auth</module>
     </modules>
 
 

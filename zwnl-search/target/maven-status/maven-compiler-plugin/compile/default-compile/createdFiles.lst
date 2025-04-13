@@ -1,1 +1,17 @@
+com\zwnl\search\service\impl\AssociateWordsServiceImpl.class
+com\zwnl\search\service\IAssociateWordsService.class
+com\zwnl\search\service\ISearchService.class
+com\zwnl\search\config\PassJavaElasticsearchConfig.class
 com\zwnl\search\SearchApplication.class
+com\zwnl\search\listener\JobsNewListener.class
+com\zwnl\search\service\IUserSearchService.class
+com\zwnl\search\config\WebMvcConfig.class
+com\zwnl\search\controller\AssociateWordsController.class
+com\zwnl\search\service\impl\SearchServiceImpl.class
+com\zwnl\search\service\impl\UserSearchServiceImpl.class
+com\zwnl\search\controller\UserSearchController.class
+com\zwnl\search\controller\JobsSearchControllerr.class
+com\zwnl\search\service\IJobsSearchService.class
+com\zwnl\search\service\impl\JobsSearchServiceImpl.class
+com\zwnl\search\listener\JobsChangeListener.class
+com\zwnl\search\interceptor\AppTokenInterceptor.class

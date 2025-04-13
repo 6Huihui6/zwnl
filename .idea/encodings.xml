@@ -8,6 +8,14 @@
     <file url="file://$PROJECT_DIR$/zwnl-admin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zwnl-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zwnl-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-gateway-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-gateway-sdk/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-resource-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-resource-sdk/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zwnl-auth/zwnl-auth-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zwnl-basic/minio-faststart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zwnl-basic/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zwnl-basic/src/main/resources" charset="UTF-8" />

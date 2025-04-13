@@ -2,12 +2,16 @@ package com.zwnl.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import com.zwnl.common.domain.dto.LoginUserDTO;
 import com.zwnl.common.domain.dto.ResponseResult;
+import com.zwnl.model.user.dtos.LoginFormDTO;
 import com.zwnl.model.user.dtos.PhoneLoginDTO;
 import com.zwnl.model.user.dtos.UserDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.Users;
 import com.zwnl.model.user.vos.UserDetailVO;
+
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -50,4 +54,12 @@ public interface IUsersService extends IService<Users> {
      * @return
      */
     ResponseResult phoneLogin(PhoneLoginDTO phoneLoginDTO);
+
+    /**
+     * 登录
+     * @param loginDTO
+     * @param isStaff
+     * @return
+     */
+    LoginUserDTO queryUserDetail(@Valid LoginFormDTO loginDTO, boolean isStaff);
 }

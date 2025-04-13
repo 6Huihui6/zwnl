@@ -8,8 +8,8 @@ import lombok.Getter;
 
 @Getter
 public enum UserRole {
-    FROZEN(0, "employer"),
-    NORMAL(1, "employee"),
+    EMPLOYEE(1, "employee"),
+    EMPLOYER(0, "employer"),
     ;
     @EnumValue
     int value;
@@ -22,10 +22,10 @@ public enum UserRole {
 
     public static UserRole of(int value) {
         if (value == 0) {
-            return FROZEN;
+            return EMPLOYER;
         }
         if (value == 1) {
-            return NORMAL;
+            return EMPLOYEE;
         }
         throw new BadRequestException(ErrorInfo.Msg.INVALID_USER_STATUS);
     }

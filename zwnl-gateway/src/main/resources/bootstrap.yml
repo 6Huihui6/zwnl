@@ -27,19 +27,18 @@ spring:
             refresh: false
           - data-id: shared-xxljob.yaml # 共享mq配置
             refresh: false
-
-
     gateway:
       routes:
         - id: ms
           uri: lb://media-service
           predicates:
             - Path=/ms/**
-#        - id: as
-#          uri: lb://auth-service
-#          predicates:
-#            - Path=/as/**
-
+        - id: as
+          uri: lb://auth-service
+          predicates:
+            - Path=/as/**
+          filters:
+            - PreserveHostHeader
         - id: ds
           uri: lb://data-service
           predicates:
@@ -48,13 +47,13 @@ spring:
           uri: lb://message-service
           predicates:
             - Path=/sms/**
-        - id: user-service
+        - id: us
           uri: lb://user-service
 #          uri: http://localhost:9091
           predicates:
             - Path=/us/**
-          filters:
-            - PreserveHostHeader
+#          filters:
+#            - PreserveHostHeader
         - id: cs
           uri: lb://course-service
           predicates:
@@ -119,7 +118,7 @@ spring:
 logging:
   level:
     com.zwnl: debug
-    org.springframework.cloud.gateway: TRACE
-    reactor.netty.http.client: DEBUG
+#    org.springframework.cloud.gateway: TRACE
+#    reactor.netty.http.client: DEBUG
 
 

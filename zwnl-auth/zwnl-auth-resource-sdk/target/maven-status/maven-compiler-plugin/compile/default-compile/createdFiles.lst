@@ -1,0 +1,7 @@
+com\zwnl\authsdk\resource\interceptors\UserInfoInterceptor.class
+com\zwnl\authsdk\resource\config\ResourceInterceptorConfiguration.class
+com\zwnl\authsdk\resource\config\FeignRelayUserAutoConfiguration.class
+com\zwnl\authsdk\resource\interceptors\LoginAuthInterceptor.class
+com\zwnl\authsdk\resource\config\ResourceAuthProperties.class
+com\zwnl\App.class
+com\zwnl\authsdk\resource\interceptors\FeignRelayUserInterceptor.class

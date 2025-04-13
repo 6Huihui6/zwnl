@@ -60,6 +60,7 @@ com\zwnl\common\exceptions\CommonException.class
 com\zwnl\common\utils\AspectUtils.class
 com\zwnl\common\autoconfigure\mvc\aspects\CheckerAspect.class
 com\zwnl\common\exceptions\BadRequestException.class
+com\zwnl\common\domain\dto\PageDTO.class
 com\zwnl\common\domain\dto\PageRequestDto.class
 com\zwnl\common\autoconfigure\redisson\enums\LockStrategy$2.class
 com\zwnl\common\enums\TaskTypeEnum.class
@@ -90,6 +91,7 @@ com\zwnl\common\validate\EnumValidator.class
 com\zwnl\common\autoconfigure\mvc\advice\CommonExceptionAdvice.class
 com\zwnl\common\autoconfigure\mq\BasicIdMessageProcessor.class
 com\zwnl\common\redis\CacheService.class
+com\zwnl\common\json\JacksonObjectMapper.class
 com\zwnl\common\autoconfigure\mvc\MvcConfig.class
 com\zwnl\common\domain\query\PageQuery.class
 com\zwnl\common\autoconfigure\redisson\enums\LockType$1.class

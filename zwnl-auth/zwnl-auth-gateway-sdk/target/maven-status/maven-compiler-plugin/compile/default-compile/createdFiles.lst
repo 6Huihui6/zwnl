@@ -1,0 +1,4 @@
+com\zwnl\authsdk\gateway\util\AuthUtil.class
+com\zwnl\authsdk\gateway\config\AuthAutoConfiguration.class
+com\zwnl\authsdk\gateway\util\JwtSignerHolder$JwkTask.class
+com\zwnl\authsdk\gateway\util\JwtSignerHolder.class

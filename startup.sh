@@ -4,7 +4,7 @@ BASE_PATH='/var/lib/jenkins/workspace/zwnl-dev-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
-JAVA_OPTS="-Xms300m -Xmx300m"
+JAVA_OPTS="-Xms64m -Xmx64m"
 PORT=9090
 DEBUG_PORT=0
 while getopts "c:n:d:p:o:a:" opt; do

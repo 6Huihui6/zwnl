@@ -29,7 +29,7 @@
       "type": "java.lang.Boolean",
       "description": "是否开启swagger功能，默认false",
       "sourceType": "com.zwnl.common.autoconfigure.swagger.SwaggerConfigProperties",
-      "defaultValue": false
+      "defaultValue": true
     },
     {
       "name": "zwnl.swagger.enableResponseWrap",

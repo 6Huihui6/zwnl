@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zwnl.api.config.RequestIdRelayConfiguration, \
+  com.zwnl.api.config.RoleCacheConfig, \
+  com.zwnl.api.config.FallbackConfig

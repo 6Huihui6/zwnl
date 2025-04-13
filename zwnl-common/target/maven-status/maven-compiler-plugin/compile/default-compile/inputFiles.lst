@@ -6,6 +6,7 @@ E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\validate\annotations\E
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\validate\annotations\ParamChecker.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\ArrayUtils.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\CookieBuilder.java
+E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\json\JacksonObjectMapper.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\autoconfigure\xxljob\XxlJobConfig.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\autoconfigure\mvc\advice\WrapperResponseBodyAdvice.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\ObjectUtils.java
@@ -84,6 +85,7 @@ E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\domain\dto\BaseDTO.jav
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\RandomUtils.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\RequestIdUtil.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\CollUtils.java
+E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\domain\dto\PageDTO.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\autoconfigure\redisson\aspect\LockAspect.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\HttpClientUtil.java
 E:\project\zwnl\zwnl-common\src\main\java\com\zwnl\common\utils\IoUtils.java

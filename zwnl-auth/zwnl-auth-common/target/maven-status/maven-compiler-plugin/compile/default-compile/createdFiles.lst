@@ -1,0 +1,5 @@
+com\zwnl\auth\common\domain\PrivilegeRoleDTO.class
+com\zwnl\auth\common\constants\AuthErrorInfo.class
+com\zwnl\auth\common\constants\JwtConstants.class
+com\zwnl\auth\common\constants\AuthErrorInfo$Code.class
+com\zwnl\auth\common\constants\AuthErrorInfo$Msg.class

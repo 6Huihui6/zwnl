@@ -40,7 +40,18 @@ zwnl:
     contact-url: https://wlmtsys.com
     contact-email: 3103733088@qq.com
     version: v1.0
-
+  auth:
+    resource:
+      enable: true
+      excludeLoginPaths:
+        - GET:/doc.html
+        - /students/register
+        - /users/detail/{isStaff}
+        - /users/list
+        - GET:/users/{id}
+        - /users/{id}/type
+        - /users/ids
+        - /users/me
   jdbc:
     database: zwnl_user
 

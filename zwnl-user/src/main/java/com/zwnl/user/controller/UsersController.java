@@ -1,7 +1,9 @@
 package com.zwnl.user.controller;
 
+import com.zwnl.common.domain.dto.LoginUserDTO;
 import com.zwnl.common.domain.dto.ResponseResult;
 import com.zwnl.common.utils.AppJwtUtil;
+import com.zwnl.model.user.dtos.LoginFormDTO;
 import com.zwnl.model.user.dtos.PhoneLoginDTO;
 import com.zwnl.model.user.dtos.UserLoginDTO;
 import com.zwnl.model.user.pos.Users;
@@ -15,6 +17,9 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
+
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -58,14 +63,25 @@ public ResponseResult login(@RequestBody UserLoginDTO userLoginDTO){
 
 @PostMapping("/login/phone")
 @ApiOperation("手机号登录")
-public ResponseResult phoneLogin(@RequestBody PhoneLoginDTO phoneLoginDTO){
+public ResponseResult queryUserDetail(@RequestBody PhoneLoginDTO phoneLoginDTO){
     log.info("手机号用户登录：{}",phoneLoginDTO.getPhone());
     //手机号登录
     return  usersService.phoneLogin(phoneLoginDTO);
 
 }
 
-
+    /**
+     * 登录结构
+     * @param loginDTO 登录表单
+     * @param isStaff 是否是后台登录
+     * @return 登录用户信息
+     */
+    @ApiIgnore
+    @PostMapping("/detail/{isStaff}")
+    public LoginUserDTO queryUserDetail(
+            @Valid @RequestBody LoginFormDTO loginDTO, @PathVariable("isStaff") boolean isStaff) {
+        return usersService.queryUserDetail(loginDTO, isStaff);
+    }
 
 
 

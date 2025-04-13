@@ -1,2 +1,3 @@
+com\zwnl\utils\Jwt\JwtUtil.class
 com\zwnl\App.class
 com\zwnl\utils\thread\AppThreadLocalUtil.class

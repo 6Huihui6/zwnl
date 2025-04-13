@@ -8,7 +8,6 @@
     </parent>
 
     <artifactId>zwnl-model</artifactId>
-    <packaging>jar</packaging>
 
     <name>zwnl-model</name>
     <url>http://maven.apache.org</url>
@@ -51,6 +50,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zwnl</groupId>
+            <artifactId>zwnl-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

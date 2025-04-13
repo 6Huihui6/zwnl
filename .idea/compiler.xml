@@ -9,11 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zwnl-search" />
         <module name="xxl-job-core" />
+        <module name="zwnl-auth-common" />
         <module name="zwnl-common" />
         <module name="zwnl-gateway" />
         <module name="xxl-job-executor-sample-frameless" />
+        <module name="zwnl-auth-gateway-sdk" />
+        <module name="zwnl-auth-service" />
         <module name="zwnl-company" />
         <module name="minio-faststart" />
+        <module name="zwnl-auth-resource-sdk" />
         <module name="zwnl-user" />
         <module name="zwnl-learning" />
         <module name="zwnl-resume" />
@@ -36,6 +40,11 @@
       <module name="minio-faststart" options="-parameters" />
       <module name="zwnl-admin" options="-parameters" />
       <module name="zwnl-api" options="-parameters" />
+      <module name="zwnl-auth" options="" />
+      <module name="zwnl-auth-common" options="-parameters" />
+      <module name="zwnl-auth-gateway-sdk" options="-parameters" />
+      <module name="zwnl-auth-resource-sdk" options="-parameters" />
+      <module name="zwnl-auth-service" options="-parameters" />
       <module name="zwnl-basic" options="" />
       <module name="zwnl-common" options="-parameters" />
       <module name="zwnl-company" options="-parameters" />
