@@ -81,3 +81,649 @@
 15:33:18.957-[DESKTOP-44TL0F9][sys]-- INFO 21280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
 15:33:19.495-[DESKTOP-44TL0F9][sys]-- INFO 21280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
 15:33:19.495-[DESKTOP-44TL0F9][sys]-- INFO 21280 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:55:12.267-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] com.zwnl.gateway.GatewayApplication      : The following 1 profile is active: "local"
+20:55:13.053-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+20:55:13.057-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+20:55:13.076-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+20:55:13.287-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33394d6d-2055-3061-ad9d-1f06c9ab811f
+20:55:13.471-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:55:13.474-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:55:13.475-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:55:14.923-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:55:14.943-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+20:55:14.946-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:55:14.946-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+20:55:14.947-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+20:55:15.074-[DESKTOP-44TL0F9][sys]--ERROR 23780 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+20:55:16.971-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:55:16.988-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+20:55:16.989-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+20:55:16.989-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+20:55:16.989-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+20:55:16.989-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+20:55:16.990-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+20:55:16.990-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+20:55:16.990-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+20:55:16.990-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+20:55:16.991-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+20:55:16.991-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+20:55:16.991-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+20:55:16.991-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+20:55:16.991-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+20:55:17.597-[DESKTOP-44TL0F9][sys]-- WARN 23780 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:55:17.841-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+20:55:19.053-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:55:20.271-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:55:20.278-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+20:55:20.279-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@gateway-service with instance: Instance{instanceId='null', ip='localhost', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+20:55:20.297-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service localhost:10000 register finished
+20:55:20.342-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [oundedElastic-1] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-service -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+20:55:20.346-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [oundedElastic-1] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-service -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+20:55:20.403-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] com.zwnl.gateway.GatewayApplication      : Started GatewayApplication in 11.796 seconds (JVM running for 12.542)
+20:55:20.405-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service+DEFAULT_GROUP
+20:55:20.407-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service, group=DEFAULT_GROUP
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service.yaml, group=DEFAULT_GROUP
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service-local.yaml+DEFAULT_GROUP
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+20:55:20.408-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service-local.yaml, group=DEFAULT_GROUP
+20:55:20.409-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [           main] com.zwnl.gateway.GatewayApplication      : --/
+---------------------------------------------------------------------------------------
+	Application 'gateway-service' is running! Access URLs:
+	Local: 		http://localhost:10000
+	External: 	http://192.168.1.119:10000
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+20:55:20.739-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-service@@DEFAULT -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+20:55:20.741-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-service@@DEFAULT -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+20:55:25.086-[DESKTOP-44TL0F9][sys]-- INFO 23780 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+20:55:25.087-[DESKTOP-44TL0F9][sys]--ERROR 23780 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:43:18.283-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] com.zwnl.gateway.GatewayApplication      : The following 1 profile is active: "local"
+21:43:18.976-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:43:18.977-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:43:18.994-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+21:43:19.186-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33394d6d-2055-3061-ad9d-1f06c9ab811f
+21:43:19.387-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:43:19.388-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:43:19.390-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:43:21.207-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:43:21.224-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:43:21.228-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:43:21.229-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:43:21.229-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:43:21.376-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:43:23.233-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+21:43:23.252-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+21:43:23.253-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+21:43:23.253-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+21:43:23.253-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:43:23.727-[DESKTOP-44TL0F9][sys]-- WARN 26868 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:43:23.932-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 10000
+21:43:25.120-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:43:26.306-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:43:26.319-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=10000, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@gateway-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+21:43:26.320-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@gateway-service with instance: Instance{instanceId='null', ip='localhost', port=10000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+21:43:26.336-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP gateway-service localhost:10000 register finished
+21:43:26.377-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [oundedElastic-2] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-service -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+21:43:26.380-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [oundedElastic-2] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-service -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+21:43:26.463-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] com.zwnl.gateway.GatewayApplication      : Started GatewayApplication in 11.874 seconds (JVM running for 12.46)
+21:43:26.467-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service+DEFAULT_GROUP
+21:43:26.468-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service, group=DEFAULT_GROUP, cnt=1
+21:43:26.469-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service, group=DEFAULT_GROUP
+21:43:26.469-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service.yaml+DEFAULT_GROUP
+21:43:26.469-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:43:26.469-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service.yaml, group=DEFAULT_GROUP
+21:43:26.470-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] gateway-service-local.yaml+DEFAULT_GROUP
+21:43:26.470-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=gateway-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:43:26.470-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=gateway-service-local.yaml, group=DEFAULT_GROUP
+21:43:26.471-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [           main] com.zwnl.gateway.GatewayApplication      : --/
+---------------------------------------------------------------------------------------
+	Application 'gateway-service' is running! Access URLs:
+	Local: 		http://localhost:10000
+	External: 	http://192.168.1.119:10000
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+21:43:26.842-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@gateway-service@@DEFAULT -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+21:43:26.844-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@gateway-service@@DEFAULT -> [{"instanceId":"localhost#10000#DEFAULT#DEFAULT_GROUP@@gateway-service","ip":"localhost","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@gateway-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+21:43:31.390-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:43:31.392-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:43:41.393-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:43:41.393-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:43:51.399-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:43:51.400-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:01.412-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:01.414-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:11.424-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:11.426-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:21.437-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:21.439-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:31.449-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:31.450-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:41.459-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:41.460-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:44:51.461-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:44:51.462-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:01.465-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:01.467-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:11.483-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:11.483-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:21.487-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:21.488-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:31.502-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:31.503-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:41.506-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:41.506-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:45:51.521-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:45:51.521-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:01.529-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:01.531-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:11.535-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:11.538-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:21.539-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:21.539-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:31.542-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:31.543-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:41.550-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:41.552-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:46:51.558-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:46:51.560-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:01.561-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:01.561-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:11.562-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:11.563-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:21.577-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:21.578-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:31.580-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:31.582-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:41.597-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:41.597-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:47:51.601-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:47:51.602-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:01.607-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:01.608-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:11.609-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:11.610-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:21.617-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:21.619-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:31.628-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:31.629-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:41.637-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:41.638-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:48:51.643-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:48:51.644-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:01.644-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:01.645-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:11.656-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:11.656-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:21.670-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:21.670-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:31.671-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:31.672-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:41.676-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:41.678-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:49:51.682-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:49:51.683-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:01.691-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:01.692-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:11.696-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:11.698-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:21.702-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:21.702-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:31.703-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:31.703-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:41.708-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:41.709-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:50:51.722-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:50:51.724-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:01.726-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:01.727-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:11.741-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:11.742-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:21.753-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:21.754-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:31.768-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:31.768-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:41.774-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:41.775-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:51:51.781-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:51:51.782-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:01.783-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:01.784-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:11.785-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:11.785-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:21.787-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:21.787-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:31.792-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:31.792-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:41.802-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:41.802-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:52:51.804-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:52:51.804-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:01.810-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:01.811-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:11.825-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:11.826-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:21.828-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:21.828-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:31.842-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:31.843-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:41.851-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:41.853-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:53:51.857-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:53:51.858-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:01.860-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:01.860-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:11.869-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:11.870-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:21.878-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:21.878-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:31.893-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:31.893-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:41.907-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:41.907-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:54:51.915-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:54:51.916-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:01.928-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:01.928-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:11.938-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:11.938-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:21.943-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:21.943-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:31.956-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:31.956-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:41.972-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:41.973-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:55:51.986-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:55:51.987-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:01.994-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:01.995-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:11.998-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:11.999-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:22.013-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:22.015-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:32.018-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:32.018-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:42.028-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:42.028-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:56:52.031-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:56:52.032-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:02.044-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:02.045-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:12.048-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:12.048-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:22.062-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:22.063-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:32.066-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:32.067-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:42.081-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:42.082-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:57:52.085-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:57:52.085-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:02.093-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:02.093-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:12.095-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:12.096-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:22.111-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:22.111-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:32.126-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:32.126-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:42.134-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:42.134-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:58:52.139-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:58:52.142-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:02.150-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:02.150-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:12.156-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:12.157-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:22.165-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:22.165-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:32.166-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:32.166-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:42.168-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:42.168-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+21:59:52.174-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+21:59:52.175-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:02.187-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:02.187-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:12.196-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:12.197-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:22.210-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:22.211-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:32.225-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:32.225-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:42.226-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:42.226-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:00:52.227-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:00:52.228-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:02.233-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:02.234-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:12.244-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:12.244-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:22.250-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:22.251-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:32.265-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:32.266-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:42.267-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:42.270-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:01:52.273-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:01:52.273-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:02.283-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:02.283-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:12.288-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:12.288-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:22.302-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:22.303-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:32.308-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:32.308-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:42.316-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:42.316-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:02:52.330-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:02:52.330-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:02.345-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:02.346-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:12.351-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:12.352-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:22.360-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:22.360-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:32.372-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:32.373-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:42.386-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:42.386-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:03:52.396-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:03:52.397-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:02.406-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:02.407-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:12.411-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:12.411-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:22.413-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:22.413-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:32.421-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:32.421-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:42.431-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:42.431-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:04:52.441-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:04:52.443-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:02.453-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:02.454-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:12.467-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:12.468-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:22.471-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:22.471-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:32.482-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:32.482-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:42.487-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:42.487-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:05:52.492-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:05:52.493-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:02.506-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:02.506-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:12.507-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:12.508-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:22.516-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:22.516-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:32.519-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:32.520-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:42.533-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:42.534-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:06:52.546-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:06:52.546-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:02.553-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:02.553-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:12.564-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:12.564-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:22.566-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:22.568-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:32.580-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:32.581-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:42.585-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:42.586-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:07:52.597-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:07:52.598-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:02.605-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:02.605-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:12.606-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:12.607-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:22.611-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:22.611-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:32.613-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:32.613-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:42.626-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:42.626-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:08:52.627-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:08:52.627-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:02.631-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:02.632-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:12.640-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:12.642-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:22.647-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:22.647-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:32.661-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:32.661-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:42.662-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:42.663-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:09:52.677-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:09:52.678-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:02.692-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:02.692-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:12.693-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:12.694-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:22.700-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:22.701-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:32.712-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:32.712-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:42.714-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:42.714-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:10:52.728-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:10:52.729-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:02.742-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:02.742-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:12.754-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:12.755-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:22.762-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:22.762-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:32.770-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:32.770-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:42.776-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:42.777-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:11:52.784-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:11:52.785-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:02.790-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:02.791-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:12.802-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:12.804-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:22.816-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:22.816-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:32.831-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:32.832-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:42.842-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:42.842-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:12:52.843-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:12:52.844-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:02.855-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:02.855-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:12.869-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:12.870-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:22.881-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:22.881-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:32.888-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:32.889-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:42.896-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:42.896-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:13:52.907-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:13:52.907-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:02.908-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:02.908-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:12.911-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:12.911-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:22.925-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:22.927-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:32.932-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:32.932-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:42.932-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:42.932-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:14:52.941-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:14:52.941-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:02.944-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:02.945-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:12.951-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:12.953-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:22.956-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:22.956-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:32.969-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:32.970-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:42.978-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:42.979-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:15:52.981-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:15:52.982-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:02.985-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:02.985-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:12.991-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:12.991-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:23.000-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:23.000-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:33.012-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:33.012-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:43.027-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:43.027-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:16:53.031-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:16:53.031-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:03.032-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:03.032-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:13.037-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:13.037-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:23.044-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:23.045-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:33.056-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:33.057-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:43.069-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:43.070-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:17:53.071-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:17:53.071-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:03.082-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:03.082-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:13.084-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:13.085-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:23.101-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:23.101-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:33.110-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:33.110-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:43.119-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:43.119-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:18:53.129-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:18:53.129-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:03.138-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:03.138-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:13.140-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:13.141-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:23.141-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:23.141-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:33.145-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:33.146-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:43.162-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:43.163-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:19:53.166-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:19:53.166-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:03.167-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:03.167-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:13.175-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:13.176-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:23.179-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:23.179-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:33.192-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:33.192-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:43.201-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:43.203-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:20:53.209-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:20:53.209-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:03.212-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:03.213-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:13.221-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:13.222-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:23.223-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:23.224-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:33.226-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:33.226-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:43.229-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:43.230-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:21:53.238-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:21:53.238-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:03.245-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:03.246-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:13.256-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:13.256-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:23.266-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:23.266-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:33.267-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:33.267-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:43.273-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:43.273-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:22:53.285-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:22:53.285-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:03.287-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:03.287-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:13.291-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:13.291-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:23.305-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:23.305-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:33.309-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:33.310-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:43.318-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:43.319-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:23:53.327-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:23:53.327-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:03.342-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:03.342-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:13.343-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:13.345-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:23.353-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:23.353-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:33.368-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:33.368-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:43.369-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:43.369-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:24:53.372-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:24:53.372-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:03.373-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:03.375-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:13.377-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:13.378-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:23.382-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:23.384-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:33.386-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:33.386-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:43.388-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:43.389-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:25:53.389-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:25:53.390-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:03.401-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:03.402-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:13.416-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:13.416-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:23.423-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:23.424-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:33.434-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:33.434-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:43.435-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:43.435-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:26:53.450-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:26:53.450-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:27:03.453-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:27:03.453-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:27:13.469-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:27:13.469-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:27:23.472-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:27:23.472-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空
+22:27:33.485-[DESKTOP-44TL0F9][sys]-- INFO 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 尝试加载auth服务地址
+22:27:33.485-[DESKTOP-44TL0F9][sys]--ERROR 26868 --- [hFetchJwkThread] c.z.a.gateway.util.JwtSignerHolder       : 加载auth服务地址失败，原因：数据为空

@@ -1,5 +1,0 @@
-com\zwnl\ports\mapper\portsMapper.class
-com\zwnl\ports\service\impl\portsServiceImpl.class
-com\zwnl\ports\controller\portsController.class
-com\zwnl\ports\service\IportsService.class
-com\zwnl\ports\PortsApplication.class

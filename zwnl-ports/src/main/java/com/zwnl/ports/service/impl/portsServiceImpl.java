@@ -33,8 +33,7 @@ import com.zwnl.ports.service.IportsService;
 @Slf4j
 public class portsServiceImpl extends ServiceImpl<portsMapper, Ports> implements IportsService
 {
-    @Autowired
-    private portsMapper zwnlPortsMapper;
+
     @Autowired
     private CacheService cacheService;
 

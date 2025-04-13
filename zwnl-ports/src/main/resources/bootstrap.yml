@@ -28,6 +28,7 @@ spring:
             refresh: false
           - data-id: shared-minio.yaml # 共享minio配置
             refresh: false
+zwnl:
   swagger:
     enable: true
     enableResponseWrap: true

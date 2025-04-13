@@ -98,3 +98,91 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 15:33:19.356-[DESKTOP-44TL0F9][sys]-- INFO 24192 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c deregistering service DEFAULT_GROUP@@auth-service with instance: Instance{instanceId='null', ip='localhost', port=9096, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
 15:33:19.366-[DESKTOP-44TL0F9][sys]-- INFO 24192 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
 15:33:19.367-[DESKTOP-44TL0F9][sys]-- INFO 24192 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+17:24:37.528-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zwnl.auth.AuthApplication            : The following 1 profile is active: "local"
+17:24:38.508-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+17:24:38.509-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+17:24:38.529-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 MongoDB repository interfaces.
+17:24:38.547-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+17:24:38.549-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:24:38.568-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+17:24:38.863-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3ebc575e-0165-3ca3-8ad7-dc808d543459
+17:24:39.435-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.440-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.440-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$629/0x000002200259e000] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.445-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.475-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.478-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:24:39.794-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9096 (http)
+17:24:39.794-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+17:24:39.795-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+17:24:39.795-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17:24:39.799-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+17:24:39.807-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:24:39.808-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:24:39.938-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:24:39.938-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2392 ms
+17:24:40.840-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+17:24:41.870-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+17:24:44.387-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+17:24:44.400-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.mapper.PrivilegeMapper.selectList  : ==>  Preparing: SELECT id,menu_id,intro,method,uri,internal,create_time,update_time,creater,updater,dep_id,deleted FROM `privilege` WHERE deleted=0
+17:24:44.419-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.mapper.PrivilegeMapper.selectList  : ==> Parameters: 
+17:24:44.475-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.mapper.PrivilegeMapper.selectList  : <==      Total: 0
+17:24:44.484-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.m.RolePrivilegeMapper.selectList   : ==>  Preparing: SELECT id,role_id,privilege_id FROM role_privilege
+17:24:44.485-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.m.RolePrivilegeMapper.selectList   : ==> Parameters: 
+17:24:44.494-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.a.m.RolePrivilegeMapper.selectList   : <==      Total: 0
+17:24:44.687-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+17:24:45.099-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+17:24:45.105-[DESKTOP-44TL0F9][sys]--DEBUG 26380 --- [           main] c.z.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+17:24:45.199-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+17:24:45.548-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [sson-netty-4-21] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /121.37.242.119:6379
+17:24:45.739-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [sson-netty-4-18] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /121.37.242.119:6379
+17:24:45.891-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@675c1335]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+17:24:45.914-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 4 common frames omitted
+17:24:47.375-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+17:24:47.567-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:24:47.568-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+17:24:47.569-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:24:47.622-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9096 (http) with context path ''
+17:24:47.632-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9096, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@auth-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+17:24:47.632-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] a0d35c99-931b-4959-b25c-65d69043123c registering service DEFAULT_GROUP@@auth-service with instance: Instance{instanceId='null', ip='localhost', port=9096, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+17:24:47.644-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP auth-service localhost:9096 register finished
+17:24:48.626-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@auth-service@@DEFAULT -> [{"instanceId":"localhost#9096#DEFAULT#DEFAULT_GROUP@@auth-service","ip":"localhost","port":9096,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@auth-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:24:48.632-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@auth-service@@DEFAULT -> [{"instanceId":"localhost#9096#DEFAULT#DEFAULT_GROUP@@auth-service","ip":"localhost","port":9096,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@auth-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:24:48.841-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+17:24:49.190-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zwnl.auth.AuthApplication            : Started AuthApplication in 15.54 seconds (JVM running for 16.226)
+17:24:49.194-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] auth-service-local.yaml+DEFAULT_GROUP
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=auth-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=auth-service-local.yaml, group=DEFAULT_GROUP
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] auth-service+DEFAULT_GROUP
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=auth-service, group=DEFAULT_GROUP, cnt=1
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=auth-service, group=DEFAULT_GROUP
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] auth-service.yaml+DEFAULT_GROUP
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=auth-service.yaml, group=DEFAULT_GROUP, cnt=1
+17:24:49.195-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=auth-service.yaml, group=DEFAULT_GROUP
+17:24:49.196-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zwnl.auth.AuthApplication            : --/
+---------------------------------------------------------------------------------------
+	Application 'auth-service' is running! Access URLs:
+	Local: 		http://localhost:9096
+	External: 	http://192.168.1.119:9096
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+17:24:49.196-[DESKTOP-44TL0F9][sys]-- INFO 26380 --- [           main] com.zwnl.auth.AuthApplication            : --/
+------------------------------------------------------------------------------
+	
